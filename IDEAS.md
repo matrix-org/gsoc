@@ -59,7 +59,7 @@ There are many minecraft clones available e.g. https://github.com/fogleman/Minec
 
 **Knowledge pre-req**: Python (assuming fogleman/Minecraft is used as a base)
 
-**Potential mentor**: Kegan Dougal
+**Potential mentor**: Kegan Dougal ([Kegsay on github](https://github.com/Kegsay))
    
 
 ### Tumblr gateway
