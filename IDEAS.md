@@ -4,7 +4,7 @@ Google Summer Of Code Matrix Ideas list
 What is Matrix?
 ---------------
 
-Matrix is a global, federated network of servers that together become an eventually-consistent database, optimized for messaging data. Just like email, you can either run your own Matrix homeserver, which means you own and control your own communications and history - or you can use one hosted by someone else (e.g. matrix.org) - there is no single point of control or mandatory service provider in Matrix. In fact, there is no single point of control over conversations in Matrix at all - conversation history is a first class citizen, with room state replicated over all participating servers, avoiding single-points of failure or control as you get in XMPP MUCs.
+Matrix is an open standard for decentralised communication, describing a global federated network of servers that together act as an huge eventually-consistent database with pubsub semantics, optimized for messaging data and communication history. Just like email, you can either run your own Matrix-compatible homeserver, which means you own and control your own communications and history - or you can use one hosted by someone else (e.g. matrix.org) - there is no single point of control or mandatory service provider in Matrix. In fact, there is no single point of control over conversations in Matrix at all - conversation history is a first class citizen, with room state replicated over all participating servers, avoiding single-points of failure or control as you get in XMPP MUCs.
 
 You can also use matrix to send and receive other types of data - events are passed as JSON objects, so you can use Matrix to collect and broadcast IoT-type data, or program-specific data packets or other objects you need to send back and forth. Matrix itself is a spec, and you can write your own server or client by implementing the spec - we also have provided reference implementations of a [python server](https://github.com/matrix-org/synapse) and clients in [AngularJS](https://github.com/matrix-org/matrix-angular-sdk), [Android](https://github.com/matrix-org/matrix-android-sdk) and [iOS](https://github.com/matrix-org/matrix-ios-sdk).
 
@@ -18,7 +18,7 @@ In the Matrix network, anyone can run a homeserver. Anyone can also run a client
 
 A client typically represents a human using a web application or mobile app. Clients use the ["Client-to-Server" (C-S) API](https://github.com/matrix-org/matrix-doc/blob/master/specification/20_client_server_api.rst)  to communicate with their homeserver, which stores their profile data and their record of the conversations in which they participate.
 
-A "homeserver" is a server which provides C-S APIs and has the ability to federate with other HSes via the [Federation API](http://github.com/matrix-org/matrix-doc/blob/master/specification/30_server_server_api.rst). It is typically responsible for multiple clients. "Federation" is the term used to describe the sharing of data between two or more homeservers.
+A "homeserver" is a server where conversation history and user accounts are stored, and provides C-S APIs and has the ability to federate with other HSes to replicate conversation history across all the servers which participate in a given room via the [Federation API](http://github.com/matrix-org/matrix-doc/blob/master/specification/30_server_server_api.rst). It is typically responsible for multiple clients. "Federation" is the term used to describe the sharing of data between two or more homeservers.
 
 Here is a diagram of this architecture:
 
@@ -38,7 +38,7 @@ Here is a diagram of this architecture:
 
 Code repositories:
 ------------------
-Eveything is stored under [https://github.com/matrix-org](https://github.com/matrix-org/), e.g.:
+Everything is stored under [https://github.com/matrix-org](https://github.com/matrix-org/), e.g.:
 * [Reference python server](https://github.com/matrix-org/synapse)
 * [Reference AngularJS client and SDK](https://github.com/matrix-org/matrix-angular-sdk)
 * [Reference Android client and SDK](https://github.com/matrix-org/matrix-android-sdk)
