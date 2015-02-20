@@ -1,6 +1,19 @@
 Google Summer Of Code Matrix Ideas list
 =======================================
 
+What is Matrix?
+---------------
+
+Matrix is a global, federated network of servers that together become an eventually-consistent database, optimized for messaging data. Just like email, you can either run your own Matrix homeserver, which means you own and control your own communications and history - or you can use one hosted by someone else (e.g. matrix.org) - there is no single point of control or mandatory service provider in Matrix. In fact, there is no single point of control over conversations in Matrix at all - conversation history is a first class citizen, with room state replicated over all participating servers, avoiding single-points of failure or control as you get in XMPP MUCs.
+
+You can also use matrix to send and receive other types of data - events are passed as JSON objects, so you can use Matrix to collect and broadcast IoT-type data, or program-specific data packets or other objects you need to send back and forth. Matrix itself is a spec, and you can write your own server or client by implementing the spec - we also have provided reference implementations of a python server and clients in Angular JS, Android and iOS.
+
+This means that if I use Matrix as my communication protocol in two separate projects, I automatically gain inter-project communication support between these projects. In the end, we hope Matrix will crack the problem of a widely successful open federated platform for communication on the internet - you should be able to use your favourite app to communicate via Matrix - and your recipients should be able to reply through the app of their choice!
+
+
+Potential GSoC ideas - remember that you can use these as inspiration and suggest your project ideas:
+-------------------
+
 ### Matrixcraft
 
 There are many minecraft clones available e.g. [https://github.com/fogleman/Minecraft](https://github.com/fogleman/Minecraft) - but none of these are networked in any way. The aim of this project is to design and implement a protocol which can allow multiple minecraft players to play together, through Matrix.
