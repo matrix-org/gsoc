@@ -59,7 +59,7 @@ There are many minecraft clones available e.g. https://github.com/fogleman/Minec
 
 **Knowledge pre-req**: Python (assuming fogleman/Minecraft is used as a base)
 
-**Potential mentor**: Kegan Dougal ([Kegsay on github](https://github.com/Kegsay))
+**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
    
 
 ### Tumblr gateway
@@ -71,7 +71,7 @@ There are many minecraft clones available e.g. https://github.com/fogleman/Minec
 
 **Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
 
-**Potential mentor**: Kegan Dougal
+**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
     
 ### Etherpad clone
 [Etherpad](http://etherpad.org/) is a multi-user, real-time text collaboration tool which we use frequently internally. The aim of this project is to recreate Etherpad using Matrix. As a start, aim for a multi-user "notepad"-style application, and then more advanced features (chat, per-user history, different fonts/text-effects/etc) can be added as extensions.
@@ -82,7 +82,7 @@ There are many minecraft clones available e.g. https://github.com/fogleman/Minec
 
 **Knowledge pre-req**: Python/Twisted for server-side extensions; Client-side development (Javascript/HTML/CSS or Android or iOS), HTTP/JSON APIs, basic awareness of Operational Transform theory
 
-**Potential mentor**: Kegan Dougal
+**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
 ### Matrix Powered Microblogging
 Matrix-powered, open and federated microblogging platform. Basically, implement something like [Twitter](http://twitter.com) in Matrix - users can post updates and follow each other, and subscribers get a feed of the users they follow. The great thing with using Matrix for something like this, is that other clients can view and respond to updates from the microblogging application - as long as the common Matrix message types are used.
@@ -93,7 +93,7 @@ Matrix-powered, open and federated microblogging platform. Basically, implement 
 
 **Knowledge pre-req**: HTML, CSS, Javascript
 
-**Potential mentor**: David Baker
+**Potential mentor**: David Baker ([github](https://github.com/dbkr))
 
 ### Location based Chat
 A mobile app that shows you a list of chat rooms "around you". People could create chat rooms fixed in one place (a Café could have a room, for example) or you could create a chat room that follows you around as you walk around using the app. Perhaps users could also see other users around them and create chats with them if they had the app open, or see what other chats they were in.
@@ -108,7 +108,7 @@ A lot of code for the chat itself can be implemented with reusable UI components
 
 **Knowledge pre-req**: Android/iOS, probably python and SQL for the backend.
 
-**Potential mentor**: David Baker (iOS), Kegan Dougal (Android)
+**Potential mentor**: David Baker (iOS)  ([github](https://github.com/dbkr)), Kegan Dougal (Android) ([github](https://github.com/Kegsay))
 
 ### HTML Embeddable Matrix Chat Rooms
 Blogs and articles that allow users to engage with the author and comment on the content are standard in today's web and hugely popular. The implementations of these are largely from the authors of the blog or often completely proprietary in the case of newspaper or magzine articles. If I comment on a article and start discussing it with someone else, I now have to keep going back to that article to continue the discussion.
@@ -121,7 +121,7 @@ Matrix could be used as a platform where users can arrive at a random website, s
 
 **Knowledge pre-req**: HTML, Javascript
 
-**Potential mentor**: David Baker, Erik Johnston
+**Potential mentor**: David Baker ([github](https://github.com/dbkr)), Erik Johnston ([github](https://github.com/erikjohnston))
 
 ### Clustered Homeservers
 Whilst Matrix itself is a global eventually consistent database, the current server implementations have no horizontal scaling or high availability per homeserver node.  As a result, it's impossible for a single homeserver to scale beyond a single core currently.  This project would extend the Synapse (Python) or Pallium (Golang) homeserver implementations to support simple clustering by letting the multiple instances run concurrently, sharing distributed state over the network such that clients can connect to arbitrary nodes within the cluster.
@@ -132,7 +132,7 @@ Whilst Matrix itself is a global eventually consistent database, the current ser
 
 **Knowledge pre-req**: Python/Twisted or Golang.  Experience of clustering strategies a plus.
 
-**Potential mentor**: Erik Johnson, Mark Haines
+**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston)), Mark Haines ([github](https://github.com/NegativeMjark))
 
 ### Golang Matrix Homeserver
 The reference implementation of the Matrix homeserver is currently Synapse, written in Python.  There also exists a 3rd party implementation written in Golang called Pallium (http://github.com/KoFish/pallium), which is promising but lacks support for the Federation API, recent Client-Server API features and generally needs more polish.  The code is a good basis for future work however and building it out to support basic federation would be an incredibly worthwhile project.
@@ -154,7 +154,7 @@ The Synapse python homeserver reference implementation is currently hardcoded to
 
 **Knowledge pre-req**: Some python & SQL knowledge desirable
 
-**Potential mentor**: Erik Johnston
+**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
 
 ### Libpurple Matrix Plugin
 The Matrix ecosystem has relatively few clients currently (just AngularJS, iOS, Android and two alpha commandline clients).  Implementing a libpurple module that talks the Matrix Client-Server REST API would improve things enormously, letting clients like Pidgin and Adium speak through to Matrix as well as bridges like Bitlbee.  The catch is that the libpurple architecture is focused around message passing rather than history synchronisation like Matrix, so there will be a bit of an impedence mismatch between the libpurple API and the Matrix Client-Server API. This should be solvable however, just as libpurple supports MUC history playback for XMPP.  An extension idea could include wrapping the resulting plugin in haze for use in empathy.
@@ -165,7 +165,7 @@ The Matrix ecosystem has relatively few clients currently (just AngularJS, iOS, 
 
 **Knowledge pre-req**: Good C skills and HTTP API knowledge. Glib knowledge an added bonus.
 
-**Potential mentor**: Erik Johnston
+**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
 
 ### Command line Matrix client
 A recurring request from poweruser newcomers to Matrix is whether we have any command-line clients.  Creating a new commandline client implementation (perhaps combined with the libpurple plugin mentioned above), or implementing an irssi plugin, or weechat or similar would be really useful.
@@ -176,7 +176,7 @@ A recurring request from poweruser newcomers to Matrix is whether we have any co
 
 **Knowledge pre-req**: Familiarity with the language used to implement the client would be a bonus.  Understanding of HTTP API basics a must.
 
-**Potential mentor**: Erik Johnston
+**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
 
 ### Add Matrix into Known
 Withknown.com is a new opensource distributed social network and blogging platform written in PHP, following the "wordpress" model.  We think it would be really cool to embed Matrix clients into the Known web engine, providing the equivalent functionality to Known that FB Messenger provides to Facebook.  Just as Known users can host their own Known servers, they could also be able to host their own Matrix servers, and use them for all their social messaging and video/voice calling needs from the comfort of their own website.  This project is tightly coupled to the "HTML Embeddable Matrix Chat Rooms" project mentioned above.
@@ -187,7 +187,7 @@ Withknown.com is a new opensource distributed social network and blogging platfo
 
 **Knowledge pre-req**: Familiarity with PHP, HTML, CSS, and HTTP APIs.
 
-**Potential mentor**: Erik Johnston
+**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
 
 ### Matrix Gateways
 Matrix's Application Service API provides a simple but powerful way to build arbitrary application logic on top of Matrix - e.g. gateways between Matrix and other communication environments such as SIP, IRC, XMPP, Lync, and proprietary chat/VoIP services.  This project would be to pick a common existing communication protocol (e.g. XMPP) and build an Application Service which bridges it into Matrix - thus extending both ecosystems, supporting as high a common set of capabilities as possible (e.g. VoIP if available, group chat if available, synchronised history if available etc).  The service could be built on our existing reference Python implementation Application Server framework.  An interesting extension would be to support end-to-end encryption over a federation - e.g. federating TextSecure's reference server with Matrix (Matrix's end-to-end encryption should be compatible with Axolotl, the algorithm TextSecure uses).
@@ -208,7 +208,7 @@ We currently have no dedicated desktop GUI Matrix clients at all.  There have be
 
 **Knowledge pre-req**: Familiarity with web services, the language used for implementing the client (e.g. ObjectiveC, Java)
 
-**Potential mentor**: Erik Johnston (Not objective c)
+**Potential mentor**: Erik Johnston (Not objective c) ([github](https://github.com/erikjohnston))
 
 ### Matrix<->Blog bridge and client
 Related to the "Tumblr gateway" idea suggestion - rather than just bridging content from Tumblr into Matrix, one could build a 'communication dashboard' app which aggregates content and comments from a wide range of blogs, messageboards, forums etc and presents them in a single interface - much like an RSS aggregator.  Unlike an RSS aggregator one could also post comments and answers directly from within the dashboard via Matrix, using a generic blog<->Matrix application service gateway.  This could put provide a consistent open decentralised API to all conversations on the the internet, with no single points of control.
@@ -240,7 +240,7 @@ As of the time of writing Matrix's mobile apps on iOS and Android don't support 
 **Difficulty**: Moderate/Hard
 Knowledge pre-req: Familiarity with iOS or Android development, and linking native 3rd party libraries into existing clients.  Basic knowledge of VoIP signalling an advantage, but not prerequisite.
 
-**Potential mentor**: David Baker
+**Potential mentor**: David Baker ([github](https://github.com/dbkr))
 
 ### Multi-way voice and video conferencing
 Matrix currently has one-to-one voice and video conferencing using WebRTC. This project would be to add multi-user voice and video chat to the Matrix web client. This would likley be done by extending a standard VoIP conferencing server such as Jitsi Video Bridge (https://jitsi.org/Projects/JitsiVideobridge). This would involve working with the Matrix team to extend to the Matrix specification as necessary to support conferencing and helping to define the open ecosystem for VoIP calls in the future. It will then involve the addition of Matrix support to the chosen conferencing server and the addition of UI to the web client to support it.
@@ -255,7 +255,7 @@ The best solution here will balance quality and bandwidth usage, for example by 
 
 **Knowledge pre-req**: Javascript, HTML, CSS, WebRTC, some experience with real time audio and video. Java if Jitsi video bridge chosen.
 
-**Potential mentor**: David Baker
+**Potential mentor**: David Baker ([github](https://github.com/dbkr))
 
 ### Matrix Search Engine
 There is currently no way to index content in Matrix.  Luckily the Application Service API makes it trivial to query the conversation history of the public rooms on a given server, meaning that room history could easily be spidered and indexed into a search engine such as ElasticSearch.  A simple web interface could then provide a Google Groups-style search engine across all public accessible content in Matrix, if extended to support multiple homeservers.  A related extension could be implementing a search-engine friendly view layer on the default matrix webclient, allowing Google and other search engines themselves to directly index Matrix content.
