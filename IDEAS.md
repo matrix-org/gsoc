@@ -154,4 +154,58 @@ The Synapse python homeserver reference implementation is currently hardcoded to
 
 **Potential mentor**: Erik Johnston
 
+### Libpurple Matrix Plugin
+The Matrix ecosystem has relatively few clients currently (just AngularJS, iOS, Android and two alpha commandline clients).  Implementing a libpurple module that talks the Matrix Client-Server REST API would improve things enormously, letting clients like Pidgin and Adium speak through to Matrix as well as bridges like Bitlbee.  The catch is that the libpurple architecture is focused around message passing rather than history synchronisation like Matrix, so there will be a bit of an impedence mismatch between the libpurple API and the Matrix Client-Server API. This should be solvable however, just as libpurple supports MUC history playback for XMPP.  An extension idea could include wrapping the resulting plugin in haze for use in empathy.
+
+**Expected Results**: Any libpurple-backed IM client can connect to a Matrix homeserver to send/receive IMs and other content.
+
+**Difficulty**: Moderate
+
+**Knowledge pre-req**: Good C skills and HTTP API knowledge. Glib knowledge an added bonus.
+
+**Potential mentor**: Erik Johnston
+
+### Command line Matrix client
+A recurring request from poweruser newcomers to Matrix is whether we have any command-line clients.  Creating a new commandline client implementation (perhaps combined with the libpurple plugin mentioned above), or implementing an irssi plugin, or weechat or similar would be really useful.
+
+**Expected results**: A new commandline/text-user-interface Matrix client implementation that can support textual groupchat modes of communication in Matrix.
+
+**Difficulty**: Moderate
+
+**Knowledge pre-req**: Familiarity with the language used to implement the client would be a bonus.  Understanding of HTTP API basics a must.
+
+**Potential mentor**: Erik Johnston
+
+### Add Matrix into Known
+Withknown.com is a new opensource distributed social network and blogging platform written in PHP, following the "wordpress" model.  We think it would be really cool to embed Matrix clients into the Known web engine, providing the equivalent functionality to Known that FB Messenger provides to Facebook.  Just as Known users can host their own Known servers, they could also be able to host their own Matrix servers, and use them for all their social messaging and video/voice calling needs from the comfort of their own website.  This project is tightly coupled to the "HTML Embeddable Matrix Chat Rooms" project mentioned above.
+
+**Expected results**: Known PHP module for embedding matrix clients into Known websites.
+
+**Difficulty**: Moderate
+
+**Knowledge pre-req**: Familiarity with PHP, HTML, CSS, and HTTP APIs.
+
+**Potential mentor**: Erik Johnston
+
+### Matrix Gateways
+Matrix's Application Service API provides a simple but powerful way to build arbitrary application logic on top of Matrix - e.g. gateways between Matrix and other communication environments such as SIP, IRC, XMPP, Lync, and proprietary chat/VoIP services.  This project would be to pick a common existing communication protocol (e.g. XMPP) and build an Application Service which bridges it into Matrix - thus extending both ecosystems, supporting as high a common set of capabilities as possible (e.g. VoIP if available, group chat if available, synchronised history if available etc).  The service could be built on our existing reference Python implementation Application Server framework.  An interesting extension would be to support end-to-end encryption over a federation - e.g. federating TextSecure's reference server with Matrix (Matrix's end-to-end encryption should be compatible with Axolotl, the algorithm TextSecure uses).
+
+**Expected results**: An application service which provides two-way bridging of group and 1:1 chat, including masquerading 'foreign' users and rooms into Matrix.
+
+**Difficulty**: Moderate
+Knowledge pre-req: Familiarity with web services, the language used for implementing the service (e.g. Python if using our reference example service framework) and the protocol being bridged.
+
+**Potential mentor**: TBD
+
+### Native Matrix Desktop Client
+We currently have no dedicated desktop GUI Matrix clients at all.  There have been many requests for a richer non-HTML client for desktop use - either porting the opensource iOS app to run on OSX, or using the Java SDK to implement a JavaFX application or similar.
+
+**Expected results**: a desktop GUI Matrix client supporting basic group chat functionality.
+
+**Difficulty**: Moderate
+
+**Knowledge pre-req**: Familiarity with web services, the language used for implementing the client (e.g. ObjectiveC, Java)
+
+**Potential mentor**: Erik Johnston (Not objective c)
+
 
