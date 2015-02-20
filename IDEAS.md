@@ -12,7 +12,7 @@ This means that if I use Matrix as my communication protocol in two separate pro
 
 APIs and architecture:
 ----------------------
-In Matrix, a user account belongs to a homeserver and looks like this: @localpart:domain - the localpart is the "username" and the domain is homeserver on which the account belongs. In other words, @user1:matrix.org is a different user to @user1:example.com as they are registered on different homeservers. 
+In Matrix, a user account belongs to a homeserver and looks like this: *@localpart:domain* - the localpart is the "username" and the domain is the homeserver on which the account belongs. In other words, *@user1:matrix.org* is a different user to *@user1:example.com* as they are registered on different homeservers. 
 
 In the Matrix network, anyone can run a homeserver. Anyone can also run a client, and you can connect to any homeserver from any client.
 
