@@ -195,7 +195,8 @@ Matrix's Application Service API provides a simple but powerful way to build arb
 **Expected results**: An application service which provides two-way bridging of group and 1:1 chat, including masquerading 'foreign' users and rooms into Matrix.
 
 **Difficulty**: Moderate
-Knowledge pre-req: Familiarity with web services, the language used for implementing the service (e.g. Python if using our reference example service framework) and the protocol being bridged.
+
+**Knowledge pre-req**: Familiarity with web services, the language used for implementing the service (e.g. Python if using our reference example service framework) and the protocol being bridged.
 
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
@@ -228,7 +229,8 @@ This project would involve helping to finalize how Matrix supports threading, as
 **Expected results**: A client with support for replying to particular messages and showing the ongoing and historic threads.
 
 **Difficulty**: Moderate
-Knowledge pre-req: Familiarity with at least one of the languages of the current clients (AngularJS, Android or Objective C)
+
+**Knowledge pre-req**: Familiarity with at least one of the languages of the current clients (AngularJS, Android or Objective C)
 
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
@@ -238,7 +240,8 @@ As of the time of writing Matrix's mobile apps on iOS and Android don't support 
 **Expected results**: The reference iOS or Android matrix clients support VoIP and Video calling to other Matrix clients (e.g. the existing WebRTC support in the reference Matrix web client).
 
 **Difficulty**: Moderate/Hard
-Knowledge pre-req: Familiarity with iOS or Android development, and linking native 3rd party libraries into existing clients.  Basic knowledge of VoIP signalling an advantage, but not prerequisite.
+
+**Knowledge pre-req**: Familiarity with iOS or Android development, and linking native 3rd party libraries into existing clients.  Basic knowledge of VoIP signalling an advantage, but not prerequisite.
 
 **Potential mentor**: David Baker ([github](https://github.com/dbkr))
 
