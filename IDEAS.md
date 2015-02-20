@@ -113,7 +113,7 @@ A lot of code for the chat itself can be implemented with reusable UI components
 ### HTML Embeddable Matrix Chat Rooms
 A Matrix-powered engine for comments boxes.
 
-**Expected Results**: A javascript/HTML SDK of some form that a website author can download, embed and skin into their website to make comments work with minimal work to integrate. Could require user to log in with a matrix account to post (so your Matrix account would let you post comments on any website which used this).  VoIP and Video calling support would be an added bonus.
+**Expected Results**: A javascript/HTML SDK of some form that a website author can download, embed and skin into their website to make comments work with minimal work to integrate. Could require user to log in with a matrix account to post (so your Matrix account would let you post comments on any website which used this). The blog author would be able to add their own comments and moderate comments. VoIP and Video calling support would be an added bonus. Other extensions would be plugins for blogging platforms so users of WordPress or similar can use the software on their blogs by just installing the plugin.
 
 **Difficulty**: Easy/Moderate
 
@@ -130,5 +130,28 @@ Whilst Matrix itself is a global eventually consistent database, the current ser
 
 **Knowledge pre-req**: Python/Twisted or Golang.  Experience of clustering strategies a plus.
 
-**Potential mentor**: Erik Johnson
+**Potential mentor**: Erik Johnson, Mark Haines
+
+### Golang Matrix Homeserver
+The reference implementation of the Matrix homeserver is currently Synapse, written in Python.  There also exists a 3rd party implementation written in Golang called Pallium (http://github.com/KoFish/pallium), which is promising but lacks support for the Federation API, recent Client-Server API features and generally needs more polish.  The code is a good basis for future work however and building it out to support basic federation would be an incredibly worthwhile project.
+
+**Expected Results**: Pallium has been extended to support the new v2 CS-API and can also talk to other servers via the Federation API.
+
+**Difficulty**: Moderate/Hard
+
+**Knowledge pre-req**: Some knowledge of Golang
+
+**Potential mentor**: TBD
+
+### Arbitrary SQL backend support in Synapse
+The Synapse python homeserver reference implementation is currently hardcoded to use sqlite as a database.  Whilst this simplifies setup and is okay for light-medium performance, it rapidly becomes a bottleneck for larger deployments because of sqlite's inherently single-threaded nature.  It also kills the possibility of HA at the database layer, or hosting the database on dedicated hardware.   The aim here is to modify Synapse's storage layer to support arbitrary SQL dialects by manipulating the current 'generic SQL' statements into dialect-specific ones, either using an existing library or manual extensions to the current database abstraction layer.
+
+**Expected Results**: Synapse supports multiple SQL backends - at least MySQL or Postgres.  Crate.io for bonus points (if it makes sense).
+
+**Difficulty**: Easy/Moderate
+
+**Knowledge pre-req**: Some python & SQL knowledge desirable
+
+**Potential mentor**: Erik Johnston
+
 
