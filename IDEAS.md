@@ -197,7 +197,7 @@ Matrix's Application Service API provides a simple but powerful way to build arb
 **Difficulty**: Moderate
 Knowledge pre-req: Familiarity with web services, the language used for implementing the service (e.g. Python if using our reference example service framework) and the protocol being bridged.
 
-**Potential mentor**: TBD
+**Potential mentor**: Kegan Dougal
 
 ### Native Matrix Desktop Client
 We currently have no dedicated desktop GUI Matrix clients at all.  There have been many requests for a richer non-HTML client for desktop use - either porting the opensource iOS app to run on OSX, or using the Java SDK to implement a JavaFX application or similar.
@@ -208,7 +208,7 @@ We currently have no dedicated desktop GUI Matrix clients at all.  There have be
 
 **Knowledge pre-req**: Familiarity with web services, the language used for implementing the client (e.g. ObjectiveC, Java)
 
-**Potential mentor**: Erik Johnston (Not objective c)
+**Potential mentor**: Erik Johnston, David Baker
 
 ### Matrix<->Blog bridge and client
 Related to the "Tumblr gateway" idea suggestion - rather than just bridging content from Tumblr into Matrix, one could build a 'communication dashboard' app which aggregates content and comments from a wide range of blogs, messageboards, forums etc and presents them in a single interface - much like an RSS aggregator.  Unlike an RSS aggregator one could also post comments and answers directly from within the dashboard via Matrix, using a generic blog<->Matrix application service gateway.  This could put provide a consistent open decentralised API to all conversations on the the internet, with no single points of control.
@@ -219,7 +219,7 @@ Related to the "Tumblr gateway" idea suggestion - rather than just bridging cont
 
 **Knowledge pre-req**: Familiarity with web services, the language used for implementing the service (e.g. Python if using our reference example service framework), and the language used for implementing the dashboard app/website (e.g. AngularJS/JQuery/Javascript/HTML/CSS).
 
-**Potential mentor**: TBD
+**Potential mentor**: Kegan Dougal
 
 ### Threaded Matrix client
 One of the major early uses of Matrix are public rooms (similar to IRC) focused around given topics, for example Matrix support channel, android development, etc. These run into the classic problem of having multiple concurrent conversations in them, which often leads to confusion for all participants. One of the desired features of Matrix is to provide threading support such that individual messages can be marked as a reply to others, this would allow apps to differentiate the various different conversations in the UI giving a much better and more usable user experience.
@@ -230,7 +230,7 @@ This project would involve helping to finalize how Matrix supports threading, as
 **Difficulty**: Moderate
 Knowledge pre-req: Familiarity with at least one of the languages of the current clients (AngularJS, Android or Objective C)
 
-**Potential mentor**: TBD
+**Potential mentor**: Kegan Dougal
 
 ### Implementing WebRTC support in Mobile apps
 As of the time of writing Matrix's mobile apps on iOS and Android don't support VoIP calling, which is a major shortcoming given Matrix's Client-Server HTTP API offers a simple pragmatic approach for federated WebRTC calling.  In this project, you would add a WebRTC stack to the iOS and/or Android applications (e.g. OpenWebRTC, or Google's WebRTC stack, or Google's in-built Android WebRTC stack) in order to support voice and video calling to the reference example Matrix clients.
@@ -266,7 +266,7 @@ There is currently no way to index content in Matrix.  Luckily the Application S
 
 **Knowledge pre-req**: Familiarity with web services, the language used for implementing the application service (e.g. Python if using our reference example service framework).  Basic HTML/CSS/Javascript needed to implement the search engine interface frontend.
 
-**Potential mentor**: TBD
+**Potential mentor**: Kegan Dougal
 
 ### Collaborative Whiteboarding in Matrix
 Matrix allows clients to send and synchronize arbitary pieces of data in a room, allowing the possibility collabrative editing. This project would be to use this ability to design and implement a collaborative whiteboarding app using Matrix. This is similar to the etherpad project above, except synchronizing a whiteboard canvas between clients instead of text.
@@ -277,7 +277,7 @@ Matrix allows clients to send and synchronize arbitary pieces of data in a room,
 
 **Knowledge pre-req**: Python/Twisted for server-side extensions; Client-side development (Javascript/HTML/CSS or Android or iOS), HTTP/JSON APIs, basic awareness of Operational Transform theory
 
-**Potential mentor**: TBD
+**Potential mentor**: Kegan Dougal
 
 ### Matrix Virtual World
 This is an extension of both the etherpad, Matrixcraft and Collaborative whiteboarding ideas mentioned above.  By integrating WebGL (e.g. using a library like ThreeJS) with Matrix, one can create a collaborative virtual world whose data is persisted in Matrix, replicated over all participating Matrix homeservers with no single points of control or failure.  If implemented as a generic platform, one could first start off by sharing 3D geometry in the world, and then defining higher level semantics (perhaps in combination with matrix Application Services) to define business logic for the world.  A good example could be building a collaborative 3D model editor on top of Matrix, or a 2D collaborative graphical programming environment.
@@ -288,7 +288,7 @@ This is an extension of both the etherpad, Matrixcraft and Collaborative whitebo
 
 **Knowledge pre-req**: 3D graphics, WebGL, Operational Transform theory all a plus.  Would likely require optimisations and/or extensions to the server to support storing object graphs in Matrix.
 
-**Potential mentor**: TBD
+**Potential mentor**: Matthew Hodgson
 
 ### Internationalising Matrix
 None of the Matrix clients are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix opensource community to source translations as required.
@@ -299,7 +299,7 @@ None of the Matrix clients are currently internationalised.  This is a real sham
 
 **Knowledge pre-req**: Basic Javascript, iOS, Android.
 
-**Potential mentor**: TBD
+**Potential mentor**: David Baker
 
 ###Matrix Client UI/UX improvements
 None of the reference Matrix clients have ever had any professional graphical design or user interface/user experience support.  This is partially deliberate, as our focus has been entirely on the technical implementation of the overall platform, and we don't want to put other people off building glossy Matrix-power apps.  In practice, it does turn people off Matrix as a whole, and we don't want to be responsible for creating bad UX.  So if you are an aspiring UX/UI designer, we would love you to come attack our reference clients and work with the dev team to implement your dreams of the ultimate communication tool!
@@ -310,7 +310,7 @@ None of the reference Matrix clients have ever had any professional graphical de
 
 **Knowledge pre-req**: UX/UI design skills; Photoshop or equivalent for building pixel-perfect UIs which the dev team can then go implement.
 
-**Potential mentor**: TBD
+**Potential mentor**: Matthew Hodgson
 
 ### Music jamming over Matrix
 The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for TechCrunch Disrupt London 2014 - this was a simple Network MIDI to Matrix bridge which persisted network MIDI traffic into Matrix, and then transcribed it using javascript to musical notation  This project would extend or reimplement this hack to build a full remote musical jamming solution for Matrix, with no single points of failure or ownership over the resulting music.  Users anywhere on the net would be able to play together via MIDI, storing the data into Matrix for posterity and letting the public listen and view the transcription in realtime.
@@ -321,7 +321,7 @@ The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for
 
 **Knowledge pre-req**: Some knowledge of MIDI and music useful.  Javascript/HTML5/AngularJS/CSS for the web application.  Python or similar for the basis MIDI<->Matrix application service bridge.  Knowledge of statistics useful for understanding quantising algorithms for transcribing MIDI.
 
-**Potential mentor**: TBD
+**Potential mentor**: Matthew Hodgson
 
 ### IoT Dashboard with Matrix
 Matrix is ideal as a platform for the Internet of Things: simple, federated, persistant communication would allow devices and hubs to communicate with services and one another in a unified, open and extensible way. IoT devices and hubs could send their data into Matrix which would distibute and store it as necessary. This project would involve input into a set of standards for such devices to put data into Matrix as well as client of some kind for visualising, analysing and orchestrating the data from these devices and potentially interacting with them. This could take the form of a webapp which reads the data from Matrix (using the angular SDK) and/or similar mobile clients. The client would display a list of all of my devices that were feeding data into the system and a summary of the data they're sending, allowing me to view a summary of recent data or get more detail and potentially plot graphs of the data from devices (for example, the curent temperature of my home thermostat and its trend over the last month). It's important that the system is open and usable by others, so specifying a format for data that's as flexible as possible whilst also providing rich, detailed information from each type of device would be an interesting problem.
@@ -332,4 +332,4 @@ Matrix is ideal as a platform for the Internet of Things: simple, federated, per
 
 **Knowledge pre-req**: Javascript/HTML5/AngularJS/CSS for web application.  Python or similar for IoT application services if using our reference application service framework.
 
-**Potential mentor**: TBD
+**Potential mentor**: Matthew Hodgson
