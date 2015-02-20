@@ -208,4 +208,110 @@ We currently have no dedicated desktop GUI Matrix clients at all.  There have be
 
 **Potential mentor**: Erik Johnston (Not objective c)
 
+### Matrix<->Blog bridge and client
+Related to the "Tumblr gateway" idea suggestion - rather than just bridging content from Tumblr into Matrix, one could build a 'communication dashboard' app which aggregates content and comments from a wide range of blogs, messageboards, forums etc and presents them in a single interface - much like an RSS aggregator.  Unlike an RSS aggregator one could also post comments and answers directly from within the dashboard via Matrix, using a generic blog<->Matrix application service gateway.  This could put provide a consistent open decentralised API to all conversations on the the internet, with no single points of control.
+
+**Expected results**: A two-way conversation dashboard client and accompanying Matrix Application Service which allows 
+
+**Difficulty**: Moderate/Hard
+
+**Knowledge pre-req**: Familiarity with web services, the language used for implementing the service (e.g. Python if using our reference example service framework), and the language used for implementing the dashboard app/website (e.g. AngularJS/JQuery/Javascript/HTML/CSS).
+
+**Potential mentor**: TBD
+
+### Threaded Matrix client
+One of the major early uses of Matrix are public rooms (similar to IRC) focused around given topics, for example Matrix support channel, android development, etc. These run into the classic problem of having multiple concurrent conversations in them, which often leads to confusion for all participants. One of the desired features of Matrix is to provide threading support such that individual messages can be marked as a reply to others, this would allow apps to differentiate the various different conversations in the UI giving a much better and more usable user experience.
+This project would involve helping to finalize how Matrix supports threading, as well as implementing support in one or more of the current clients.
+
+**Expected results**: A client with support for replying to particular messages and showing the ongoing and historic threads.
+
+**Difficulty**: Moderate
+Knowledge pre-req: Familiarity with at least one of the languages of the current clients (AngularJS, Android or Objective C)
+
+**Potential mentor**: TBD
+
+### Implementing WebRTC support in Mobile apps
+As of the time of writing Matrix's mobile apps on iOS and Android don't support VoIP calling, which is a major shortcoming given Matrix's Client-Server HTTP API offers a simple pragmatic approach for federated WebRTC calling.  In this project, you would add a WebRTC stack to the iOS and/or Android applications (e.g. OpenWebRTC, or Google's WebRTC stack, or Google's in-built Android WebRTC stack) in order to support voice and video calling to the reference example Matrix clients.
+
+**Expected results**: The reference iOS or Android matrix clients support VoIP and Video calling to other Matrix clients (e.g. the existing WebRTC support in the reference Matrix web client).
+
+**Difficulty**: Moderate/Hard
+Knowledge pre-req: Familiarity with iOS or Android development, and linking native 3rd party libraries into existing clients.  Basic knowledge of VoIP signalling an advantage, but not prerequisite.
+
+**Potential mentor**: David Baker
+
+### Multi-way voice and video conferencing
+Matrix currently has one-to-one voice and video conferencing using WebRTC. This project would be to add multi-user voice and video chat to the Matrix web client. This would likley be done by extending a standard VoIP conferencing server such as Jitsi Video Bridge (https://jitsi.org/Projects/JitsiVideobridge). This would involve working with the Matrix team to extend to the Matrix specification as necessary to support conferencing and helping to define the open ecosystem for VoIP calls in the future. It will then involve the addition of Matrix support to the chosen conferencing server and the addition of UI to the web client to support it.
+To start with, this project would support voice conferences so that users can speak together (without the speaker's voice being echoed back at them). The next step would be to add video support so the participants can all see each other.
+The best solution here will balance quality and bandwidth usage, for example by using low-resolution video streams for participants that are not currently speaking and higher quality ones for active members, switching between them as required. Voice Activity Detection could be used to automatically focus the active speaker.
+
+**Expected Results**: A Matrix web client where users can establish a multi-party voice / video conference call and server software to enable this as necessary, as well as input into the Matrix specification.
+
+**Difficulty**: Hard
+
+**Knowledge Pre-Req**: Javascript, HTML, CSS, WebRTC, some experience with real time audio and video. Java if Jitsi video bridge chosen.
+
+**Potential Mentor**: David Baker
+
+### Matrix Search Engine
+There is currently no way to index content in Matrix.  Luckily the Application Service API makes it trivial to query the conversation history of the public rooms on a given server, meaning that room history could easily be spidered and indexed into a search engine such as ElasticSearch.  A simple web interface could then provide a Google Groups-style search engine across all public accessible content in Matrix, if extended to support multiple homeservers.  A related extension could be implementing a search-engine friendly view layer on the default matrix webclient, allowing Google and other search engines themselves to directly index Matrix content.
+
+**Expected results**: An application service that indexes homeserver content, and a web API and  interface for searching for given terms and viewing results.
+
+**Difficulty**: Easy/Moderate
+
+**Knowledge prereq**: Familiarity with web services, the language used for implementing the application service (e.g. Python if using our reference example service framework).  Basic HTML/CSS/Javascript needed to implement the search engine interface frontend.
+
+**Potential mentor**: TBD
+
+### Collaborative Whiteboarding in Matrix
+Matrix allows clients to send and synchronize arbitary pieces of data in a room, allowing the possibility collabrative editing. This project would be to use this ability to design and implement a collaborative whiteboarding app using Matrix. This is similar to the etherpad project above, except synchronizing a whiteboard canvas between clients instead of text.
+
+**Expected results**: A client that supports allowing multiple users drawing and editing the whiteboard similutaneously, with the results synchronized in real time between all clients in the room.
+
+**Difficulty**: Hard
+
+**Knowledge pre-req**: Python/Twisted for server-side extensions; Client-side development (Javascript/HTML/CSS or Android or iOS), HTTP/JSON APIs, basic awareness of Operational Transform theory
+
+**Potential mentor**: TBD
+
+### Matrix Virtual World
+This is an extension of both the etherpad, Matrixcraft and Collaborative whiteboarding ideas mentioned above.  By integrating WebGL (e.g. using a library like ThreeJS) with Matrix, one can create a collaborative virtual world whose data is persisted in Matrix, replicated over all participating Matrix homeservers with no single points of control or failure.  If implemented as a generic platform, one could first start off by sharing 3D geometry in the world, and then defining higher level semantics (perhaps in combination with matrix Application Services) to define business logic for the world.  A good example could be building a collaborative 3D model editor on top of Matrix, or a 2D collaborative graphical programming environment.
+
+**Expected results**: A WebGL Matrix client that renders 3D geometry described in Matrix, allowing direct manipulation and operational transforms for concurrent access.
+
+**Difficulty**: Hard
+
+**Knowledge pre-req**: 3D graphics, WebGL, Operational Transform theory all a plus.  Would likely require optimisations and/or extensions to the server to support storing object graphs in Matrix.
+
+### Internationalising Matrix
+None of the Matrix clients are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix opensource community to source translations as required.
+
+**Expected results**: Architectural support for i18n in all reference matrix clients and servers, and implementations of at least 4 languages (translation provide by the wider community)
+
+**Difficulty**: Easy
+
+**Knowledge pre-req**: Basic Javascript, iOS, Android.
+
+
+###Matrix Client UI/UX improvements
+None of the reference Matrix clients have ever had any professional graphical design or user interface/user experience support.  This is partially deliberate, as our focus has been entirely on the technical implementation of the overall platform, and we don't want to put other people off building glossy Matrix-power apps.  In practice, it does turn people off Matrix as a whole, and we don't want to be responsible for creating bad UX.  So if you are an aspiring UX/UI designer, we would love you to come attack our reference clients and work with the dev team to implement your dreams of the ultimate communication tool!
+
+**Expected results**: improved and consistent skins or UX across the Matrix reference clients
+
+**Difficulty**: Moderate/Hard
+
+**Knowledge pre-req**: UX/UI design skills; Photoshop or equivalent for building pixel-perfect UIs which the dev team can then go implement.
+
+### Music jamming over Matrix
+The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for TechCrunch Disrupt London 2014 - this was a simple Network MIDI to Matrix bridge which persisted network MIDI traffic into Matrix, and then transcribed it using javascript to musical notation  This project would extend or reimplement this hack to build a full remote musical jamming solution for Matrix, with no single points of failure or ownership over the resulting music.  Users anywhere on the net would be able to play together via MIDI, storing the data into Matrix for posterity and letting the public listen and view the transcription in realtime.
+
+**Expected results**: one remote jamming web application powered by Matrix, and a MIDI<->Matrix bridge
+
+**Difficulty**: Moderate/Hard
+
+**Knowledge pre-req**: Some knowledge of MIDI and music useful.  Javascript/HTML5/AngularJS/CSS for the web application.  Python or similar for the basis MIDI<->Matrix application service bridge.  Knowledge of statistics useful for understanding quantising algorithms for transcribing MIDI.
+
+### IoT Dashboard with Matrix
+Matrix is ideal as a platform for the Internet of Things: simple, federated, persistant communication would allow devices and hubs to communicate with services and one another in a unified, open and extensible way. IoT devices and hubs could send their data into Matrix which would distibute and store it as necessary. This project would involve input into a set of standards for such devices to put data into Matrix as well as client of some kind for visualising, analysing and orchestrating the data from these devices and potentially interacting with them. This could take the form of a webapp which reads the data from Matrix (using the angular SDK) and/or similar mobile clients. The client would display a list of all of my devices that were feeding data into the system and a summary of the data they're sending, allowing me to view a summary of recent data or get more detail and potentially plot graphs of the data from devices (for example, the curent temperature of my home thermostat and its trend over the last month). It's important that the system is open and usable by others, so specifying a format for data that's as flexible as possible whilst also providing rich, detailed information from each type of device would be an interesting problem.
 
