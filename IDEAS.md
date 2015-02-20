@@ -8,7 +8,7 @@ Matrix is a global, federated network of servers that together become an eventua
 
 You can also use matrix to send and receive other types of data - events are passed as JSON objects, so you can use Matrix to collect and broadcast IoT-type data, or program-specific data packets or other objects you need to send back and forth. Matrix itself is a spec, and you can write your own server or client by implementing the spec - we also have provided reference implementations of a [python server](https://github.com/matrix-org/synapse) and clients in [AngularJS](https://github.com/matrix-org/matrix-angular-sdk), [Android](https://github.com/matrix-org/matrix-android-sdk) and [iOS](https://github.com/matrix-org/matrix-ios-sdk).
 
-This means that if I use Matrix as my communication protocol in two separate projects, I automatically gain inter-project communication support between these projects. In the end, we hope Matrix will crack the problem of a widely successful open federated platform for communication on the internet - you should be able to use your favourite app to communicate via Matrix - and your recipients should be able to reply through the app of their choice!
+This means that if you use Matrix as your communication protocol in two separate projects, you automatically gain inter-project communication support between these projects. In the end, we hope Matrix will crack the problem of a widely successful open federated platform for communication on the internet - you should be able to use your favourite app to communicate via Matrix - and your recipients should be able to reply through the app of their choice!
 
 APIs and architecture:
 ----------------------
@@ -20,7 +20,20 @@ A client typically represents a human using a web application or mobile app. Cli
 
 A "homeserver" is a server which provides C-S APIs and has the ability to federate with other HSes via the [Federation API](http://github.com/matrix-org/matrix-doc/blob/master/specification/30_server_server_api.rst). It is typically responsible for multiple clients. "Federation" is the term used to describe the sharing of data between two or more homeservers.
 
-For a diagram of this architecture, see the ["How data flows between clients"](https://github.com/matrix-org/matrix-doc/blob/master/specification/00_basis.rst#51architecture) diagram in the [specification](https://github.com/matrix-org/matrix-doc/blob/master/specification/).
+Here is a diagram of this architecture:
+
+                      How data flows between clients
+                       ==============================
+     
+     { Matrix client A }                             { Matrix client B }
+         ^          |                                    ^          |
+         |  events  |                                    |  events  |
+         |          V                                    |          V
+     +------------------+                            +------------------+
+     |                  |---------( HTTPS )--------->|                  |
+     |   Home Server    |                            |   Home Server    |
+     |                  |<--------( HTTPS )----------|                  |
+     +------------------+        Federation          +------------------+
 
 
 Code repositories:
