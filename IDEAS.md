@@ -1,9 +1,6 @@
 Google Summer Of Code Matrix Ideas list
 =======================================
 
-Google Summer Of Code Matrix Ideas list
-=======================================
-
 ### Matrixcraft
 
 There are many minecraft clones available e.g. [https://github.com/fogleman/Minecraft](https://github.com/fogleman/Minecraft) - but none of these are networked in any way. The aim of this project is to design and implement a protocol which can allow multiple minecraft players to play together, through Matrix.
