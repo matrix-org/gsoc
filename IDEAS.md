@@ -244,16 +244,18 @@ Knowledge pre-req: Familiarity with iOS or Android development, and linking nati
 
 ### Multi-way voice and video conferencing
 Matrix currently has one-to-one voice and video conferencing using WebRTC. This project would be to add multi-user voice and video chat to the Matrix web client. This would likley be done by extending a standard VoIP conferencing server such as Jitsi Video Bridge (https://jitsi.org/Projects/JitsiVideobridge). This would involve working with the Matrix team to extend to the Matrix specification as necessary to support conferencing and helping to define the open ecosystem for VoIP calls in the future. It will then involve the addition of Matrix support to the chosen conferencing server and the addition of UI to the web client to support it.
+
 To start with, this project would support voice conferences so that users can speak together (without the speaker's voice being echoed back at them). The next step would be to add video support so the participants can all see each other.
+
 The best solution here will balance quality and bandwidth usage, for example by using low-resolution video streams for participants that are not currently speaking and higher quality ones for active members, switching between them as required. Voice Activity Detection could be used to automatically focus the active speaker.
 
 **Expected Results**: A Matrix web client where users can establish a multi-party voice / video conference call and server software to enable this as necessary, as well as input into the Matrix specification.
 
 **Difficulty**: Hard
 
-**Knowledge Pre-Req**: Javascript, HTML, CSS, WebRTC, some experience with real time audio and video. Java if Jitsi video bridge chosen.
+**Knowledge pre-req**: Javascript, HTML, CSS, WebRTC, some experience with real time audio and video. Java if Jitsi video bridge chosen.
 
-**Potential Mentor**: David Baker
+**Potential mentor**: David Baker
 
 ### Matrix Search Engine
 There is currently no way to index content in Matrix.  Luckily the Application Service API makes it trivial to query the conversation history of the public rooms on a given server, meaning that room history could easily be spidered and indexed into a search engine such as ElasticSearch.  A simple web interface could then provide a Google Groups-style search engine across all public accessible content in Matrix, if extended to support multiple homeservers.  A related extension could be implementing a search-engine friendly view layer on the default matrix webclient, allowing Google and other search engines themselves to directly index Matrix content.
@@ -262,7 +264,7 @@ There is currently no way to index content in Matrix.  Luckily the Application S
 
 **Difficulty**: Easy/Moderate
 
-**Knowledge prereq**: Familiarity with web services, the language used for implementing the application service (e.g. Python if using our reference example service framework).  Basic HTML/CSS/Javascript needed to implement the search engine interface frontend.
+**Knowledge pre-req**: Familiarity with web services, the language used for implementing the application service (e.g. Python if using our reference example service framework).  Basic HTML/CSS/Javascript needed to implement the search engine interface frontend.
 
 **Potential mentor**: TBD
 
@@ -286,6 +288,8 @@ This is an extension of both the etherpad, Matrixcraft and Collaborative whitebo
 
 **Knowledge pre-req**: 3D graphics, WebGL, Operational Transform theory all a plus.  Would likely require optimisations and/or extensions to the server to support storing object graphs in Matrix.
 
+**Potential mentor**: TBD
+
 ### Internationalising Matrix
 None of the Matrix clients are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix opensource community to source translations as required.
 
@@ -295,6 +299,7 @@ None of the Matrix clients are currently internationalised.  This is a real sham
 
 **Knowledge pre-req**: Basic Javascript, iOS, Android.
 
+**Potential mentor**: TBD
 
 ###Matrix Client UI/UX improvements
 None of the reference Matrix clients have ever had any professional graphical design or user interface/user experience support.  This is partially deliberate, as our focus has been entirely on the technical implementation of the overall platform, and we don't want to put other people off building glossy Matrix-power apps.  In practice, it does turn people off Matrix as a whole, and we don't want to be responsible for creating bad UX.  So if you are an aspiring UX/UI designer, we would love you to come attack our reference clients and work with the dev team to implement your dreams of the ultimate communication tool!
@@ -305,6 +310,8 @@ None of the reference Matrix clients have ever had any professional graphical de
 
 **Knowledge pre-req**: UX/UI design skills; Photoshop or equivalent for building pixel-perfect UIs which the dev team can then go implement.
 
+**Potential mentor**: TBD
+
 ### Music jamming over Matrix
 The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for TechCrunch Disrupt London 2014 - this was a simple Network MIDI to Matrix bridge which persisted network MIDI traffic into Matrix, and then transcribed it using javascript to musical notation  This project would extend or reimplement this hack to build a full remote musical jamming solution for Matrix, with no single points of failure or ownership over the resulting music.  Users anywhere on the net would be able to play together via MIDI, storing the data into Matrix for posterity and letting the public listen and view the transcription in realtime.
 
@@ -314,6 +321,8 @@ The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for
 
 **Knowledge pre-req**: Some knowledge of MIDI and music useful.  Javascript/HTML5/AngularJS/CSS for the web application.  Python or similar for the basis MIDI<->Matrix application service bridge.  Knowledge of statistics useful for understanding quantising algorithms for transcribing MIDI.
 
+**Potential mentor**: TBD
+
 ### IoT Dashboard with Matrix
 Matrix is ideal as a platform for the Internet of Things: simple, federated, persistant communication would allow devices and hubs to communicate with services and one another in a unified, open and extensible way. IoT devices and hubs could send their data into Matrix which would distibute and store it as necessary. This project would involve input into a set of standards for such devices to put data into Matrix as well as client of some kind for visualising, analysing and orchestrating the data from these devices and potentially interacting with them. This could take the form of a webapp which reads the data from Matrix (using the angular SDK) and/or similar mobile clients. The client would display a list of all of my devices that were feeding data into the system and a summary of the data they're sending, allowing me to view a summary of recent data or get more detail and potentially plot graphs of the data from devices (for example, the curent temperature of my home thermostat and its trend over the last month). It's important that the system is open and usable by others, so specifying a format for data that's as flexible as possible whilst also providing rich, detailed information from each type of device would be an interesting problem.
 
@@ -322,3 +331,5 @@ Matrix is ideal as a platform for the Internet of Things: simple, federated, per
 **Difficulty**: Moderate
 
 **Knowledge pre-req**: Javascript/HTML5/AngularJS/CSS for web application.  Python or similar for IoT application services if using our reference application service framework.
+
+**Potential mentor**: TBD
