@@ -18,7 +18,7 @@ In the Matrix network, anyone can run a homeserver. Anyone can also run a client
 
 A client typically represents a human using a web application or mobile app. Clients use the ["Client-to-Server" (C-S) API](https://github.com/matrix-org/matrix-doc/blob/master/specification/20_client_server_api.rst)  to communicate with their homeserver, which stores their profile data and their record of the conversations in which they participate.
 
-A "Home Server" is a server which provides C-S APIs and has the ability to federate with other HSes via the [Federation API](https://github.com/matrix-org/matrix-doc/blob/master/specification/20_client_server_api.rst). It is typically responsible for multiple clients. "Federation" is the term used to describe the sharing of data between two or more home servers.
+A "homeserver" is a server which provides C-S APIs and has the ability to federate with other HSes via the [Federation API](https://github.com/matrix-org/matrix-doc/blob/master/specification/20_client_server_api.rst). It is typically responsible for multiple clients. "Federation" is the term used to describe the sharing of data between two or more homeservers.
 
 For a diagram of this architecture, see the ["How data flows between clients"](https://github.com/matrix-org/matrix-doc/blob/master/specification/00_basis.rst#id7) diagram in the [specification](https://github.com/matrix-org/matrix-doc/blob/master/specification/).
 
