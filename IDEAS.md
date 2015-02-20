@@ -1,14 +1,23 @@
 Google Summer Of Code Matrix Ideas list
 =======================================
 
-# What is Matrix?
+What is Matrix?
+---------------
 
 Matrix is a global, federated network of servers that together become an eventually-consistent database, optimized for messaging data. Just like email, you can either run your own Matrix homeserver, which means you own and control your own communications and history - or you can use one hosted by someone else (e.g. matrix.org) - there is no single point of control or mandatory service provider in Matrix. In fact, there is no single point of control over conversations in Matrix at all - conversation history is a first class citizen, with room state replicated over all participating servers, avoiding single-points of failure or control as you get in XMPP MUCs.
 
-You can also use matrix to send and receive other types of data - events are passed as JSON objects, so you can use Matrix to collect and broadcast IoT-type data, or program-specific data packets or other objects you need to send back and forth. Matrix itself is a spec, and you can write your own server or client by implementing the spec - we also have provided reference implementations of a python server and clients in Angular JS, Android and iOS.
+You can also use matrix to send and receive other types of data - events are passed as JSON objects, so you can use Matrix to collect and broadcast IoT-type data, or program-specific data packets or other objects you need to send back and forth. Matrix itself is a spec, and you can write your own server or client by implementing the spec - we also have provided reference implementations of a [python server](https://github.com/matrix-org/synapse) and clients in [Angular JS](https://github.com/matrix-org/matrix-angular-sdk), [Android](https://github.com/matrix-org/matrix-android-sdk) and [iOS](https://github.com/matrix-org/matrix-ios-sdk).
 
 This means that if I use Matrix as my communication protocol in two separate projects, I automatically gain inter-project communication support between these projects. In the end, we hope Matrix will crack the problem of a widely successful open federated platform for communication on the internet - you should be able to use your favourite app to communicate via Matrix - and your recipients should be able to reply through the app of their choice!
 
+Code repositories:
+------------------
+Eveything is available from (https://github.com/matrix-org)[https://github.com/matrix-org/), e.g.:
+* [Reference python server](https://github.com/matrix-org/synapse)
+* [Reference Angular JS client and SDK](https://github.com/matrix-org/matrix-angular-sdk)
+* [Reference Android client and SDK](https://github.com/matrix-org/matrix-android-sdk)
+* [Reference iOS client and SDK](https://github.com/matrix-org/matrix-ios-sdk)
+* [Python client SDK](https://github.com/matrix-org/matrix-python-sdk)
 
 Potential GSoC ideas:
 ---------------------
