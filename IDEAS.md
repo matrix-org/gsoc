@@ -45,13 +45,13 @@ Eveything is stored under [https://github.com/matrix-org](https://github.com/mat
 * [Reference iOS client and SDK](https://github.com/matrix-org/matrix-ios-sdk)
 * [Python client SDK](https://github.com/matrix-org/matrix-python-sdk)
 
+
 Potential GSoC ideas:
 ---------------------
 Remember that you can also use these as inspiration and suggest your own project ideas.
 
 ### Matrixcraft
-
-There are many minecraft clones available e.g. [https://github.com/fogleman/Minecraft](https://github.com/fogleman/Minecraft) - but none of these are networked in any way. The aim of this project is to design and implement a protocol which can allow multiple minecraft players to play together, through Matrix.
+There are many minecraft clones available e.g. https://github.com/fogleman/Minecraft - but none of these are networked in any way. The aim of this project is to design and implement a protocol which can allow multiple minecraft players to play together, even though they are using different clients - by having the data communication go through Matrix.
 
 **Expected results**: Able to have 2+ players building structures together
 
@@ -63,7 +63,7 @@ There are many minecraft clones available e.g. [https://github.com/fogleman/Mine
    
 
 ### Tumblr gateway
-Tumblr has a public API which you can use to extract and submit posts. It would be great if you could join a room alias like #tumblr_username and see a complete feed of their posts in Matrix, optionally responding to them from any Matrix client. This can be done use the Application Services API in Matrix.
+[Tumblr](http://tumblr.com) is a share-anything pubsub blog application. Tumblr has a public API which you can use to extract and submit posts. It would be great if you could join a room alias like #tumblr_username and see a complete feed of their posts in Matrix, optionally responding to them from any Matrix client. This can be done use the Application Services API in Matrix.
 
 **Expected results**: Able to join a room alias for any tumblr user and see a feed (even if it's just text) of their posts. Bonus points for gifs/videos/etc, and the ability to post comments on the posts and/or reblog.
 
@@ -74,7 +74,7 @@ Tumblr has a public API which you can use to extract and submit posts. It would 
 **Potential mentor**: Kegan Dougal
     
 ### Etherpad clone
-  Etherpad allows real-time text collaboration and we use it frequently internally. The aim of this project is to recreate Etherpad using Matrix.
+[Etherpad](http://etherpad.org/) is a multi-user, real-time text collaboration tool which we use frequently internally. The aim of this project is to recreate Etherpad using Matrix. As a start, aim for a multi-user "notepad"-style application, and then more advanced features (chat, per-user history, different fonts/text-effects/etc) can be added as extensions.
 
 **Expected results**: Able to have at least 10 people collaborating (typing) on a single document, and to have the document in sync across all people.
 
@@ -85,9 +85,9 @@ Tumblr has a public API which you can use to extract and submit posts. It would 
 **Potential mentor**: Kegan Dougal
 
 ### Matrix Powered Microblogging
-Matrix-powered, open and federated microblogging platform.
+Matrix-powered, open and federated microblogging platform. Basically, implement something like [Twitter](http://twitter.com) in Matrix - users can post updates and follow each other, and subscribers get a feed of the users they follow. The great thing with using Matrix for something like this, is that other clients can view and respond to updates from the microblogging application - as long as the common Matrix message types are used.
 
-**Expected results**: User can log in, choose some users to follow, get an aggregated feed of 'tweets' from users they follow, and post 'tweets'.  Messages should be sendable and consumable by both generic Matrix clients as well as the microblog-specific optimised user experience.
+**Expected results**: User can log in, choose some users to follow, get an aggregated feed of 'tweets' from users they follow, and post 'tweets'.  Messages should be sendable and consumable by both generic Matrix clients as well as the microblog-specific optimised user experience. A web client would probably be the standard with mobile clients as extensions.
 
 **Difficulty**: Moderate
 
@@ -96,7 +96,11 @@ Matrix-powered, open and federated microblogging platform.
 **Potential mentor**: David Baker
 
 ### Location based Chat
-A mobile app that shows you a list of chat rooms "around you". People could create chat rooms fixed in one place (a Café could have a room, for example) or you could create a chat room that follows you around as you walk around using the app.
+A mobile app that shows you a list of chat rooms "around you". People could create chat rooms fixed in one place (a Café could have a room, for example) or you could create a chat room that follows you around as you walk around using the app. Perhaps users could also see other users around them and create chats with them if they had the app open, or see what other chats they were in.
+
+Some level of moderation would likely be necessary - this could be a natural extension once the base features have been implemented. 
+
+A lot of code for the chat itself can be implemented with reusable UI components of the Matrix Console apps. It should be relatively straightforward to allow users to post pictures, video and audio clips to the room using standard Matrix message types and reusable components. 
 
 **Expected Results**: An app and backend where you can log in, create a room, find and join rooms near you and chat.
 
@@ -115,7 +119,7 @@ A Matrix-powered engine for comments boxes.
 
 **Knowledge pre-req**: HTML, Javascript
 
-**Potential mentor**: David Baker
+**Potential mentor**: David Baker, Erik Johnston
 
 ### Clustered Homeservers
 Whilst Matrix itself is a global eventually consistent database, the current server implementations have no horizontal scaling or high availability per homeserver node.  As a result, it's impossible for a single homeserver to scale beyond a single core currently.  This project would extend the Synapse (Python) or Pallium (Golang) homeserver implementations to support simple clustering by letting the multiple instances run concurrently, sharing distributed state over the network such that clients can connect to arbitrary nodes within the cluster.
