@@ -38,7 +38,7 @@ Here is a diagram of this architecture:
 
 Code repositories:
 ------------------
-Everything is stored under [https://github.com/matrix-org](https://github.com/matrix-org/), e.g.:
+Everything is stored under [https://github.com/matrix-org](https://github.com/matrix-org/):
 * [Reference python server](https://github.com/matrix-org/synapse)
 * [Reference AngularJS client and SDK](https://github.com/matrix-org/matrix-angular-sdk)
 * [Reference Android client and SDK](https://github.com/matrix-org/matrix-android-sdk)
@@ -63,7 +63,7 @@ There are many minecraft clones available e.g. https://github.com/fogleman/Minec
    
 
 ### Tumblr gateway
-[Tumblr](http://tumblr.com) is a share-anything pubsub blog application. Tumblr has a public API which you can use to extract and submit posts. It would be great if you could join a room alias like #tumblr_username and see a complete feed of their posts in Matrix, optionally responding to them from any Matrix client. This can be done use the Application Services API in Matrix.
+[Tumblr](http://tumblr.com) is a share-anything pubsub blog application. Tumblr has a public API which you can use to extract and submit posts. It would be great if you could join a room alias like ``#tumblr_username:your_homeserver.com`` and see a complete feed of their posts in Matrix, optionally responding to them from any Matrix client. This can be done use the Application Services API in Matrix.
 
 **Expected results**: Able to join a room alias for any tumblr user and see a feed (even if it's just text) of their posts. Bonus points for gifs/videos/etc, and the ability to post comments on the posts and/or reblog.
 
@@ -214,7 +214,7 @@ We currently have no dedicated desktop GUI Matrix clients at all.  There have be
 ### Matrix<->Blog bridge and client
 Related to the "Tumblr gateway" idea suggestion - rather than just bridging content from Tumblr into Matrix, one could build a 'communication dashboard' app which aggregates content and comments from a wide range of blogs, messageboards, forums etc and presents them in a single interface - much like an RSS aggregator.  Unlike an RSS aggregator one could also post comments and answers directly from within the dashboard via Matrix, using a generic blog<->Matrix application service gateway.  This could put provide a consistent open decentralised API to all conversations on the the internet, with no single points of control.
 
-**Expected results**: A two-way conversation dashboard client and accompanying Matrix Application Service which allows 
+**Expected results**: A two-way conversation dashboard client and accompanying Matrix Application Service which allows content to be sent/received to and from Matrix.
 
 **Difficulty**: Moderate/Hard
 
