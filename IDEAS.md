@@ -4,11 +4,17 @@ Google Summer Of Code Matrix Ideas list
 What is Matrix?
 ---------------
 
-Matrix is an open standard for decentralised communication, describing a global federated network of servers that together act as an huge eventually-consistent database with pubsub semantics, optimized for messaging data and communication history. Just like email, you can either run your own Matrix-compatible homeserver, which means you own and control your own communications and history - or you can use one hosted by someone else (e.g. matrix.org) - there is no single point of control or mandatory service provider in Matrix. In fact, there is no single point of control over conversations in Matrix at all - conversation history is a first class citizen, with room state replicated over all participating servers, avoiding single-points of failure or control as you get in XMPP MUCs.
+Matrix is a decentralised communication specification for clients and servers. It is designed to persist data across multiple servers via federation. This design means that there are no single points of control or failure. Anyone can run their own "home" server, or use one hosted by someone else (e.g. ``matrix.org``). All communication uses HTTP(S) and data is represented as JSON objects, scoped to a "room", which consists of a group of users.
 
-You can also use matrix to send and receive other types of data - events are passed as JSON objects, so you can use Matrix to collect and broadcast IoT-type data, or program-specific data packets or other objects you need to send back and forth. Matrix itself is a spec, and you can write your own server or client by implementing the spec - we also have provided reference implementations of a [python server](https://github.com/matrix-org/synapse) and clients in [AngularJS](https://github.com/matrix-org/matrix-angular-sdk), [Android](https://github.com/matrix-org/matrix-android-sdk) and [iOS](https://github.com/matrix-org/matrix-ios-sdk).
+Matrix is completely open and transparent: all of our designs, implementations, testing and bug tracking are publicly available on Github and matrix.org, and our day-to-day design discussions take place on public channels on ``matrix.org``. Anyone can contribute to the specification to help improve it. We also provide reference implementations of a [python server](https://github.com/matrix-org/synapse) and clients in [AngularJS](https://github.com/matrix-org/matrix-angular-sdk), [Android](https://github.com/matrix-org/matrix-android-sdk) and [iOS](https://github.com/matrix-org/matrix-ios-sdk).
 
-This means that if you use Matrix as your communication protocol in two separate projects, you automatically gain inter-project communication support between these projects. In the end, we hope Matrix will crack the problem of a widely successful open federated platform for communication on the internet - you should be able to use your favourite app to communicate via Matrix - and your recipients should be able to reply through the app of their choice!
+To date, Matrix has been used as a communications protocol for a wide range of technologies, including (but not limited to):
+- [Internet of Things](https://fosdem.org/2015/schedule/event/deviot04/)
+- [Instant messaging](https://matrix.org/beta)
+- [WebRTC](http://www.webrtcworld.com/videos.aspx?vid=10786)
+- Program-specific data (MIDI, 3d animations)
+
+In the end, we hope Matrix will crack the problem of a widely successful open federated platform for communication on the internet.
 
 APIs and architecture:
 ----------------------
@@ -336,3 +342,4 @@ Matrix is ideal as a platform for the Internet of Things: simple, federated, per
 **Knowledge pre-req**: Javascript/HTML5/AngularJS/CSS for web application.  Python or similar for IoT application services if using our reference application service framework.
 
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
+
