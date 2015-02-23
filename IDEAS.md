@@ -4,7 +4,7 @@ Google Summer Of Code Matrix Ideas list
 What is Matrix?
 ---------------
 
-Matrix is a decentralised communication specification for clients and servers. It is designed to persist data across multiple servers via federation. This design means that there are no single points of control or failure. Anyone can run their own "home" server, or use one hosted by someone else (e.g. ``matrix.org``). All communication uses HTTP and data is represented as JSON objects, scoped to a "room", which consists of a group of clients.
+Matrix is a decentralised communication specification for clients and servers. It is designed to persist data across multiple servers via federation. This design means that there are no single points of control or failure. Anyone can run their own "home" server, or use one hosted by someone else (e.g. ``matrix.org``). All communication uses HTTP(S) and data is represented as JSON objects, scoped to a "room", which consists of a group of users.
 
 Matrix is completely open and transparent: all of our designs, implementations, testing and bug tracking are publicly available on Github and matrix.org, and our day-to-day design discussions take place on public channels on ``matrix.org``. Anyone can contribute to the specification to help improve it. We also provide reference implementations of a [python server](https://github.com/matrix-org/synapse) and clients in [AngularJS](https://github.com/matrix-org/matrix-angular-sdk), [Android](https://github.com/matrix-org/matrix-android-sdk) and [iOS](https://github.com/matrix-org/matrix-ios-sdk).
 
