@@ -12,7 +12,7 @@ To date, Matrix has been used as a communications protocol for a wide range of t
 - [Internet of Things](https://fosdem.org/2015/schedule/event/deviot04/)
 - [Instant messaging](https://matrix.org/beta)
 - [WebRTC](http://www.webrtcworld.com/videos.aspx?vid=10786)
-- Program-specific data (MIDI, 3d animations)
+- Program-specific data (MIDI, 3D animations)
 
 In the end, we hope Matrix will crack the problem of a widely successful open federated platform for communication on the internet.
 
@@ -84,9 +84,9 @@ There are many minecraft clones available e.g. https://github.com/fogleman/Minec
 
 **Expected results**: Able to have at least 10 people collaborating (typing) on a single document, and to have the document in sync across all people.
 
-**Difficulty**: Hard. Made harder by needing to storing and synchronising document snapshots efficiently
+**Difficulty**: Hard. Made harder by needing to storing and synchronising document snapshots efficiently.
 
-**Knowledge pre-req**: Python/Twisted for server-side extensions; Client-side development (Javascript/HTML/CSS or Android or iOS), HTTP/JSON APIs, basic awareness of Operational Transform theory
+**Knowledge pre-req**: Python/Twisted for server-side extensions; Client-side development (Javascript/HTML/CSS or Android or iOS), HTTP/JSON APIs, basic awareness of Operational Transform theory.
 
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
@@ -230,6 +230,7 @@ Related to the "Tumblr gateway" idea suggestion - rather than just bridging cont
 
 ### Threaded Matrix client
 One of the major early uses of Matrix are public rooms (similar to IRC) focused around given topics, for example Matrix support channel, android development, etc. These run into the classic problem of having multiple concurrent conversations in them, which often leads to confusion for all participants. One of the desired features of Matrix is to provide threading support such that individual messages can be marked as a reply to others, this would allow apps to differentiate the various different conversations in the UI giving a much better and more usable user experience.
+
 This project would involve helping to finalize how Matrix supports threading, as well as implementing support in one or more of the current clients.
 
 **Expected results**: A client with support for replying to particular messages and showing the ongoing and historic threads.
@@ -252,7 +253,7 @@ As of the time of writing Matrix's mobile apps on iOS and Android don't support 
 **Potential mentor**: David Baker ([github](https://github.com/dbkr))
 
 ### Multi-way voice and video conferencing
-Matrix currently has one-to-one voice and video conferencing using WebRTC. This project would be to add multi-user voice and video chat to the Matrix web client. This would likley be done by extending a standard VoIP conferencing server such as Jitsi Video Bridge (https://jitsi.org/Projects/JitsiVideobridge). This would involve working with the Matrix team to extend to the Matrix specification as necessary to support conferencing and helping to define the open ecosystem for VoIP calls in the future. It will then involve the addition of Matrix support to the chosen conferencing server and the addition of UI to the web client to support it.
+Matrix currently has one-to-one voice and video conferencing using WebRTC. This project would be to add multi-user voice and video chat to the Matrix web client. This would likely be done by extending a standard VoIP conferencing server such as Jitsi Video Bridge (https://jitsi.org/Projects/JitsiVideobridge). This would involve working with the Matrix team to extend to the Matrix specification as necessary to support conferencing and helping to define the open ecosystem for VoIP calls in the future. It will then involve the addition of Matrix support to the chosen conferencing server and the addition of UI to the web client to support it.
 
 To start with, this project would support voice conferences so that users can speak together (without the speaker's voice being echoed back at them). The next step would be to add video support so the participants can all see each other.
 
@@ -302,7 +303,7 @@ This is an extension of both the etherpad, Matrixcraft and Collaborative whitebo
 ### Internationalising Matrix
 None of the Matrix clients are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix opensource community to source translations as required.
 
-**Expected results**: Architectural support for i18n in all reference matrix clients and servers, and implementations of at least 4 languages (translation provide by the wider community)
+**Expected results**: Architectural support for i18n in all reference matrix clients and servers, and implementations of at least 4 languages (translation provided by the wider community).
 
 **Difficulty**: Easy
 
@@ -313,7 +314,7 @@ None of the Matrix clients are currently internationalised.  This is a real sham
 ###Matrix Client UI/UX improvements
 None of the reference Matrix clients have ever had any professional graphical design or user interface/user experience support.  This is partially deliberate, as our focus has been entirely on the technical implementation of the overall platform, and we don't want to put other people off building glossy Matrix-power apps.  In practice, it does turn people off Matrix as a whole, and we don't want to be responsible for creating bad UX.  So if you are an aspiring UX/UI designer, we would love you to come attack our reference clients and work with the dev team to implement your dreams of the ultimate communication tool!
 
-**Expected results**: improved and consistent skins or UX across the Matrix reference clients
+**Expected results**: improved and consistent skins or UX across the Matrix reference clients.
 
 **Difficulty**: Moderate/Hard
 
@@ -322,9 +323,9 @@ None of the reference Matrix clients have ever had any professional graphical de
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
 
 ### Music jamming over Matrix
-The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for TechCrunch Disrupt London 2014 - this was a simple Network MIDI to Matrix bridge which persisted network MIDI traffic into Matrix, and then transcribed it using javascript to musical notation  This project would extend or reimplement this hack to build a full remote musical jamming solution for Matrix, with no single points of failure or ownership over the resulting music.  Users anywhere on the net would be able to play together via MIDI, storing the data into Matrix for posterity and letting the public listen and view the transcription in realtime.
+The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for TechCrunch Disrupt London 2014 - this was a simple Network MIDI to Matrix bridge which persisted network MIDI traffic into Matrix, and then transcribed it using javascript to musical notation.  This project would extend or reimplement this hack to build a full remote musical jamming solution for Matrix, with no single points of failure or ownership over the resulting music.  Users anywhere on the net would be able to play together via MIDI, storing the data into Matrix for posterity and letting the public listen and view the transcription in realtime.
 
-**Expected results**: one remote jamming web application powered by Matrix, and a MIDI<->Matrix bridge
+**Expected results**: one remote jamming web application powered by Matrix, and a MIDI<->Matrix bridge.
 
 **Difficulty**: Moderate/Hard
 
@@ -333,7 +334,11 @@ The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
 
 ### IoT Dashboard with Matrix
-Matrix is ideal as a platform for the Internet of Things: simple, federated, persistant communication would allow devices and hubs to communicate with services and one another in a unified, open and extensible way. IoT devices and hubs could send their data into Matrix which would distibute and store it as necessary. This project would involve input into a set of standards for such devices to put data into Matrix as well as client of some kind for visualising, analysing and orchestrating the data from these devices and potentially interacting with them. This could take the form of a webapp which reads the data from Matrix (using the angular SDK) and/or similar mobile clients. The client would display a list of all of my devices that were feeding data into the system and a summary of the data they're sending, allowing me to view a summary of recent data or get more detail and potentially plot graphs of the data from devices (for example, the curent temperature of my home thermostat and its trend over the last month). It's important that the system is open and usable by others, so specifying a format for data that's as flexible as possible whilst also providing rich, detailed information from each type of device would be an interesting problem.
+Matrix is ideal as a platform for the Internet of Things: simple, federated, persistent communication would allow devices and hubs to communicate with services and one another in a unified, open and extensible way. IoT devices and hubs could send their data into Matrix which would distibute and store it as necessary. 
+
+This project would involve input into a set of standards for such devices to put data into Matrix as well as client of some kind for visualising, analysing and orchestrating the data from these devices and potentially interacting with them. This could take the form of a webapp which reads the data from Matrix (using the angular SDK) and/or similar mobile clients. The client would display a list of all of my devices that were feeding data into the system and a summary of the data they're sending, allowing me to view a summary of recent data or get more detail and potentially plot graphs of the data from devices (for example, the current temperature of my home thermostat and its trend over the last month). 
+
+It's important that the system is open and usable by others, so specifying a format for data that's as flexible as possible whilst also providing rich, detailed information from each type of device would be an interesting problem.
 
 **Expected results**: one IoT dashboard web application, with some IoT devices integrated via the Matrix client-server API.  Optionally also IoT application services for analysing/aggregating/visualising the resulting IoT data en mass.
 
