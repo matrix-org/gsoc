@@ -86,14 +86,14 @@ In an ideal world, we'd end up with bridges to all of the below and more!
   * IRC
   * Slack
   * libpurple
-   * Skype
-   * Lync
-   * FB Messenger
-   * AIM
-   * ICQ
-   * Y!
-   * QQ
-   * Sametime?
+    * Skype
+    * Lync
+    * FB Messenger
+    * AIM
+    * ICQ
+    * Y!
+    * QQ
+    * Sametime?
   * Hangouts
   * WhatsApp
   * HipChat
