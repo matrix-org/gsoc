@@ -89,6 +89,7 @@ In an ideal world, we'd end up with bridges to all of the below and more!
     * Skype
     * Lync
     * FB Messenger
+    * Telegram
     * AIM
     * ICQ
     * Y!
