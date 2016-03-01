@@ -9,9 +9,9 @@ Matrix is a decentralised communication specification for clients and servers.  
 Matrix is completely open and transparent: all of our designs, implementations, testing and bug tracking are publicly available on Github and matrix.org, and our day-to-day design discussions take place on public channels on ``matrix.org``. Anyone can contribute to the specification to help improve it. We also provide reference implementations of a [python server](https://github.com/matrix-org/synapse) and clients in [React](https://github.com/vector-im/vector-web), [Android](https://github.com/matrix-org/matrix-android-sdk) and [iOS](https://github.com/matrix-org/matrix-ios-sdk).
 
 To date, Matrix has been used as a communications protocol for a wide range of technologies, including (but not limited to):
-- [Internet of Things](https://fosdem.org/2015/schedule/event/deviot04/)
 - [Instant messaging](https://vector.im)
 - [WebRTC](http://www.webrtcworld.com/videos.aspx?vid=10786)
+- [Internet of Things](https://fosdem.org/2015/schedule/event/deviot04/)
 - Program-specific data (MIDI, 3D animations)
 
 In the end, we hope Matrix will crack the problem of a widely successful open federated platform for communication on the internet, which bridges together all of today's existing communication silos into a single open communication meta-network.
