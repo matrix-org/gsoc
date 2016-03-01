@@ -232,7 +232,7 @@ Matrix could be used as a platform where users can arrive at a random website, s
 
 **Knowledge pre-req**: HTML, Javascript
 
-**Potential mentor**: David Baker ([github](https://github.com/dbkr)), Erik Johnston ([github](https://github.com/erikjohnston))
+**Potential mentor**: David Baker ([github](https://github.com/dbkr)), Erik Johnston ([github](https://github.com/erikjohnston)), Kegan Dougal ([github](https://github.com/Kegsay))
 
 
 ### IPFS support for content repositories
