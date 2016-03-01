@@ -4,6 +4,7 @@ Google Summer Of Code Matrix Ideas list
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 - [Google Summer Of Code Matrix Ideas list](#google-summer-of-code-matrix-ideas-list)
+
   - [What is Matrix?](#what-is-matrix)
   - [APIs and architecture:](#apis-and-architecture)
   - [Code repositories:](#code-repositories)
@@ -27,6 +28,7 @@ Google Summer Of Code Matrix Ideas list
 - [Ideas below this point almost certainly require more effort than the GSoC format allows, but are included here for interest's sake.](#ideas-below-this-point-almost-certainly-require-more-effort-than-the-gsoc-format-allows-but-are-included-here-for-interests-sake)
     - [E2E Encryption](#e2e-encryption)
     - [Peer-to-peer Matrix](#peer-to-peer-matrix)
+    - [Decentralised accounts](#decentralised-accounts)
     - [Decentralised identity](#decentralised-identity)
     - [Etherpad clone](#etherpad-clone)
     - [Collaborative Whiteboarding in Matrix](#collaborative-whiteboarding-in-matrix)
@@ -435,7 +437,7 @@ Matrix currently follows a client-server architecture, where the servers federat
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
 
 
-### Decentralised accounts
+### Decentralised accounts
 
 Currently Matrix accounts are stored on a single homeserver.  This is far from decentralised and produces an unfortunate single point of failure and control for the user.  It would be fantastic to evolve Matrix to support replicating account data across multiple servers, and let clients pick which home server they talk to.  There is significant overlap in solving this with the 'Peer-to-peer Matrix' proposal.
 
