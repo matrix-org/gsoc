@@ -64,7 +64,7 @@ Potential GSoC ideas:
 ---------------------
 Remember that you can also use these as inspiration and suggest your own project ideas.
 
-### Bridge ALL THE THINGS
+### Bridge ALL THE THINGS!!
 
 The single biggest thing missing from the Matrix ecosystem right now are mature bridges to link into other silos and defragment them.
 Right now we have beta-grade bridges for IRC, Slack and FreeSWITCH, and alpha-grade bridges for libpurple (Skype, Lync, Telegram, Facebook, WhatsApp etc), Asterisk and Kamailio.
@@ -79,6 +79,8 @@ An example guide for how to write a Slack bridge in 100 lines(!) of Node.js is a
  * https://github.com/matrix-org/matrix-appservice-respoke
  * https://github.com/matrix-org/node-purple/tree/master/appservice
  * ...and the full list at https://matrix.org/blog/try-matrix-now under Application Services.
+
+By default our preferred language for writing bridges is in Node.js (ES6), so we can build on top of the https://github.com/matrix-org/matrix-appservice-bridge library which provides a bunch of useful infrastructure and boilerplate.  If the remote network lacks good Node library support we consider other languages though.
 
 In an ideal world, we'd end up with bridges to all of the below and more!
 
@@ -146,6 +148,59 @@ In an ideal world, we'd end up with bridges to all of the below and more!
 **Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
 
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+
+
+### Integrations to ALL THE THINGS!!
+
+As well as bridging, we're building out a large ecosystem of integrations (also known as bots) to let folks interact with other services from Matrix.  Today we have basic bots for interfacing with JIRA, Github and Jenkins (https://github.com/matrix-org/Matrix-NEB) and Hubot (https://github.com/davidar/hubot-matrix/) - and we obviously support remote IRC/Slack/XMPP-etc bots via bridging.
+
+Bots can be written in any language, and we have a wide range of SDKs already available to help people get up and running - from everything from Node to Python to Perl to Ruby to Elixir...
+
+Platforms we'd love to integrate with via native Matrix bots include:
+ * Trello bot
+ * Twitter bot
+ * Known bot
+ * Giphy
+ * Basecamp bot
+ * IFTTT
+ * Zapier
+ * Nagios
+ * Google Image search
+ * Medium Bot
+ * Wordpress Bot
+ * HackerNews Bot
+ * Reddit Bot
+ * Tumblr Bot
+ * NNTP Bot
+ * VBulletin bot
+ * phpBB bot
+ * SMF bot
+ * Discourse bot
+ * ...
+
+Extensions include:
+ * Extending bots to be metadata aware: https://github.com/matrix-org/matrix-doc/pull/93 once landed
+ * Implementing slack-compatible webhooks
+
+**Expected results**: Creating client-server API bots that respond to !-commands to interact with the given integrated services, and/or inject messages into rooms based on those services.
+
+**Difficulty**: Ranges from Easy through to Medium depending on the service!
+
+**Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
+
+**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+
+### Matrix Visualisations
+
+When developing on Matrix it's often quite hard to visualise the underlying replicated Directed Acyclic Graph datastructure that describes the conversation history in a room.  We've made some basic tools in the past like https://github.com/Kegsay/matrix-vis and https://github.com/matrix-org/synapse/tree/master/contrib/graph but what would be really cool would be a real-time visualisation of the DAG to help folks understand Matrix, and help developers debug interesting edge cases and merge resolution scenarios when the DAG bifurcates.  This could be written in any language, talking some combination of the server-server API or an enhanced version of the client-server API or just inspecting your synapse's database to visualise what's going on.
+
+**Expected results**: A realtime visualisation of the DAG of a given Matrix room, as seen from the perspective of one or more HSes.
+
+**Difficulty**: Medium
+
+**Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
+
+**Potential mentor**: Erik Johnston ([github](https://github.com/ErikJohnston)) or Kegan Dougal ([github](https://github.com/Kegsay))
 
 
 ### Helping out on PTO
