@@ -107,6 +107,7 @@ In an ideal world, we'd end up with bridges to all of the below and more!
   * PSYC
   * XMPP
   * MSRP
+  * LINE
   * TextSecure / Signal
   * Mattermost
   * iMessage
