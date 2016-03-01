@@ -1,3 +1,41 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Google Summer Of Code Matrix Ideas list](#google-summer-of-code-matrix-ideas-list)
+  - [What is Matrix?](#what-is-matrix)
+  - [APIs and architecture:](#apis-and-architecture)
+  - [Code repositories:](#code-repositories)
+  - [Potential GSoC ideas:](#potential-gsoc-ideas)
+  - [This is list is now prioritised - most important suggestions first (as of Mar 1st 2016)](#this-is-list-is-now-prioritised---most-important-suggestions-first-as-of-mar-1st-2016)
+    - [Bridge ALL THE THINGS!!](#bridge-all-the-things)
+    - [Integrations to ALL THE THINGS!!](#integrations-to-all-the-things)
+    - [Internationalising Matrix](#internationalising-matrix)
+    - [Matrix Visualisations](#matrix-visualisations)
+    - [HTML Embeddable Matrix Chat Rooms](#html-embeddable-matrix-chat-rooms)
+    - [IPFS support for content repositories](#ipfs-support-for-content-repositories)
+    - [Helping out on PTO](#helping-out-on-pto)
+    - [Extending Native Matrix Desktop Clients](#extending-native-matrix-desktop-clients)
+    - [Helping out on Ruma (Rust Homeserver)](#helping-out-on-ruma-rust-homeserver)
+    - [Matrix Powered Microblogging](#matrix-powered-microblogging)
+    - [Editable messages](#editable-messages)
+    - [Location based Chat](#location-based-chat)
+    - [Decentralised reputation](#decentralised-reputation)
+    - [Decentralised Search](#decentralised-search)
+    - [IoT Dashboard with Matrix](#iot-dashboard-with-matrix)
+- [Ideas below this point almost certainly require more effort than the GSoC format allows, but are included here for interest's sake.](#ideas-below-this-point-almost-certainly-require-more-effort-than-the-gsoc-format-allows-but-are-included-here-for-interests-sake)
+    - [E2E Encryption](#e2e-encryption)
+    - [Peer-to-peer Matrix](#peer-to-peer-matrix)
+    - [Decentralised identity](#decentralised-identity)
+    - [Etherpad clone](#etherpad-clone)
+    - [Collaborative Whiteboarding in Matrix](#collaborative-whiteboarding-in-matrix)
+    - [Music jamming over Matrix](#music-jamming-over-matrix)
+    - [Matrixcraft](#matrixcraft)
+    - [Threaded Matrix client](#threaded-matrix-client)
+    - [Matrix Virtual World](#matrix-virtual-world)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Google Summer Of Code Matrix Ideas list
 =======================================
 
