@@ -64,6 +64,8 @@ Potential GSoC ideas:
 ---------------------
 Remember that you can also use these as inspiration and suggest your own project ideas.
 
+## This is list is now prioritised - most important suggestions first (as of Mar 1st 2016)
+
 ### Bridge ALL THE THINGS!!
 
 The single biggest thing missing from the Matrix ecosystem right now are mature bridges to link into other silos and defragment them.
@@ -190,6 +192,20 @@ Extensions include:
 
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
+
+### Internationalising Matrix
+
+None of the Matrix clients are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix opensource community to source translations as required.
+
+**Expected results**: Architectural support for i18n in all reference matrix clients and servers, and implementations of at least 4 languages (translation provided by the wider community).
+
+**Difficulty**: Easy / Moderate
+
+**Knowledge pre-req**: Basic Javascript, iOS, Android.
+
+**Potential mentor**: David Baker ([github](https://github.com/dbkr))
+
+
 ### Matrix Visualisations
 
 When developing on Matrix it's often quite hard to visualise the underlying replicated Directed Acyclic Graph datastructure that describes the conversation history in a room.  We've made some basic tools in the past like https://github.com/Kegsay/matrix-vis and https://github.com/matrix-org/synapse/tree/master/contrib/graph but what would be really cool would be a real-time visualisation of the DAG to help folks understand Matrix, and help developers debug interesting edge cases and merge resolution scenarios when the DAG bifurcates.  This could be written in any language, talking some combination of the server-server API or an enhanced version of the client-server API or just inspecting your synapse's database to visualise what's going on.
@@ -203,35 +219,68 @@ When developing on Matrix it's often quite hard to visualise the underlying repl
 **Potential mentor**: Erik Johnston ([github](https://github.com/ErikJohnston)) or Kegan Dougal ([github](https://github.com/Kegsay))
 
 
+### HTML Embeddable Matrix Chat Rooms
+
+Blogs and articles that allow users to engage with the author and comment on the content are standard in today's web and hugely popular. The implementations of these are largely from the authors of the blog or often completely proprietary in the case of newspaper or magzine articles. If I comment on a article and start discussing it with someone else, I now have to keep going back to that article to continue the discussion.
+
+Matrix could be used as a platform where users can arrive at a random website, sign in with their Matrix ID, comment on a blog post or article and then continue that discussion through a standard Matrix client.
+
+**Expected Results**: Extending https://github.com/matrix-org/matrix-react-sdk to provide reusable web compoents that a website author can download, embed and skin into their website to make comments work with minimal work to integrate. Could require user to log in with a matrix account to post (so your Matrix account would let you post comments on any website which used this), or support anonymous guest access. The blog author would be able to add their own comments and moderate comments. VoIP and Video calling support would be an added bonus. Other extensions would be plugins for blogging platforms so users of WordPress or similar can use the software on their blogs by just installing the plugin.
+
+**Difficulty**: Easy/Moderate
+
+**Knowledge pre-req**: HTML, Javascript
+
+**Potential mentor**: David Baker ([github](https://github.com/dbkr)), Erik Johnston ([github](https://github.com/erikjohnston))
+
+
+### IPFS support for content repositories
+
+Currently Matrix uses a basic distirbuted content repository based on replicating data over HTTPS between its servers.  It could be nice to support storing data in IPFS instead, providing dedicated p2p distributed immutable data storage rather than the stop-gap solution that Matrix provides.
+
+**Expected Results**: Extend synapse to optionally store and load content from IPFS, and extend one or more matrix clients (e.g. Vector) to natively load/store content from IPFS clientside.
+
+**Difficulty**: Medium
+
+**Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
+
+
 ### Helping out on PTO
 
 https://pto.im (Perpetually Talking Online) is an awesome new contribution to Matrix that provides an IRC front-end to any Matrix homeserver, written in Rust, which means anyone can point their existing IRC clients into Matrix, treating as a giant distributed ircd.  This helps people get up and running in the Matrix ecosystem without having to jump all the way to a Matrix client (or bridge via an existing IRC network).  It's very alpha currently, but fun to hack on and there's a wide range of issues to be picked from at https://github.com/tdfischer/pto/issues.
 
 
-### Matrixcraft
+### Extending Native Matrix Desktop Clients
 
-There are many minecraft clones available e.g. https://github.com/fogleman/Minecraft - but none of these are networked in any way. The aim of this project is to design and implement a protocol which can allow multiple minecraft players to play together, even though they are using different clients - by having the data communication go through Matrix.
+There are several native Matrix Desktop Clients out there:
 
-**Expected results**: Able to have 2+ players building structures together
+ * Tensor (QML + JS)
+ * Quaternion (QML + C++)
+ * Unplug (JavaFX)
 
-**Difficulty**: Hard. Getting sensible chunking algorithms for rooms is Hard. There is huge scope to build on this both feature wise (e.g. PvP, monster AI) and protocol wise (reliability, masking latency hiccups, etc)
+ All of which could be extended further.  Developers wanting to hack features into fun desktop clients would be welcome here!
 
-**Knowledge pre-req**: Python (assuming fogleman/Minecraft is used as a base)
+**Expected results**: Add new features to Tensor, Quaternion, Unplug and friends.
 
-**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
-   
+**Difficulty**: Easy to Moderate
 
-### Etherpad clone
+**Knowledge pre-req**: Familiarity with web services, the language used for implementing the client (e.g. ObjectiveC, Java)
 
-[Etherpad](http://etherpad.org/) is a multi-user, real-time text collaboration tool which we use frequently internally. The aim of this project is to recreate Etherpad using Matrix. As a start, aim for a multi-user "notepad"-style application, and then more advanced features (chat, per-user history, different fonts/text-effects/etc) can be added as extensions.
+**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston)), David Baker ([github](https://github.com/dbkr))
 
-**Expected results**: Able to have at least 10 people collaborating (typing) on a single document, and to have the document in sync across all people.
 
-**Difficulty**: Hard. Made harder by needing to storing and synchronising document snapshots efficiently.
 
-**Knowledge pre-req**: Python/Twisted for server-side extensions; Client-side development (Javascript/HTML/CSS or Android or iOS), HTTP/JSON APIs, basic awareness of Operational Transform theory.
+### Helping out on Ruma (Rust Homeserver)
 
-**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+Ruma (https://ruma.io) is a new project from the community to implement a Matrix homeserver in Rust.  It's early days, but it would be great to have both client-side and server-side components for Matrix implemented in Rust, and there's a huge amount of work to be done there.
+
+**Expected Results**: Extend Ruma's components to implement more Matrix endpoints.
+
+**Difficulty**: Hard
+
+**Knowledge pre-req**: Rust, Web Services
+
+**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
 
 
 ### Matrix Powered Microblogging
@@ -245,6 +294,19 @@ Matrix-powered, open and federated microblogging platform. Basically, implement 
 **Knowledge pre-req**: HTML, CSS, Javascript
 
 **Potential mentor**: David Baker ([github](https://github.com/dbkr))
+
+
+### Editable messages
+
+A relatively easy extension to the Matrix spec and implementation is to add 'update' type messages, letting you edit existing messages, and associate new events with existing ones.  This would provide the long-awaited ability to edit messages.
+
+**Expected results**: Define and implement 'update' message semantics in conjunction with the team.
+
+**Difficulty**: Moderate
+
+**Knowledge pre-req**: Python, and familiarity with at least one of the languages of the current clients (React, Android or Objective C)
+
+**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
 
 
 ### Location based Chat
@@ -264,19 +326,50 @@ A lot of code for the chat itself can be implemented with reusable UI components
 **Potential mentor**: David Baker (iOS)  ([github](https://github.com/dbkr)), Kegan Dougal (Android) ([github](https://github.com/Kegsay))
 
 
-### HTML Embeddable Matrix Chat Rooms
+### Decentralised reputation
 
-Blogs and articles that allow users to engage with the author and comment on the content are standard in today's web and hugely popular. The implementations of these are largely from the authors of the blog or often completely proprietary in the case of newspaper or magzine articles. If I comment on a article and start discussing it with someone else, I now have to keep going back to that article to continue the discussion.
+Mitigating abuse is an ongoing area of research in Matrix.  Tracking realtime reputation data for Matrix endpoints, such that users can report abuse and filter their communication to hide abusive content is the holy grail.  There are some very early thoughts on this [here](https://github.com/matrix-org/matrix-doc/blob/master/drafts/reputation_thoughts.rst).  Anyone interested in researching the holy grail of abuse mitigation is welcome to experiment here!
 
-Matrix could be used as a platform where users can arrive at a random website, sign in with their Matrix ID, comment on a blog post or article and then continue that discussion through a standard Matrix client.
+**Expected Results**: Add upvote/downvote functionality to Matrix spec, gather the data in a secure decentralised datastructure that can be mined for cluster analysis, and publish reputation data that Matrix clients can align themselves with when filtering abusive content.
 
-**Expected Results**: Extending https://github.com/matrix-org/matrix-react-sdk to provide reusable web compoents that a website author can download, embed and skin into their website to make comments work with minimal work to integrate. Could require user to log in with a matrix account to post (so your Matrix account would let you post comments on any website which used this), or support anonymous guest access. The blog author would be able to add their own comments and moderate comments. VoIP and Video calling support would be an added bonus. Other extensions would be plugins for blogging platforms so users of WordPress or similar can use the software on their blogs by just installing the plugin.
+**Difficulty**: Hard
 
-**Difficulty**: Easy/Moderate
+**Knowledge pre-req**: Distributed data-structures; Graph databases; Data analytics
 
-**Knowledge pre-req**: HTML, Javascript
+**Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
 
-**Potential mentor**: David Baker ([github](https://github.com/dbkr)), Erik Johnston ([github](https://github.com/erikjohnston))
+
+### Decentralised Search
+
+Matrix provides a basic full-text search API and implementation in Synapse.  Would be great to build a cross-Matrix search engine however, especially a decentralised one.
+
+**Expected results**: A Matrix spider that consumes public event data from Matrix and indexes into a decentralised secure datastructure that can then be queried for rapid cross-Matrix search results.
+
+**Difficulty**: Moderate/Hard
+
+**Knowledge pre-req**: Familiarity with web services, the language used for implementing the application service (e.g. Python if using our reference example service framework).  Basic HTML/CSS/Javascript needed to implement the search engine interface frontend.
+
+**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+
+
+### IoT Dashboard with Matrix
+
+Matrix is ideal as a platform for the Internet of Things: simple, federated, persistent communication would allow devices and hubs to communicate with services and one another in a unified, open and extensible way. IoT devices and hubs could send their data into Matrix which would distibute and store it as necessary. 
+
+This project would involve input into a set of standards for such devices to put data into Matrix as well as client of some kind for visualising, analysing and orchestrating the data from these devices and potentially interacting with them. This could take the form of a webapp which reads the data from Matrix (using the React SDK) and/or similar mobile clients. The client would display a list of all of my devices that were feeding data into the system and a summary of the data they're sending, allowing me to view a summary of recent data or get more detail and potentially plot graphs of the data from devices (for example, the current temperature of my home thermostat and its trend over the last month). 
+
+It's important that the system is open and usable by others, so specifying a format for data that's as flexible as possible whilst also providing rich, detailed information from each type of device would be an interesting problem.
+
+**Expected results**: one IoT dashboard web application, with some IoT devices integrated via the Matrix client-server API.  Optionally also IoT application services for analysing/aggregating/visualising the resulting IoT data en mass.
+
+**Difficulty**: Moderate
+
+**Knowledge pre-req**: Javascript/HTML5/React/CSS for web application.  Python or similar for IoT application services if using our reference application service framework.
+
+**Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
+
+
+# Ideas below this point almost certainly require more effort than the GSoC format allows, but are included here for interest's sake.
 
 
 ### E2E Encryption
@@ -292,7 +385,6 @@ Matrix aims to provide E2E encryption as part of the baseline spec.  The job is 
 **Potential mentor**: Mark Haines ([github](https://github.com/NegativeMjark)), Richard van der Hoff ([github](https://github.com/richvdh))
 
 
-
 ### Peer-to-peer Matrix
 
 Matrix currently follows a client-server architecture, where the servers federate together.  This means that to host your own conversations in Matrix you have to own and maintain a server with a static IP and DNS SRV record etc.  This isolates many people from running their own Matrix nodes.  An interesting experiment would be to write a homeserver variant (probably in Node.js) which advertises itself via a DHT or similar (e.g. using js-libp2p) and uses WebRTC data channels for p2p synchronisation of message graph data.  This could make it much easier to run homeservers - either as a standalone node daemon, or built into a desktop or even web client.  Such a server would implement the basic features of today's Matrix C-S API, but obviously break compatibility with today's Matrix S-S API.  An extension might be to write a bridge between the two federation protocols.
@@ -302,18 +394,6 @@ Matrix currently follows a client-server architecture, where the servers federat
 **Difficulty**: Hard
 
 **Knowledge pre-req**: P2P tech, JavaScript
-
-**Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
-
-
-
-### IPFS support for content repositories
-
-Currently Matrix uses a basic distirbuted content repository based on replicating data over HTTPS between its servers.  It could be nice to support storing data in IPFS instead, providing dedicated p2p distributed immutable data storage rather than the stop-gap solution that Matrix provides.
-
-**Expected Results**: Extend synapse to optionally store and load content from IPFS, and extend one or more matrix clients (e.g. Vector) to natively load/store content from IPFS clientside.
-
-**Difficulty**: Medium
 
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
 
@@ -342,51 +422,56 @@ Currently the mapping of 3rd party IDs (e.g. email addresses) through to Matrix 
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n)), Erik Johnston ([github](https://github.com/erikjohnston))
 
 
-### Decentralised reputation
+### Etherpad clone
 
-Mitigating abuse is an ongoing area of research in Matrix.  Tracking realtime reputation data for Matrix endpoints, such that users can report abuse and filter their communication to hide abusive content is the holy grail.  There are some very early thoughts on this [here](https://github.com/matrix-org/matrix-doc/blob/master/drafts/reputation_thoughts.rst).  Anyone interested in researching the holy grail of abuse mitigation is welcome to experiment here!
+[Etherpad](http://etherpad.org/) is a multi-user, real-time text collaboration tool which we use frequently internally. The aim of this project is to recreate Etherpad using Matrix. As a start, aim for a multi-user "notepad"-style application, and then more advanced features (chat, per-user history, different fonts/text-effects/etc) can be added as extensions.
 
-**Expected Results**: Add upvote/downvote functionality to Matrix spec, gather the data in a secure decentralised datastructure that can be mined for cluster analysis, and publish reputation data that Matrix clients can align themselves with when filtering abusive content.
+**Expected results**: Able to have at least 10 people collaborating (typing) on a single document, and to have the document in sync across all people.
+
+**Difficulty**: Hard. Made harder by needing to storing and synchronising document snapshots efficiently.
+
+**Knowledge pre-req**: Python/Twisted for server-side extensions; Client-side development (Javascript/HTML/CSS or Android or iOS), HTTP/JSON APIs, basic awareness of Operational Transform theory.
+
+**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+
+
+### Collaborative Whiteboarding in Matrix
+
+Matrix allows clients to send and synchronize arbitary pieces of data in a room, allowing the possibility collabrative editing. This project would be to use this ability to design and implement a collaborative whiteboarding app using Matrix. This is similar to the etherpad project above, except synchronizing a whiteboard canvas between clients instead of text.
+
+**Expected results**: A client that supports allowing multiple users drawing and editing the whiteboard similutaneously, with the results synchronized in real time between all clients in the room.
 
 **Difficulty**: Hard
 
-**Knowledge pre-req**: Distributed data-structures; Graph databases; Data analytics
+**Knowledge pre-req**: Python/Twisted for server-side extensions; Client-side development (Javascript/HTML/CSS or Android or iOS), HTTP/JSON APIs, basic awareness of Operational Transform theory
+
+**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+
+
+### Music jamming over Matrix
+
+The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for TechCrunch Disrupt London 2014 - this was a simple Network MIDI to Matrix bridge which persisted network MIDI traffic into Matrix, and then transcribed it using javascript to musical notation.  This project would extend or reimplement this hack to build a full remote musical jamming solution for Matrix, with no single points of failure or ownership over the resulting music.  Users anywhere on the net would be able to play together via MIDI, storing the data into Matrix for posterity and letting the public listen and view the transcription in realtime.
+
+**Expected results**: one remote jamming web application powered by Matrix, and a MIDI<->Matrix bridge.
+
+**Difficulty**: Moderate/Hard
+
+**Knowledge pre-req**: Some knowledge of MIDI and music useful.  Javascript/HTML5/React/CSS for the web application.  Python or similar for the basis MIDI<->Matrix application service bridge.  Knowledge of statistics useful for understanding quantising algorithms for transcribing MIDI.
 
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
 
 
+### Matrixcraft
 
-### Helping out on Ruma (Rust Homeserver)
+There are many minecraft clones available e.g. https://github.com/fogleman/Minecraft - but none of these are networked in any way. The aim of this project is to design and implement a protocol which can allow multiple minecraft players to play together, even though they are using different clients - by having the data communication go through Matrix.
 
-Ruma (https://ruma.io) is a new project from the community to implement a Matrix homeserver in Rust.  It's early days, but it would be great to have both client-side and server-side components for Matrix implemented in Rust, and there's a huge amount of work to be done there.
+**Expected results**: Able to have 2+ players building structures together
 
-**Expected Results**: Extend Ruma's components to implement more Matrix endpoints.
+**Difficulty**: Hard. Getting sensible chunking algorithms for rooms is Hard. There is huge scope to build on this both feature wise (e.g. PvP, monster AI) and protocol wise (reliability, masking latency hiccups, etc)
 
-**Difficulty**: Hard
+**Knowledge pre-req**: Python (assuming fogleman/Minecraft is used as a base)
 
-**Knowledge pre-req**: Rust, Web Services
-
-**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
-
-
-
-### Extending Native Matrix Desktop Clients
-
-There are several native Matrix Desktop Clients out there:
-
- * Tensor (QML + JS)
- * Quaternion (QML + C++)
- * Unplug (JavaFX)
-
- All of which could be extended further.  Developers wanting to hack features into fun desktop clients would be welcome here!
-
-**Expected results**: Add new features to Tensor, Quaternion, Unplug and friends.
-
-**Difficulty**: Easy to Moderate
-
-**Knowledge pre-req**: Familiarity with web services, the language used for implementing the client (e.g. ObjectiveC, Java)
-
-**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston)), David Baker ([github](https://github.com/dbkr))
+**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
 
 ### Threaded Matrix client
@@ -404,47 +489,6 @@ This project would involve helping to finalize how Matrix supports threading, as
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
 
-### Editable messages
-
-A relatively easy extension to the Matrix spec and implementation is to add 'update' type messages, letting you edit existing messages, and associate new events with existing ones.  This would provide the long-awaited ability to edit messages.
-
-**Expected results**: Define and implement 'update' message semantics in conjunction with the team.
-
-**Difficulty**: Moderate
-
-**Knowledge pre-req**: Python, and familiarity with at least one of the languages of the current clients (React, Android or Objective C)
-
-**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
-
-
-
-### Decentralised Search
-
-Matrix provides a basic full-text search API and implementation in Synapse.  Would be great to build a cross-Matrix search engine however, especially a decentralised one.
-
-**Expected results**: A Matrix spider that consumes public event data from Matrix and indexes into a decentralised secure datastructure that can then be queried for rapid cross-Matrix search results.
-
-**Difficulty**: Moderate/Hard
-
-**Knowledge pre-req**: Familiarity with web services, the language used for implementing the application service (e.g. Python if using our reference example service framework).  Basic HTML/CSS/Javascript needed to implement the search engine interface frontend.
-
-**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
-
-
-
-### Collaborative Whiteboarding in Matrix
-
-Matrix allows clients to send and synchronize arbitary pieces of data in a room, allowing the possibility collabrative editing. This project would be to use this ability to design and implement a collaborative whiteboarding app using Matrix. This is similar to the etherpad project above, except synchronizing a whiteboard canvas between clients instead of text.
-
-**Expected results**: A client that supports allowing multiple users drawing and editing the whiteboard similutaneously, with the results synchronized in real time between all clients in the room.
-
-**Difficulty**: Hard
-
-**Knowledge pre-req**: Python/Twisted for server-side extensions; Client-side development (Javascript/HTML/CSS or Android or iOS), HTTP/JSON APIs, basic awareness of Operational Transform theory
-
-**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
-
-
 ### Matrix Virtual World
 
 This is an extension of both the etherpad, Matrixcraft and Collaborative whiteboarding ideas mentioned above.  By integrating WebGL (e.g. using a library like ThreeJS) with Matrix, one can create a collaborative virtual world whose data is persisted in Matrix, replicated over all participating Matrix homeservers with no single points of control or failure.  If implemented as a generic platform, one could first start off by sharing 3D geometry in the world, and then defining higher level semantics (perhaps in combination with matrix Application Services) to define business logic for the world.  A good example could be building a collaborative 3D model editor on top of Matrix, or a 2D collaborative graphical programming environment.
@@ -454,49 +498,6 @@ This is an extension of both the etherpad, Matrixcraft and Collaborative whitebo
 **Difficulty**: Hard
 
 **Knowledge pre-req**: 3D graphics, WebGL, Operational Transform theory all a plus.  Would likely require optimisations and/or extensions to the server to support storing object graphs in Matrix.
-
-**Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
-
-
-### Internationalising Matrix
-
-None of the Matrix clients are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix opensource community to source translations as required.
-
-**Expected results**: Architectural support for i18n in all reference matrix clients and servers, and implementations of at least 4 languages (translation provided by the wider community).
-
-**Difficulty**: Easy / Moderate
-
-**Knowledge pre-req**: Basic Javascript, iOS, Android.
-
-**Potential mentor**: David Baker ([github](https://github.com/dbkr))
-
-
-### Music jamming over Matrix
-
-The Matrix team built a "MIDI over Matrix" proof of concept called RemoteJam for TechCrunch Disrupt London 2014 - this was a simple Network MIDI to Matrix bridge which persisted network MIDI traffic into Matrix, and then transcribed it using javascript to musical notation.  This project would extend or reimplement this hack to build a full remote musical jamming solution for Matrix, with no single points of failure or ownership over the resulting music.  Users anywhere on the net would be able to play together via MIDI, storing the data into Matrix for posterity and letting the public listen and view the transcription in realtime.
-
-**Expected results**: one remote jamming web application powered by Matrix, and a MIDI<->Matrix bridge.
-
-**Difficulty**: Moderate/Hard
-
-**Knowledge pre-req**: Some knowledge of MIDI and music useful.  Javascript/HTML5/React/CSS for the web application.  Python or similar for the basis MIDI<->Matrix application service bridge.  Knowledge of statistics useful for understanding quantising algorithms for transcribing MIDI.
-
-**Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
-
-
-### IoT Dashboard with Matrix
-
-Matrix is ideal as a platform for the Internet of Things: simple, federated, persistent communication would allow devices and hubs to communicate with services and one another in a unified, open and extensible way. IoT devices and hubs could send their data into Matrix which would distibute and store it as necessary. 
-
-This project would involve input into a set of standards for such devices to put data into Matrix as well as client of some kind for visualising, analysing and orchestrating the data from these devices and potentially interacting with them. This could take the form of a webapp which reads the data from Matrix (using the React SDK) and/or similar mobile clients. The client would display a list of all of my devices that were feeding data into the system and a summary of the data they're sending, allowing me to view a summary of recent data or get more detail and potentially plot graphs of the data from devices (for example, the current temperature of my home thermostat and its trend over the last month). 
-
-It's important that the system is open and usable by others, so specifying a format for data that's as flexible as possible whilst also providing rich, detailed information from each type of device would be an interesting problem.
-
-**Expected results**: one IoT dashboard web application, with some IoT devices integrated via the Matrix client-server API.  Optionally also IoT application services for analysing/aggregating/visualising the resulting IoT data en mass.
-
-**Difficulty**: Moderate
-
-**Knowledge pre-req**: Javascript/HTML5/React/CSS for web application.  Python or similar for IoT application services if using our reference application service framework.
 
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
 
