@@ -378,6 +378,19 @@ Mitigating abuse is an ongoing area of research in Matrix.  Tracking realtime re
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
 
 
+### Alternative Efficient Client-Server Transports and Encodings
+
+Matrix's baseline Client-Server API is simple long-polling HTTP calls.  This is purely for compatibility and simplicity for the widest range of client devices and applications, however - we encourage and expect people to implement more efficient transports and encodings in future.  For instance, we've published and implemented a beta Websockets transport draft at https://github.com/matrix-org/matrix-doc/blob/master/drafts/websockets.rst and https://github.com/matrix-org/matrix-websockets-proxy.
+
+It would be *really* fun to experiment with other transports and encodings to find just how fast, low latency, low CPU or low bandwidth one can make the Client Server API run.  This could involve playing around with COaP+CBOR, MQTT, protobufs, capnproto, messagepack, HTTP/2 or any other option in a quest for the holy grail transport/encoding combination!
+
+**Difficulty**: Medium
+
+**Knowledge pre-req**: Network protocols
+
+**Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh))
+
+
 ### Decentralised Search
 
 Matrix provides a basic full-text search API and implementation in Synapse.  Would be great to build a cross-Matrix search engine however, especially a decentralised one.
@@ -389,6 +402,16 @@ Matrix provides a basic full-text search API and implementation in Synapse.  Wou
 **Knowledge pre-req**: Familiarity with web services, the language used for implementing the application service (e.g. Python if using our reference example service framework).  Basic HTML/CSS/Javascript needed to implement the search engine interface frontend.
 
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+
+
+### Synapse optimisation
+
+Synapse is Matrix's reference homeserver, written in Python 2 and Twisted.  It was never written for speed, and there is huge room for optimisation on it.  In the longer term we plan to move to an entirely different codebase, but in practice the Synapse codebase is here to stay and there are lots of people running it who would love to see it faster.  A possible angle here could be to try porting it to PyPy to see if that speeds everything up - as well as a large range of caching and algorithmic profiling and improvement.  Any work here would probably necessitate building better profiling tools for Twisted.
+
+
+### IPv6 Support
+
+Synapse doesn't currently support IPv6, thanks to limitations on Twisted.  Whilst in the long term we plan to migrate away from Twisted, meanwhile Twisted's IPv6 support is slowly evolving: e.g. recent activity on https://twistedmatrix.com/trac/ticket/4362.  Working with the Twisted team to finish IPv6 and bring it to Synapse would be much appreciated by all the folks running Synapse out there - especially for use on IPv6 overlay networks like cjdns.
 
 
 ### IoT Dashboard with Matrix
