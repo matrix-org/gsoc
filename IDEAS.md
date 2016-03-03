@@ -145,6 +145,7 @@ In an ideal world, we'd end up with bridges to all of the below and more!
   * HipChat
   * Rocket.Chat
   * Zulip
+  * Discord
   * PSYC
   * XMPP
   * MSRP
