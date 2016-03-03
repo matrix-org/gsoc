@@ -237,7 +237,7 @@ Extensions include:
 
 ### Internationalising Matrix
 
-None of the Matrix clients are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix opensource community to source translations as required.
+None of the Matrix clients are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix open source community to source translations as required.
 
 **Expected results**: Architectural support for i18n in all reference matrix clients and servers, and implementations of at least 4 languages (translation provided by the wider community).
 
@@ -278,7 +278,7 @@ Matrix could be used as a platform where users can arrive at a random website, s
 
 ### IPFS support for content repositories
 
-Currently Matrix uses a basic distirbuted content repository based on replicating data over HTTPS between its servers.  It could be nice to support storing data in IPFS instead, providing dedicated p2p distributed immutable data storage rather than the stop-gap solution that Matrix provides.
+Currently Matrix uses a basic distributed content repository based on replicating data over HTTPS between its servers.  It could be nice to support storing data in IPFS instead, providing dedicated p2p distributed immutable data storage rather than the stop-gap solution that Matrix provides.
 
 **Expected Results**: Extend synapse to optionally store and load content from IPFS, and extend one or more matrix clients (e.g. Vector) to natively load/store content from IPFS clientside.
 
