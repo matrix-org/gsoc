@@ -25,6 +25,7 @@ Google Summer Of Code Matrix Ideas list
     - [Location based Chat](#location-based-chat)
     - [Decentralised reputation](#decentralised-reputation)
     - [Decentralised Search](#decentralised-search)
+    - [Improving Auth for Synapse](#improving-auth-for-synapse)
     - [Synapse optimisation](#synapse-optimisation)
     - [IPv6 Support](#ipv6-support)
     - [IoT Dashboard with Matrix](#iot-dashboard-with-matrix)
@@ -407,6 +408,16 @@ Matrix provides a basic full-text search API and implementation in Synapse.  Wou
 
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
+
+### Improving Auth for Synapse
+
+Currently Synapse (the Matrix.org reference homeserver) has registration logic hardcoded to LoginType.DUMMY, LoginType.RECAPTCHA, LoginType.EMAIL_IDENTITY and LoginType.PASSWORD - and is not remotely modular.  It would be much nicer to provide a modular auth architecture so that synapses can auth users against CAS, LDAP, PAM, OAuth2 etc.  Extensions include improving `access_token` semantics.
+
+**Expected results**: A new authentication implementation in synapse, with modular backends for as many auth mechanisms as possible!
+
+**Difficulty**: Moderate
+
+**Knowledge pre-req**: Python, ideally Twisted
 
 ### Synapse optimisation
 
