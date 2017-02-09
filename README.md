@@ -4,7 +4,7 @@ Matrix - Google Summer of Code
 Getting in touch
 ----------------
 
-You can contact the Matrix team via our [Matrix HQ room](https://matrix.to/#/#matrix:matrix.org) - or on IRC in [#matrix on freenode](irc://irc.freenode.net/matrix) (an example server on freenode is irc.freenode.net). 
+You can contact the Matrix team via our [Matrix GSoC room](https://matrix.to/#/#gsoc:matrix.org) or alternatively our [Matrix HQ room](https://matrix.to/#/#matrix:matrix.org) - or on IRC in [#matrix on freenode](irc://irc.freenode.net/matrix) (an example server on freenode is irc.freenode.net). 
 
 How do I pick a project?
 ------------------------
