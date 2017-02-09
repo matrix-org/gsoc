@@ -33,6 +33,7 @@ Google Summer Of Code Matrix Ideas, 2017 Edition!!
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+
 What is Matrix?
 ---------------
 
@@ -91,6 +92,12 @@ Everything is stored under [https://github.com/matrix-org](https://github.com/ma
 * [Python client SDK](https://github.com/matrix-org/matrix-python-sdk)
 
 ...and many many more: see https://matrix.org/blog/try-matrix-now for the full list of existing projects.
+
+
+What should my proposal look like?
+----------------------------------
+
+Please make sure you have read https://github.com/matrix-org/GSoC/blob/master/README.md#how-do-i-write-my-gsoc-application which has all the details of what we'd expect from your proposal :)
 
 
 Potential GSoC ideas:
