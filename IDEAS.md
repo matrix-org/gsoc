@@ -357,7 +357,7 @@ Ruma (https://ruma.io) is a project from the community to implement a Matrix hom
 
 **Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
 
-
+---
 
 Ideas below this point almost certainly require more effort than the GSoC format allows, but are included here for interest's sake.
 -----------------------------------------------------------------------------------------------------------------------------------
