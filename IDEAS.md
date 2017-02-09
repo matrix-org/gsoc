@@ -186,17 +186,24 @@ None of the Matrix clients (still!) are currently internationalised.  This is a 
 **Potential mentor**: David Baker ([github](https://github.com/dbkr))
 
 
-### Matrix Visualisations
+### Adding end-to-end encryption to more clients
 
-When developing on Matrix it's often quite hard to visualise the underlying replicated Directed Acyclic Graph datastructure that describes the conversation history in a room.  We've made some basic tools in the past like https://github.com/Kegsay/matrix-vis and https://github.com/matrix-org/synapse/tree/master/contrib/graph and https://github.com/erikjohnston/matrix-introspection but what would be really cool would be a real-time visualisation of the DAG to help folks understand Matrix, and help developers debug interesting edge cases and merge resolution scenarios when the DAG bifurcates.  This could be written in any language, talking some combination of the server-server API or an enhanced version of the client-server API or just inspecting your synapse's database to visualise what's going on.
+One of the big new features of Matrix in 2016 was launching End-to-End Encryption using the Olm & Megolm cryptographic ratchets, and getting it assessed by NCC Group - see https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last/ for details.
 
-**Expected results**: A realtime visualisation of the DAG of a given Matrix room, as seen from the perspective of one or more HSes.
+However, the current implementation has only landed in matrix-js-sdk, matrix-ios-sdk and matrix-android-sdk.  As a result, any client or bridge or bot which isn't built on one of those codebases is currently out of luck.
 
-**Difficulty**: Medium
+In this project, you would port the application-layer E2E implementation to one or more other clients - e.g. to Golang for use with go-neb, or to Python for use with matrix-python-sdk or to C++ for libqmatrixclient (as used by the Quaternion & Tensor desktop clients) or to C for matrix-purple (as used by Pidgin).  Alternatively, you might consider implementing an E2E-aware matrix proxy which *any* client can connect to (when running locally) to share encrypted communication with the rest of Matrix.
 
-**Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
+This would be a great way to improve your cryptography skills and learn about one of the most exciting and ambitious E2E cryptography projects out there.
 
-**Potential mentor**: Erik Johnston ([github](https://github.com/ErikJohnston)) or Kegan Dougal ([github](https://github.com/Kegsay))
+**Expected results**: Extend other Matrix clients to speak E2E, or implement an E2E-aware Matrix Proxy
+
+**Difficulty**: Hard
+
+**Knowledge pre-req**: Cryptography. The language for the platform you are targetting.
+
+**Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh)), Matthew Hodgson ([github](https://github.com/ara4n))
+
 
 
 ### HTML Embeddable Matrix Chat Rooms
@@ -225,6 +232,19 @@ Currently Matrix uses a basic distributed content repository based on replicatin
 **Difficulty**: Medium
 
 **Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
+
+
+### Matrix Visualisations
+
+When developing on Matrix it's often quite hard to visualise the underlying replicated Directed Acyclic Graph datastructure that describes the conversation history in a room.  We've made some basic tools in the past like https://github.com/Kegsay/matrix-vis and https://github.com/matrix-org/synapse/tree/master/contrib/graph and https://github.com/erikjohnston/matrix-introspection but what would be really cool would be a real-time visualisation of the DAG to help folks understand Matrix, and help developers debug interesting edge cases and merge resolution scenarios when the DAG bifurcates.  This could be written in any language, talking some combination of the server-server API or an enhanced version of the client-server API or just inspecting your synapse's database to visualise what's going on.
+
+**Expected results**: A realtime visualisation of the DAG of a given Matrix room, as seen from the perspective of one or more HSes.
+
+**Difficulty**: Medium
+
+**Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
+
+**Potential mentor**: Erik Johnston ([github](https://github.com/ErikJohnston)) or Kegan Dougal ([github](https://github.com/Kegsay))
 
 
 ### Alternative Efficient Client-Server Transports and Encodings
