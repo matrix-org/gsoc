@@ -98,7 +98,7 @@ Potential GSoC ideas:
 ---------------------
 Remember that you can also use these as inspiration and suggest your own project ideas.
 
-## This is list is now prioritised - most important suggestions first (as of Feb 9th 2017)
+**This is list is now prioritised - most important suggestions first (as of Feb 9th 2017)**
 
 ### Building Bridges!
 
