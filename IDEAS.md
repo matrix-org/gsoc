@@ -9,7 +9,6 @@ Google Summer Of Code Matrix Ideas, 2017 Edition!!
 - [APIs and architecture:](#apis-and-architecture)
 - [Code repositories:](#code-repositories)
 - [Potential GSoC ideas:](#potential-gsoc-ideas)
-- [This is list is now prioritised - most important suggestions first (as of Feb 9th 2017)](#this-is-list-is-now-prioritised---most-important-suggestions-first-as-of-feb-9th-2017)
   - [Building Bridges!](#building-bridges)
   - [Bots & Integrations to ALL THE THINGS!!](#bots--integrations-to-all-the-things)
   - [Alternative Push Notification Transport](#alternative-push-notification-transport)
