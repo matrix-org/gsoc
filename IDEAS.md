@@ -11,11 +11,15 @@ Google Summer Of Code Matrix Ideas list
   - [Potential GSoC ideas:](#potential-gsoc-ideas)
   - [This is list is now prioritised - most important suggestions first (as of Feb 9th 2017)](#this-is-list-is-now-prioritised---most-important-suggestions-first-as-of-feb-9th-2017)
     - [Building Bridges!](#building-bridges)
-    - [Integrations to ALL THE THINGS!!](#integrations-to-all-the-things)
+    - [Bots & Integrations to ALL THE THINGS!!](#bots--integrations-to-all-the-things)
+    - [Alternative Push Notification Transport](#alternative-push-notification-transport)
     - [Internationalising Matrix](#internationalising-matrix)
-    - [Matrix Visualisations](#matrix-visualisations)
+    - [Fun features for Riot/iOS and Riot/Android](#fun-features-for-riotios-and-riotandroid)
+    - [Adding end-to-end encryption to more clients](#adding-end-to-end-encryption-to-more-clients)
+    - [Better public key verification UX for E2E](#better-public-key-verification-ux-for-e2e)
     - [HTML Embeddable Matrix Chat Rooms](#html-embeddable-matrix-chat-rooms)
     - [IPFS support for content repositories](#ipfs-support-for-content-repositories)
+    - [Matrix Visualisations](#matrix-visualisations)
     - [Alternative Efficient Client-Server Transports and Encodings](#alternative-efficient-client-server-transports-and-encodings)
     - [Finishing matrix-ircd](#finishing-matrix-ircd)
     - [Extending Native Matrix Desktop Clients](#extending-native-matrix-desktop-clients)
@@ -134,7 +138,7 @@ By default our preferred language for writing bridges is in Node.js (ES6), so we
 
 
 
-### Integrations to ALL THE THINGS!!
+### Bots & Integrations to ALL THE THINGS!!
 
 As well as bridging, we're building out a large ecosystem of integrations (also known as bots) to let folks interact with other services from Matrix.  Today this is mainly in Go, with https://github.com/matrix-org/go-neb being the flagship bot project.  However, there's also the python incarnation (https://github.com/matrix-org/Matrix-NEB) as well as Hubot adaptors like https://github.com/davidar/hubot-matrix and other bot frameworks like https://gitlab.com/argit/hello-matrix-bot.
 
@@ -159,6 +163,10 @@ Platforms we'd love to integrate with via native Matrix bots include:
  * Discourse bot
  * ...
 
+Possible standalone bots include:
+ * Personal assistant bots (integrate with calendar, todo-lists etc)
+ * "Get started with Riot" guide bot
+
 Extensions include:
  * Extending bots to be metadata aware: https://github.com/matrix-org/matrix-doc/pull/93 once landed
  * Building UI modules for Riot to provide a 'conversational interface' UI onto the bots
@@ -173,6 +181,17 @@ Extensions include:
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
 
+### Alternative Push Notification Transport
+
+Battery life for matrix-android-sdk apps (e.g. Riot/Android) on Fdroid is currently very bad as in the absence of GCM (Google Cloud Messaging), we have to poll the server for new notifications.  This project would build or extend an existing push server to provide an alternative to GCM and APNS that matrix clients like Riot/Android can use to receive push notifications.  An example server already exists from the community at https://github.com/slp/matrix-pushgw but nobody has yet written clients for it.  This is related to the "Alternative Efficient Client-Server Transports and Encodings" project below, although that aims to replace the whole client-server API transport, whereas this would be optimised strictly for receiving push notifications.
+
+**Difficulty**: Medium
+
+**Knowledge pre-req**: Network protocols, Language for the platforms being targetted
+
+**Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh))
+
+
 ### Internationalising Matrix
 
 None of the Matrix clients (still!) are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix open source community to source translations as required.
@@ -182,6 +201,23 @@ None of the Matrix clients (still!) are currently internationalised.  This is a 
 **Difficulty**: Easy / Moderate
 
 **Knowledge pre-req**: Basic Javascript, iOS, Android.
+
+**Potential mentor**: David Baker ([github](https://github.com/dbkr))
+
+
+### Fun features for Riot/iOS and Riot/Android
+
+Riot is a flagship Matrix client; an Apache-licensed set of communication apps for Web (React), iOS & Android.  Some nice refinements that would be good GSoC projects include:
+ * Implementing CallKit on iOS in order to properly integrate VoIP calls with the OS and make Riot act as a full replacement dialler
+ * Ability to share maps of locations!  We just got a PR from the community for Riot/Web (https://github.com/matrix-org/matrix-react-sdk/pull/596) - adding to mobile would be cool too!
+ * Ability to decrypt notifications for E2E rooms and display them as normal notifications (if desired by the user).
+ * Quick-actions on iOS for replying to notifications
+ * Theming support on mobile!  Riot/Web has dark & light themes and configurable colour-schemes these days, but the mobile clients don't have it yet :(
+ * Rich-text Editor!  Riot/Web has a Rich-text Editor thanks to GSoC 2016 - why not add to the mobile platforms?
+ 
+**Difficulty**: Medium (on average)
+
+**Knowledge pre-req**: iOS, Android.
 
 **Potential mentor**: David Baker ([github](https://github.com/dbkr))
 
@@ -204,6 +240,18 @@ This would be a great way to improve your cryptography skills and learn about on
 
 **Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh)), Matthew Hodgson ([github](https://github.com/ara4n))
 
+
+### Better public key verification UX for E2E
+
+Currently E2E key verification in matrix-*-sdk is performed by manually comparing public key fingerprints.  This is terrible UX - it would be wonderful to instead be able to scan QR codes, bump RFID devices, quote mnemonics or other tricks in order to make verifying device identity more fun and more user-friendly.  https://github.com/vector-im/riot-web/issues/2142 is the official bug for this issue.
+
+**Expected results**: Add additional verification mechanisms to Riot/Web, iOS & Android
+
+**Difficulty**: Medium
+
+**Knowledge pre-req**: Cryptography. The language for the platforms you are targetting.
+
+**Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh)), Matthew Hodgson ([github](https://github.com/ara4n))
 
 
 ### HTML Embeddable Matrix Chat Rooms
