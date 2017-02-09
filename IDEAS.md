@@ -5,32 +5,32 @@ Google Summer Of Code Matrix Ideas list
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-  - [What is Matrix?](#what-is-matrix)
-  - [APIs and architecture:](#apis-and-architecture)
-  - [Code repositories:](#code-repositories)
-  - [Potential GSoC ideas:](#potential-gsoc-ideas)
-  - [This is list is now prioritised - most important suggestions first (as of Feb 9th 2017)](#this-is-list-is-now-prioritised---most-important-suggestions-first-as-of-feb-9th-2017)
-    - [Building Bridges!](#building-bridges)
-    - [Bots & Integrations to ALL THE THINGS!!](#bots--integrations-to-all-the-things)
-    - [Alternative Push Notification Transport](#alternative-push-notification-transport)
-    - [Internationalising Matrix](#internationalising-matrix)
-    - [Fun features for Riot/iOS and Riot/Android](#fun-features-for-riotios-and-riotandroid)
-    - [Adding end-to-end encryption to more clients](#adding-end-to-end-encryption-to-more-clients)
-    - [Better public key verification UX for E2E](#better-public-key-verification-ux-for-e2e)
-    - [HTML Embeddable Matrix Chat Rooms](#html-embeddable-matrix-chat-rooms)
-    - [IPFS support for content repositories](#ipfs-support-for-content-repositories)
-    - [Matrix Visualisations](#matrix-visualisations)
-    - [Alternative Efficient Client-Server Transports and Encodings](#alternative-efficient-client-server-transports-and-encodings)
-    - [Finishing matrix-ircd](#finishing-matrix-ircd)
-    - [Extending Native Matrix Desktop Clients](#extending-native-matrix-desktop-clients)
-    - [Helping out on Ruma (Rust Homeserver)](#helping-out-on-ruma-rust-homeserver)
+- [What is Matrix?](#what-is-matrix)
+- [APIs and architecture:](#apis-and-architecture)
+- [Code repositories:](#code-repositories)
+- [Potential GSoC ideas:](#potential-gsoc-ideas)
+- [This is list is now prioritised - most important suggestions first (as of Feb 9th 2017)](#this-is-list-is-now-prioritised---most-important-suggestions-first-as-of-feb-9th-2017)
+  - [Building Bridges!](#building-bridges)
+  - [Bots & Integrations to ALL THE THINGS!!](#bots--integrations-to-all-the-things)
+  - [Alternative Push Notification Transport](#alternative-push-notification-transport)
+  - [Internationalising Matrix](#internationalising-matrix)
+  - [Fun features for Riot/iOS and Riot/Android](#fun-features-for-riotios-and-riotandroid)
+  - [Adding end-to-end encryption to more clients](#adding-end-to-end-encryption-to-more-clients)
+  - [Better public key verification UX for E2E](#better-public-key-verification-ux-for-e2e)
+  - [HTML Embeddable Matrix Chat Rooms](#html-embeddable-matrix-chat-rooms)
+  - [IPFS support for content repositories](#ipfs-support-for-content-repositories)
+  - [Matrix Visualisations](#matrix-visualisations)
+  - [Alternative Efficient Client-Server Transports and Encodings](#alternative-efficient-client-server-transports-and-encodings)
+  - [Finishing matrix-ircd](#finishing-matrix-ircd)
+  - [Extending Native Matrix Desktop Clients](#extending-native-matrix-desktop-clients)
+  - [Helping out on Ruma (Rust Homeserver)](#helping-out-on-ruma-rust-homeserver)
 - [Ideas below this point almost certainly require more effort than the GSoC format allows, but are included here for interest's sake.](#ideas-below-this-point-almost-certainly-require-more-effort-than-the-gsoc-format-allows-but-are-included-here-for-interests-sake)
-    - [Peer-to-peer Matrix](#peer-to-peer-matrix)
-    - [Decentralised accounts](#decentralised-accounts)
-    - [Decentralised identity](#decentralised-identity)
-    - [Decentralised reputation](#decentralised-reputation)
-    - [Decentralised Search](#decentralised-search)
-    - [Matrix Virtual World](#matrix-virtual-world)
+  - [Peer-to-peer Matrix](#peer-to-peer-matrix)
+  - [Decentralised accounts](#decentralised-accounts)
+  - [Decentralised identity](#decentralised-identity)
+  - [Decentralised reputation](#decentralised-reputation)
+  - [Decentralised Search](#decentralised-search)
+  - [Matrix Virtual World](#matrix-virtual-world)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -208,6 +208,7 @@ None of the Matrix clients (still!) are currently internationalised.  This is a 
 ### Fun features for Riot/iOS and Riot/Android
 
 Riot is a flagship Matrix client; an Apache-licensed set of communication apps for Web (React), iOS & Android.  Some nice refinements that would be good GSoC projects include:
+
  * Implementing CallKit on iOS in order to properly integrate VoIP calls with the OS and make Riot act as a full replacement dialler
  * Ability to share maps of locations!  We just got a PR from the community for Riot/Web (https://github.com/matrix-org/matrix-react-sdk/pull/596) - adding to mobile would be cool too!
  * Ability to decrypt notifications for E2E rooms and display them as normal notifications (if desired by the user).
@@ -358,7 +359,8 @@ Ruma (https://ruma.io) is a project from the community to implement a Matrix hom
 
 
 
-# Ideas below this point almost certainly require more effort than the GSoC format allows, but are included here for interest's sake.
+Ideas below this point almost certainly require more effort than the GSoC format allows, but are included here for interest's sake.
+-----------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Peer-to-peer Matrix
