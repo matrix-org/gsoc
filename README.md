@@ -30,7 +30,7 @@ In terms of the proposal itself, we suggest including the following:
  * a brief description of what you want to achieve with your project.
  * a paragraph on why this project is needed, e.g. which problem you are solving.
  * more details on how the project will be designed and implemented.
- * a timeline on what will be done at what time. More details is better, and this should be a good help for yourself to try and scope your project to fit in the 3 month space. Make sure you have a bit of buffer for unforeseen problems!
+ * a timeline on what will be done at what time. More detail is better, and this should be a good help for yourself to try and scope your project to fit in the 3 month space. Make sure you have a bit of buffer for unforeseen problems!
  * also describe features that will not be added as part of the project - but that can be added at a later stage.
  * finally, make a case for why you are the best person to tackle this project. Good things to mention are past projects (with links to code if possible), an explanation of why this particular area interests you, and your prior experience.
 
