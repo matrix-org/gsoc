@@ -13,7 +13,7 @@ The first thing to do, is to have a play with Matrix. Register an account on the
 
 [This guide](https://matrix.org/docs/guides/getting_involved.html) has a lot of information about getting involved. Perhaps you might want to run your own client, or even set up your own homeserver? Check out [the code](https://github.com/matrix-org/synapse) and have a look at the [client-server API](https://matrix.org/docs/api/client-server/).
 
-In order to find a project you would like to work on, we suggest reading our latest [status update](https://matrix.org/blog/2016/12/26/the-matrix-holiday-special-2016-edition/) and looking at the [ideas](https://github.com/matrix-org/GSoC/blob/master/IDEAS.md) list - and then thinking about what you would like to add to the Matrix ecosystem. Of course, please also come talk and discuss your idea with us (in [#gsoc:matrix.org](https://matrix.to/#/#gsoc:matrix.org) or [#matrix:matrix.org](https://matrix.to/#/#matrix:matrix.org) for example), but it's important that you find a project that you find interesting yourself!
+In order to find a project you would like to work on, we suggest reading our latest [status update](https://matrix.org/blog/2017/12/25/the-matrix-holiday-mini-special-2017-edition/) and looking at the [ideas](https://github.com/matrix-org/GSoC/blob/master/IDEAS.md) list - and then thinking about what you would like to add to the Matrix ecosystem. Of course, please also come talk and discuss your idea with us (in [#gsoc:matrix.org](https://matrix.to/#/#gsoc:matrix.org) or [#matrix:matrix.org](https://matrix.to/#/#matrix:matrix.org) for example), but it's important that you find a project that you find interesting yourself!
 
 
 How do I write my GSoC application?

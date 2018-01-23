@@ -1,28 +1,27 @@
-Google Summer Of Code Matrix Ideas, 2017 Edition!!
-==================================================
+Google Summer Of Code Matrix Ideas, 2018 Edition!!
+=================================================================
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
 - [What is Matrix?](#what-is-matrix)
-- [APIs and architecture:](#apis-and-architecture)
+- [APIs and Architecture](#apis-and-architecture)
 - [Code repositories:](#code-repositories)
+- [What should my proposal look like?](#what-should-my-proposal-look-like)
 - [Potential GSoC ideas:](#potential-gsoc-ideas)
+  - [Contribute to Dendrite](#contribute-to-dendrite)
   - [Building Bridges!](#building-bridges)
   - [Bots & Integrations to ALL THE THINGS!!](#bots--integrations-to-all-the-things)
   - [Alternative Push Notification Transport](#alternative-push-notification-transport)
-  - [Internationalising Matrix](#internationalising-matrix)
-  - [Fun features for Riot/iOS and Riot/Android](#fun-features-for-riotios-and-riotandroid)
-  - [Adding end-to-end encryption to more clients](#adding-end-to-end-encryption-to-more-clients)
-  - [Better public key verification UX for E2E](#better-public-key-verification-ux-for-e2e)
-  - [HTML Embeddable Matrix Chat Rooms](#html-embeddable-matrix-chat-rooms)
-  - [IPFS support for content repositories](#ipfs-support-for-content-repositories)
   - [Matrix Visualisations](#matrix-visualisations)
+  - [Adding end-to-end encryption to more clients](#adding-end-to-end-encryption-to-more-clients)
+  - [Fun features for Riot/iOS and Riot/Android](#fun-features-for-riotios-and-riotandroid)
+  - [HTML Embeddable Matrix Chat Rooms](#html-embeddable-matrix-chat-rooms)
   - [Alternative Efficient Client-Server Transports and Encodings](#alternative-efficient-client-server-transports-and-encodings)
-  - [Finishing matrix-ircd](#finishing-matrix-ircd)
   - [Extending Native Matrix Desktop Clients](#extending-native-matrix-desktop-clients)
-  - [Helping out on Ruma (Rust Homeserver)](#helping-out-on-ruma-rust-homeserver)
+  - [Finishing matrix-ircd](#finishing-matrix-ircd)
+  - [IPFS support for content repositories](#ipfs-support-for-content-repositories)
 - [Ideas below this point almost certainly require more effort than the GSoC format allows, but are included here for interest's sake.](#ideas-below-this-point-almost-certainly-require-more-effort-than-the-gsoc-format-allows-but-are-included-here-for-interests-sake)
   - [Peer-to-peer Matrix](#peer-to-peer-matrix)
   - [Decentralised accounts](#decentralised-accounts)
@@ -35,7 +34,7 @@ Google Summer Of Code Matrix Ideas, 2017 Edition!!
 
 
 What is Matrix?
----------------
+------------------
 
 Matrix is a decentralised communication specification for clients and servers.  It is designed to replicate conversation data across multiple servers via federation, meaning that there are no single points of control or failure for conversations or their history.  Anyone can run their own "home" server, or use one hosted by someone else (e.g. ``matrix.org``). All communication uses HTTP(S) and data is represented as JSON objects, scoped to a "room", which consists of a group of users.  Matrix is designed to make it easy to bridge existing communication apps and networks, making Matrix a global decentralised "meta-network" for connecting (or matrixing!) together all of today's communication silos.
 
@@ -50,8 +49,8 @@ To date, Matrix has been used as a communications protocol for a wide range of t
 In the end, we hope Matrix will crack the problem of a widely successful open federated platform for communication on the internet, which bridges together all of today's existing communication silos into a single open communication meta-network.
 
 
-APIs and architecture:
-----------------------
+APIs and Architecture
+-------------------------
 In Matrix, a user account belongs to a homeserver and looks like this: *@localpart:domain* - the localpart is the "username" and the domain is the homeserver on which the account belongs. In other words, *@user1:matrix.org* is a different user to *@user1:example.com* as they are registered on different homeservers. 
 
 In the Matrix network, anyone can run a homeserver. Anyone can also run a client, and you can connect to any homeserver from any client.
@@ -82,7 +81,8 @@ Here is a diagram of this architecture:
 
 Code repositories:
 ------------------
-Everything is stored under [https://github.com/matrix-org](https://github.com/matrix-org/):
+Projects lead by matrix.org are stored under [https://github.com/matrix-org](https://github.com/matrix-org/):
+
 * [Reference python server](https://github.com/matrix-org/synapse)
 * ['Riot' React client](https://github.com/vector-im/riot-web)
 * [Reference react SDK](https://github.com/matrix-org/matrix-react-sdk)
@@ -104,7 +104,18 @@ Potential GSoC ideas:
 ---------------------
 Remember that you can also use these as inspiration and suggest your own project ideas.
 
-**This is list is now prioritised - most important suggestions first (as of Feb 9th 2017)**
+**This is list is prioritised - most important suggestions first**
+
+### Contribute to Dendrite
+
+[Dendrite](https://github.com/matrix-org/dendrite) is a work in progress matrix homeserver written in Go. Being a large
+project there are many areas of the homeserver APIs that a GSOC project could
+work on, there is a
+[spreadsheet](https://docs.google.com/spreadsheets/d/1tkMNpIpPjvuDJWjPFbw_xzNzOHBA-Hp50Rkpcr43xTw)
+that tracks the current implementation status of the various APIs. A good GSOC
+proposal would use this and discussion with mentors and the community to find an
+appropriate and realistic subset of these APIs to work on during the project.
+
 
 ### Building Bridges!
 
@@ -117,7 +128,7 @@ Bridging (linking existing networks into the wider Matrix ecosystem) is one of t
   * RocketChat: https://github.com/matrix-org/matrix-appservice-rocketchat
   * Verto (FreeSWITCH): https://github.com/matrix-org/matrix-appservice-verto
  * Alpha grade:
-  * Telegram Client https://github.com/matrix-org/matrix-appservice-tg
+  * Telegram https://github.com/matrix-org/matrix-appservice-tg, https://github.com/SijmenSchoon/telematrix, https://github.com/tulir/mautrix-telegram/
   * Libpurple https://github.com/matrix-org/node-purple/tree/master/appservice
   * Asterisk https://github.com/matrix-org/matrix-appservice-respoke
  * And lots of experimental ones from the community: Twitter, XMPP, iMessage, Facebook Messenger, etc.
@@ -127,12 +138,12 @@ Bridges are relatively easy and fun to write, and we would *love* for GSOCers to
 
 We are most interested in bridges for:
  * Libpurple - as if you can connect to libpurple, you can immediately connect to lots of other services.
- * Hangouts - there's a very simple PoC at https://github.com/CyrusTheHedgehog/Hangouts-Bridge using the hangups library - building a proper one would be great!
- * XMPP - there are some promising bridges, but none are comprehensive.  https://github.com/pztrn/matrix-xmpp-bridge is the most advanced, but there's still lots ot work to go to make it perfect
- * Discord - discord's API should make bridging quite easy, but nobody's written one yet!
- * Email - by the time GSoC comes around Matrix should have threading support.  Building email and bulletin board bridges would be a fantastic way to showcase threading.
+ * Hangouts - there's an initial implementation here: https://github.com/Cadair/matrix-appservice-hangouts using the [hangups](http://hangups.readthedocs.io/) library.
+ * XMPP - there are some promising bridges, but none are comprehensive.  https://github.com/pztrn/matrix-xmpp-bridge is the most advanced, but there's still lots ot work to go to make it perfect.
+ * Discord - An alpha implementation is here: https://github.com/Half-Shot/matrix-appservice-discord
+ * Email
 
-By default our preferred language for writing bridges is in Node.js (ES6), so we can build on top of the https://github.com/matrix-org/matrix-appservice-bridge library which provides a bunch of useful infrastructure and boilerplate.  If the remote network lacks good Node library support we consider other languages though.
+By default our preferred language for writing bridges is in Node.js (ES6), so we can build on top of the https://github.com/matrix-org/matrix-appservice-bridge library which provides a bunch of useful infrastructure and boilerplate.  If there already exists a project in another language or if the remote network lacks good Node library support we consider other languages though.
 
 **Expected results**: Bridging matrix rooms and users into one or more of the above environments - ideally supporting dynamic users (i.e. auto-creating users on both sides of the bridge on demand) and dynamic rooms (i.e. bridging the whole namespace of the remote network into matrix).
 
@@ -143,10 +154,9 @@ By default our preferred language for writing bridges is in Node.js (ES6), so we
 **Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
 
 
-
 ### Bots & Integrations to ALL THE THINGS!!
 
-As well as bridging, we're building out a large ecosystem of integrations (also known as bots) to let folks interact with other services from Matrix.  Today this is mainly in Go, with https://github.com/matrix-org/go-neb being the flagship bot project.  However, there's also the python incarnation (https://github.com/matrix-org/Matrix-NEB) as well as Hubot adaptors like https://github.com/davidar/hubot-matrix and other bot frameworks like https://gitlab.com/argit/hello-matrix-bot.
+As well as bridging, we're building out a large ecosystem of integrations (also known as bots) to let folks interact with other services from Matrix.  Today this is mainly in Go, with https://github.com/matrix-org/go-neb being the flagship bot project.  However, there's also the python incarnation (https://github.com/matrix-org/Matrix-NEB) as well as Hubot adaptors like https://github.com/davidar/hubot-matrix and other bot frameworks like https://gitlab.com/argit/hello-matrix-bot or https://github.com/opsdroid/connector-matrix .
 
 Bots can be written in any language, and we have a wide range of SDKs already available to help people get up and running - from everything from Node to Python to Perl to Ruby to Elixir...
 
@@ -193,40 +203,22 @@ Battery life for matrix-android-sdk apps (e.g. Riot/Android) on Fdroid is curren
 
 **Difficulty**: Medium
 
-**Knowledge pre-req**: Network protocols, Language for the platforms being targetted
+**Knowledge pre-req**: Network protocols, Language for the platforms being targeted
 
 **Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh))
 
 
-### Internationalising Matrix
+### Matrix Visualisations
 
-None of the Matrix clients (still!) are currently internationalised.  This is a real shame, especially given that the core dev team is made up of many different nationalities (English, French, Norwegian, etc).  This would be an easy but very useful project to go through implementing consistent internationalisation support across all of our reference clients and servers, working with the wider Matrix open source community to source translations as required.
+When developing on Matrix it's often quite hard to visualise the underlying replicated Directed Acyclic Graph datastructure that describes the conversation history in a room.  We've made some basic tools in the past like https://github.com/Kegsay/matrix-vis and https://github.com/matrix-org/synapse/tree/master/contrib/graph and https://github.com/erikjohnston/matrix-introspection but what would be really cool would be a real-time visualisation of the DAG to help folks understand Matrix, and help developers debug interesting edge cases and merge resolution scenarios when the DAG bifurcates.  This could be written in any language, talking some combination of the server-server API or an enhanced version of the client-server API or just inspecting your synapse's database to visualise what's going on.
 
-**Expected results**: Architectural support for i18n in all reference matrix clients and servers, and implementations of at least 4 languages (translation provided by the wider community).
+**Expected results**: A realtime visualisation of the DAG of a given Matrix room, as seen from the perspective of one or more HSes.
 
-**Difficulty**: Easy / Moderate
+**Difficulty**: Medium
 
-**Knowledge pre-req**: Basic Javascript, iOS, Android.
+**Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
 
-**Potential mentor**: David Baker ([github](https://github.com/dbkr))
-
-
-### Fun features for Riot/iOS and Riot/Android
-
-Riot is a flagship Matrix client; an Apache-licensed set of communication apps for Web (React), iOS & Android.  Some nice refinements that would be good GSoC projects include:
-
- * Implementing CallKit on iOS in order to properly integrate VoIP calls with the OS and make Riot act as a full replacement dialler
- * Ability to share maps of locations!  We just got a PR from the community for Riot/Web (https://github.com/matrix-org/matrix-react-sdk/pull/596) - adding to mobile would be cool too!
- * Ability to decrypt notifications for E2E rooms and display them as normal notifications (if desired by the user).
- * Quick-actions on iOS for replying to notifications
- * Theming support on mobile!  Riot/Web has dark & light themes and configurable colour-schemes these days, but the mobile clients don't have it yet :(
- * Rich-text Editor!  Riot/Web has a Rich-text Editor thanks to GSoC 2016 - why not add to the mobile platforms?
- 
-**Difficulty**: Medium (on average)
-
-**Knowledge pre-req**: iOS, Android.
-
-**Potential mentor**: David Baker ([github](https://github.com/dbkr))
+**Potential mentor**: Erik Johnston ([github](https://github.com/ErikJohnston)) or Kegan Dougal ([github](https://github.com/Kegsay))
 
 
 ### Adding end-to-end encryption to more clients
@@ -248,17 +240,21 @@ This would be a great way to improve your cryptography skills and learn about on
 **Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh)), Matthew Hodgson ([github](https://github.com/ara4n))
 
 
-### Better public key verification UX for E2E
+### Fun features for Riot/iOS and Riot/Android
 
-Currently E2E key verification in matrix-*-sdk is performed by manually comparing public key fingerprints.  This is terrible UX - it would be wonderful to instead be able to scan QR codes, bump RFID devices, quote mnemonics or other tricks in order to make verifying device identity more fun and more user-friendly.  https://github.com/vector-im/riot-web/issues/2142 is the official bug for this issue.
+Riot is a flagship Matrix client; an Apache-licensed set of communication apps for Web (React), iOS & Android.  Some nice refinements that would be good GSoC projects include:
 
-**Expected results**: Add additional verification mechanisms to Riot/Web, iOS & Android
+ * Ability to share maps of locations!  We just got a PR from the community for Riot/Web (https://github.com/matrix-org/matrix-react-sdk/pull/596) - adding to mobile would be cool too!
+ * High quality push-to-talk support.
+ * Support for using multiple accounts simultaneously.
+ * Quick actions on iOS for replying to notifications.
+ * Rich-text Editor!  Riot/Web has a Rich-text Editor thanks to GSoC 2016 - why not add to the mobile platforms?
+ 
+**Difficulty**: Medium (on average)
 
-**Difficulty**: Medium
+**Knowledge pre-req**: iOS, Android.
 
-**Knowledge pre-req**: Cryptography. The language for the platforms you are targetting.
-
-**Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh)), Matthew Hodgson ([github](https://github.com/ara4n))
+**Potential mentor**: David Baker ([github](https://github.com/dbkr))
 
 
 ### HTML Embeddable Matrix Chat Rooms
@@ -278,30 +274,6 @@ There is some related prior art at https://live.hello-matrix.net/ and https://gi
 **Potential mentor**: David Baker ([github](https://github.com/dbkr)), Erik Johnston ([github](https://github.com/erikjohnston)), Kegan Dougal ([github](https://github.com/Kegsay))
 
 
-### IPFS support for content repositories
-
-Currently Matrix uses a basic distributed content repository based on replicating data over HTTPS between its servers.  It could be nice to support storing data in IPFS instead, providing dedicated p2p distributed immutable data storage rather than the stop-gap solution that Matrix provides.
-
-**Expected Results**: Extend synapse to optionally store and load content from IPFS, and extend one or more matrix clients (e.g. Vector) to natively load/store content from IPFS clientside.
-
-**Difficulty**: Medium
-
-**Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
-
-
-### Matrix Visualisations
-
-When developing on Matrix it's often quite hard to visualise the underlying replicated Directed Acyclic Graph datastructure that describes the conversation history in a room.  We've made some basic tools in the past like https://github.com/Kegsay/matrix-vis and https://github.com/matrix-org/synapse/tree/master/contrib/graph and https://github.com/erikjohnston/matrix-introspection but what would be really cool would be a real-time visualisation of the DAG to help folks understand Matrix, and help developers debug interesting edge cases and merge resolution scenarios when the DAG bifurcates.  This could be written in any language, talking some combination of the server-server API or an enhanced version of the client-server API or just inspecting your synapse's database to visualise what's going on.
-
-**Expected results**: A realtime visualisation of the DAG of a given Matrix room, as seen from the perspective of one or more HSes.
-
-**Difficulty**: Medium
-
-**Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
-
-**Potential mentor**: Erik Johnston ([github](https://github.com/ErikJohnston)) or Kegan Dougal ([github](https://github.com/Kegsay))
-
-
 ### Alternative Efficient Client-Server Transports and Encodings
 
 Matrix's baseline Client-Server API is simple long-polling HTTP calls.  This is purely for compatibility and simplicity for the widest range of client devices and applications, however - we encourage and expect people to implement more efficient transports and encodings in future.  For instance, we've published and implemented a beta Websockets transport draft at https://github.com/matrix-org/matrix-doc/blob/master/drafts/websockets.rst and https://github.com/matrix-org/matrix-websockets-proxy.
@@ -315,23 +287,11 @@ It would be *really* fun to experiment with other transports and encodings to fi
 **Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh))
 
 
-### Finishing matrix-ircd
-
-https://github.com/matrix-org/matrix-ircd is a new project that provides an IRC front-end to any Matrix homeserver, written in Rust, which means anyone can point their existing IRC clients into Matrix, treating as a giant distributed ircd.  This helps people get up and running in the Matrix ecosystem without having to jump all the way to a Matrix client (or bridge via an existing IRC network).  It's in early beta currently, but fun to hack on with lots of functionality still to be finished.
-
-**Expected results**: Add features and stability to matrix-ircd and get irc.matrix.org running as an IRC interface into the guts of Matrix!
-
-**Difficulty**: Easy to Moderate
-
-**Knowledge pre-req**:  Basic Rust and familiarity with web services.
-
-**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
-
-
 ### Extending Native Matrix Desktop Clients
 
 There are several native Matrix Desktop Clients in development...
 
+ * Nheko (Qt + C++) https://github.com/mujx/nheko
  * NaChat (Qt + C++) https://github.com/Ralith/nachat
  * Quaternion (QML + C++) https://github.com/fxrh/quaternion
  * Tensor (QML + JS) https://github.com/davidar/tensor
@@ -350,18 +310,29 @@ There are several native Matrix Desktop Clients in development...
 **Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston)), David Baker ([github](https://github.com/dbkr))
 
 
+### Finishing matrix-ircd
 
-### Helping out on Ruma (Rust Homeserver)
+https://github.com/matrix-org/matrix-ircd is a new project that provides an IRC front-end to any Matrix homeserver, written in Rust, which means anyone can point their existing IRC clients into Matrix, treating as a giant distributed ircd.  This helps people get up and running in the Matrix ecosystem without having to jump all the way to a Matrix client (or bridge via an existing IRC network).  It's in early beta currently, but fun to hack on with lots of functionality still to be finished.
 
-Ruma (https://ruma.io) is a project from the community to implement a Matrix homeserver in Rust.  It's making solid progress, and would be great to have both client-side and server-side components for Matrix implemented in Rust, and there's a huge amount of work to be done there.
+**Expected results**: Add features and stability to matrix-ircd and get irc.matrix.org running as an IRC interface into the guts of Matrix!
 
-**Expected Results**: Extend Ruma's components to implement more Matrix endpoints.
+**Difficulty**: Easy to Moderate
 
-**Difficulty**: Hard
-
-**Knowledge pre-req**: Rust, Web Services
+**Knowledge pre-req**:  Basic Rust and familiarity with web services.
 
 **Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston))
+
+
+### IPFS support for content repositories
+
+Currently Matrix uses a basic distributed content repository based on replicating data over HTTPS between its servers.  It could be nice to support storing data in IPFS instead, providing dedicated p2p distributed immutable data storage rather than the stop-gap solution that Matrix provides.
+
+**Expected Results**: Extend synapse to optionally store and load content from IPFS, and extend one or more matrix clients (e.g. Riot) to natively load/store content from IPFS clientside.
+
+**Difficulty**: Medium
+
+**Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
+
 
 ---
 
