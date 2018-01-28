@@ -12,6 +12,7 @@ Google Summer Of Code Matrix Ideas, 2018 Edition!!
 - [Potential GSoC ideas:](#potential-gsoc-ideas)
   - [Contribute to Dendrite](#contribute-to-dendrite)
   - [Building Bridges!](#building-bridges)
+    - [Bridge Project Suggestions](#bridge-project-suggestions)
   - [Bots & Integrations to ALL THE THINGS!!](#bots--integrations-to-all-the-things)
   - [Alternative Push Notification Transport](#alternative-push-notification-transport)
   - [Matrix Visualisations](#matrix-visualisations)
@@ -126,7 +127,10 @@ Potential mentors: Erik Johnston ([github](https://github.com/erikjohnston)), Ri
 
 ### Building Bridges!
 
-Bridging (linking existing networks into the wider Matrix ecosystem) is one of the most important bits of Matrix, and one of the most rewarding.  Right now we have bridges for:
+Bridging (linking existing networks into the wider Matrix ecosystem) is one of the most important bits of Matrix, and one of the most rewarding. There are a large number of bridges, in various languages and in various states of maturity.
+
+matrix.org has a number of bridges, in various states of development:
+
  * Production grade:
   * IRC: https://github.com/matrix-org/matrix-appservice-irc
   * Slack: https://github.com/matrix-org/matrix-appservice-slack
@@ -135,20 +139,37 @@ Bridging (linking existing networks into the wider Matrix ecosystem) is one of t
   * RocketChat: https://github.com/matrix-org/matrix-appservice-rocketchat
   * Verto (FreeSWITCH): https://github.com/matrix-org/matrix-appservice-verto
  * Alpha grade:
-  * Telegram https://github.com/matrix-org/matrix-appservice-tg, https://github.com/SijmenSchoon/telematrix, https://github.com/tulir/mautrix-telegram/
   * Libpurple https://github.com/matrix-org/node-purple/tree/master/appservice
   * Asterisk https://github.com/matrix-org/matrix-appservice-respoke
- * And lots of experimental ones from the community: Twitter, XMPP, iMessage, Facebook Messenger, etc.
- * ...and the full list at https://matrix.org/blog/try-matrix-now under Application Services.
+  
+There are also a large number of community bridges, for example:
 
-Bridges are relatively easy and fun to write, and we would *love* for GSoCers to get involved in writing new bridges and polishing the existing ones.
+  * Telegram https://github.com/SijmenSchoon/telematrix, https://github.com/tulir/mautrix-telegram/, https://github.com/matrix-org/matrix-appservice-tg
+  * Hangouts - https://github.com/Cadair/matrix-appservice-hangouts using the [hangups](http://hangups.readthedocs.io/) library.
+  * Discord - An alpha implementation is here: https://github.com/Half-Shot/matrix-appservice-discord
+  * XMPP - there are some promising bridges, but none are comprehensive.  https://github.com/pztrn/matrix-xmpp-bridge is the most advanced, but there's still lots ot work to go to make it perfect.
+  * see the full list at https://matrix.org/blog/try-matrix-now under Application Services.
 
-We are most interested in bridges for:
- * Libpurple - as if you can connect to libpurple, you can immediately connect to lots of other services.
- * Hangouts - there's an initial implementation here: https://github.com/Cadair/matrix-appservice-hangouts using the [hangups](http://hangups.readthedocs.io/) library.
- * XMPP - there are some promising bridges, but none are comprehensive.  https://github.com/pztrn/matrix-xmpp-bridge is the most advanced, but there's still lots ot work to go to make it perfect.
- * Discord - An alpha implementation is here: https://github.com/Half-Shot/matrix-appservice-discord
- * Email
+
+#### Bridge Project Suggestions
+
+There are a *lot* of potential projects in all the various matrix bridges, below
+is a few ideas to get you started. A good room to join if you are interested in
+working on bridges is
+[#bridges:matrix.org](https://matrix.to/#/#bridges:matrix.org)
+
+
+1. Add user puppeting support to the Slack and Gitter bridges, this would allow
+   users to login with their account details and send messages to Gitter/Slack
+   as themselves. In a similar way to the IRC bridge.
+   
+2. Work with the maintainers of any of the community bridges to develop new
+   features or improve the reliability.
+   
+3. Develop a new bridge for the service of your choice. Some suggestions of desired bridges from the community can be found [here](https://github.com/turt2live/matrix-wishlist/issues?q=is%3Aissue+is%3Aopen+label%3Abridge)
+
+
+Bridges are relatively easy and fun to write, and we would *love* for GSOCers to get involved in writing new bridges and polishing the existing ones.
 
 By default our preferred language for writing bridges is in Node.js (ES6), so we can build on top of the https://github.com/matrix-org/matrix-appservice-bridge library which provides a bunch of useful infrastructure and boilerplate.  If there already exists a project in another language or if the remote network lacks good Node library support we consider other languages though.
 
