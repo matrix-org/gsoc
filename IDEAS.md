@@ -163,7 +163,7 @@ working on bridges is
    users to login with their account details and send messages to Gitter/Slack
    as themselves. In a similar way to the IRC bridge.
    
-2. Worth with the maintainers of any of the community bridges to develop new
+2. Work with the maintainers of any of the community bridges to develop new
    features or improve the reliability.
    
 3. Develop a new bridge for the service of your choice. Some suggestions of desired bridges from the community can be found [here](https://github.com/turt2live/matrix-wishlist/issues?q=is%3Aissue+is%3Aopen+label%3Abridge)
