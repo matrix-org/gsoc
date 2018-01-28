@@ -166,7 +166,7 @@ working on bridges is
 2. Worth with the maintainers of any of the community bridges to develop new
    features or improve the reliability.
    
-3. Develop a new bridge for the service of your choice.
+3. Develop a new bridge for the service of your choice. Some suggestions of desired bridges from the community can be found [here](https://github.com/turt2live/matrix-wishlist/issues?q=is%3Aissue+is%3Aopen+label%3Abridge)
 
 
 Bridges are relatively easy and fun to write, and we would *love* for GSOCers to get involved in writing new bridges and polishing the existing ones.
