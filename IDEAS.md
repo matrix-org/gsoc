@@ -17,7 +17,7 @@ Google Summer Of Code Matrix Ideas, 2018 Edition!!
   - [Alternative Push Notification Transport](#alternative-push-notification-transport)
   - [Matrix Visualisations](#matrix-visualisations)
   - [Adding end-to-end encryption to more clients](#adding-end-to-end-encryption-to-more-clients)
-  - [Fun features for Riot/iOS and Riot/Android](#fun-features-for-riotios-and-riotandroid)
+  - [Fun features for Riot/Web, Riot/iOS and Riot/Android](#fun-features-for-riotweb-riotios-and-riotandroid)
   - [HTML Embeddable Matrix Chat Rooms](#html-embeddable-matrix-chat-rooms)
   - [Alternative Efficient Client-Server Transports and Encodings](#alternative-efficient-client-server-transports-and-encodings)
   - [Extending Native Matrix Desktop Clients](#extending-native-matrix-desktop-clients)
@@ -110,13 +110,20 @@ Remember that you can also use these as inspiration and suggest your own project
 ### Contribute to Dendrite
 
 [Dendrite](https://github.com/matrix-org/dendrite) is a work in progress matrix homeserver written in Go. Being a large
-project there are many areas of the homeserver APIs that a GSOC project could
+project there are many areas of the homeserver APIs that a GSoC project could
 work on, there is a
 [spreadsheet](https://docs.google.com/spreadsheets/d/1tkMNpIpPjvuDJWjPFbw_xzNzOHBA-Hp50Rkpcr43xTw)
 that tracks the current implementation status of the various APIs. A good GSOC
 proposal would use this and discussion with mentors and the community to find an
 appropriate and realistic subset of these APIs to work on during the project.
 
+**Expected results**: Add implementations, unit tests & integration tests for an agreed set of missing APIs for Dendrite, based on the Matrix Spec and/or taking inspiration from the legacy Python implementation.
+
+**Difficulty**: Ranges from Easy through to Hard depending on the API!
+
+**Knowledge pre-req**: Good knowledge of Golang and HTTP/REST APIs in general.
+
+Potential mentors: Erik Johnston ([github](https://github.com/erikjohnston)), Richard van der Hoff ([github](https://github.com/richvdh))
 
 ### Building Bridges!
 
@@ -172,7 +179,7 @@ By default our preferred language for writing bridges is in Node.js (ES6), so we
 
 **Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
 
-**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+**Potential mentor**: Matthew Hodgson ([github](https://github.com/Ara4n))
 
 
 ### Bots & Integrations to ALL THE THINGS!!
@@ -215,7 +222,7 @@ Extensions include:
 
 **Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
 
-**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+**Potential mentor**: Dave Baker ([github](https://github.com/dbkr))
 
 
 ### Alternative Push Notification Transport
@@ -239,12 +246,12 @@ When developing on Matrix it's often quite hard to visualise the underlying repl
 
 **Knowledge pre-req**: Good knowledge of HTTP/REST APIs in general.
 
-**Potential mentor**: Erik Johnston ([github](https://github.com/ErikJohnston)) or Kegan Dougal ([github](https://github.com/Kegsay))
+**Potential mentor**: Erik Johnston ([github](https://github.com/ErikJohnston))
 
 
 ### Adding end-to-end encryption to more clients
 
-One of the big new features of Matrix in 2016 was launching End-to-End Encryption using the Olm & Megolm cryptographic ratchets, and getting it assessed by NCC Group - see https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last/ for details.
+A lot of effort in Matrix is being put into End-to-End Encryption using the Olm & Megolm cryptographic ratchets (as assessed by NCC Group - see https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last/ for details.
 
 However, the current implementation has only landed in matrix-js-sdk, matrix-ios-sdk and matrix-android-sdk.  As a result, any client or bridge or bot which isn't built on one of those codebases is currently out of luck.
 
@@ -261,21 +268,22 @@ This would be a great way to improve your cryptography skills and learn about on
 **Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh)), Matthew Hodgson ([github](https://github.com/ara4n))
 
 
-### Fun features for Riot/iOS and Riot/Android
+### Fun features for Riot/Web, Riot/iOS and Riot/Android
 
 Riot is a flagship Matrix client; an Apache-licensed set of communication apps for Web (React), iOS & Android.  Some nice refinements that would be good GSoC projects include:
 
- * Ability to share maps of locations!  We just got a PR from the community for Riot/Web (https://github.com/matrix-org/matrix-react-sdk/pull/596) - adding to mobile would be cool too!
+ * Ability to share maps of locations!  We have a PR from the community for Riot/Web (https://github.com/matrix-org/matrix-react-sdk/pull/596) - adding to mobile would be cool too!
  * High quality push-to-talk support.
+ * Adding custom emojis to the message composer and timeline on all platforms!
  * Support for using multiple accounts simultaneously.
  * Quick actions on iOS for replying to notifications.
  * Rich-text Editor!  Riot/Web has a Rich-text Editor thanks to GSoC 2016 - why not add to the mobile platforms?
- 
+
 **Difficulty**: Medium (on average)
 
 **Knowledge pre-req**: iOS, Android.
 
-**Potential mentor**: David Baker ([github](https://github.com/dbkr))
+**Potential mentors**: David Baker ([github](https://github.com/dbkr)), Guillaume Foret ([github](https://github.com/giomfo)), Emmanuel Rohee ([github](https://github.com/manuroe))
 
 
 ### HTML Embeddable Matrix Chat Rooms
@@ -292,7 +300,7 @@ There is some related prior art at https://live.hello-matrix.net/ and https://gi
 
 **Knowledge pre-req**: HTML, Javascript
 
-**Potential mentor**: David Baker ([github](https://github.com/dbkr)), Erik Johnston ([github](https://github.com/erikjohnston)), Kegan Dougal ([github](https://github.com/Kegsay))
+**Potential mentors**: David Baker ([github](https://github.com/dbkr)), Erik Johnston ([github](https://github.com/erikjohnston))
 
 
 ### Alternative Efficient Client-Server Transports and Encodings
@@ -328,7 +336,7 @@ There are several native Matrix Desktop Clients in development...
 
 **Knowledge pre-req**: Familiarity with web services, the language used for implementing the client (e.g. ObjectiveC, Java)
 
-**Potential mentor**: Erik Johnston ([github](https://github.com/erikjohnston)), David Baker ([github](https://github.com/dbkr))
+**Potential mentor**: David Baker ([github](https://github.com/dbkr))
 
 
 ### Finishing matrix-ircd
@@ -422,7 +430,7 @@ Matrix provides a basic full-text search API and implementation in Synapse.  Wou
 
 **Knowledge pre-req**: Familiarity with web services, the language used for implementing the application service (e.g. Python if using our reference example service framework).  Basic HTML/CSS/Javascript needed to implement the search engine interface frontend.
 
-**Potential mentor**: Kegan Dougal ([github](https://github.com/Kegsay))
+**Potential mentor**: Matthew Hodgson ([github](https://github.com/ara4n))
 
 
 
