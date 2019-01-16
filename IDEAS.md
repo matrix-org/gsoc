@@ -255,7 +255,7 @@ A lot of effort in Matrix is being put into End-to-End Encryption using the Olm 
 
 However, the current implementation has only landed in matrix-js-sdk, matrix-ios-sdk and matrix-android-sdk.  As a result, any client or bridge or bot which isn't built on one of those codebases is currently out of luck.
 
-In this project, you would port the application-layer E2E implementation to one or more other clients - e.g. to Golang for use with go-neb, or to Python for use with matrix-python-sdk or to C++ for libqmatrixclient (as used by the Quaternion & Tensor desktop clients) or to C for matrix-purple (as used by Pidgin).  Alternatively, you might consider implementing an E2E-aware matrix proxy which *any* client can connect to (when running locally) to share encrypted communication with the rest of Matrix.
+In this project, you would port the application-layer E2E implementation to one or more other clients - e.g. to Golang for use with go-neb, or to C++ for libqmatrixclient (as used by the Quaternion, Spectral & Tensor desktop clients) or to C for matrix-purple (as used by Pidgin).  Alternatively, you might consider implementing an E2E-aware matrix proxy which *any* client can connect to (when running locally) to share encrypted communication with the rest of Matrix.
 
 This would be a great way to improve your cryptography skills and learn about one of the most exciting and ambitious E2E cryptography projects out there.
 
@@ -265,7 +265,7 @@ This would be a great way to improve your cryptography skills and learn about on
 
 **Knowledge pre-req**: Cryptography. The language for the platform you are targetting.
 
-**Potential mentor**: Richard van der Hoff ([github](https://github.com/richvdh)), Matthew Hodgson ([github](https://github.com/ara4n))
+**Potential mentor**: Hubert Chathi ([github](https://github.com/uhoreg)), Matthew Hodgson ([github](https://github.com/ara4n))
 
 
 ### Fun features for Riot/Web, Riot/iOS and Riot/Android
@@ -278,6 +278,7 @@ Riot is a flagship Matrix client; an Apache-licensed set of communication apps f
  * Support for using multiple accounts simultaneously.
  * Quick actions on iOS for replying to notifications.
  * Rich-text Editor!  Riot/Web has a Rich-text Editor thanks to GSoC 2016 - why not add to the mobile platforms?
+ * Sending and displaying mathematics
 
 **Difficulty**: Medium (on average)
 
