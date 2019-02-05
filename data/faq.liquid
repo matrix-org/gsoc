@@ -4,7 +4,7 @@
 {% for faq in site.faq %}
 {
  "question" : "{{ faq.question }}",
- "url" : "{{ faq.url }}",
+ "url" : "{{ faq.url | remove_first:'/' }}",
  "markdown" : "{{ faq.path | replace: '_faq/', ''}}" 
 }{% unless forloop.last %},{% endunless %}{% endfor %}
 ]
