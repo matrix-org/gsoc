@@ -9,4 +9,4 @@ Our policy is that we'll always mentor awesome projects, so as long as your prop
 is one of the winning ones, there will be a mentor for the project.
 But as for all other projects it might help to talk to your possible mentors, and in
 that case it also means trying to maybe find a mentor or at least talk to
-devs/maintainers about your ideas possibly on [gitter](https://coala.io/chat).
+devs/maintainers about your ideas possibly in [#gsoc:matrix.org](https://matrix.to/#/!WZbLERcNJxrvkxPfyV:matrix.org?via=sw1v.org&via=matrix.org&via=thebeckmeyers.xyz).

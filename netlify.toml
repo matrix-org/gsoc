@@ -1,3 +1,0 @@
-[build]
-  publish = "_site"
-  command = "gem install bundler && .ci/build.sh"

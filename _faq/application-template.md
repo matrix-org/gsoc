@@ -3,9 +3,9 @@ question: "Do you have an application template?"
 ---
 {% assign month = "now" | date: "%-m" | plus: 0 %}
 {% if month >= site.gsoc_switch_month %}
-# coala {{ "now" | date: "%Y" | plus: 1 }} Application Template
+# Matrix {{ "now" | date: "%Y" | plus: 1 }} Application Template
 {% else %}
-# coala {{ "now" | date: "%Y" }} Application Template
+# Matrix {{ "now" | date: "%Y" }} Application Template
 {% endif %}
 
 ```
@@ -15,10 +15,9 @@ Student Info
 - Name:
 - GitHub username:
 - Alternative-/Nickname:
-- Username Checker: (e.g. https://username-check.herokuapp.com/?username=your_username)
 - Email:
+- Matrix ID: (i.e. @cadair:cadair.com)
 - Which country will you reside in during the project?
-- Which city (or other geographical boundary you feel comfortable sharing)?
 - Time Zone:
 - GSoC blog RSS feed URL: (You will have to write a blog post every
   week during GSoC.)
@@ -27,32 +26,18 @@ Student Info
 Code Sample
 -----------
 
-Link all your contributions to coala and any other open source project here.
-
-For example, to list your contributions to coala you can mention:
-  - https://github.com/coala/coala/commits/master?author=YOUR_USER_NAME
-    for coala repo
-  - https://github.com/coala/coala-bears/commits/master?author=YOUR_USER_NAME
-    for coala-bears repo
-
-- Link all your contributions to upstream repositories here. Such as third-party
-  linters and libraries that coala depends on.
+Link all your contributions to matrix and any other open source project here.
 
 You may also mention specific issues/commits using the commit id if you want
 us to take a look at that.
-
-You will have to finish the coala newcomer guide to be accepted:
-http://coala.io/newcomer
 
 
 Project Info
 ------------
 
-- Which project from http://projects.coala.io are you applying for?
+- Which project from http://matrix-org.github.io/gsoc are you applying for?
   If you have your own idea, please add it to our projects list:
-  https://github.com/coala/projects/blob/master/data/projects.liquid
-
-- How is your project helping coala and its community?
+  https://github.com/matrix-org/gsoc
 
 - What is the final goal for this project? What would make it a total
   and perfect success?
@@ -63,7 +48,7 @@ Project Info
   be the first listed mentor as primary and another as secondary.
   All projects will have a primary and a secondary mentor.
 
-- What parts of coala do you have to work with in order to complete
+- What parts of the matrix ecosystem do you have to work with in order to complete
   this project? What else are you planning on using?
 
 - Why are you the right person to work on this project?
@@ -74,16 +59,14 @@ Project Info
       This is a great help in evaluating your own progress and helps you
       achieving your goal as it forces you to plan your work preemptively.
 
-Add all ideas you have to solve the project here. This could include
-research on linters, libraries and similar problems as well as mockups
-of code, api and ui changes.
+Add all ideas you have to solve the project here.
 
 
 Other Commitments
 -----------------
 
 - Do you have any other commitments during the GSoC period,
-  May 14th to August 14th?
+  May 27th to August 19th?
 
     - We don't penalize students for needing adjustments to schedule if
       they're up-front about them and have a plan to mitigate any issues.
@@ -109,7 +92,7 @@ Other Commitments
 Extra Information
 -----------------
 
-This additional information isn't needed by coala but can help us to learn
+This additional information isn't needed but can help us to learn
 more about you. All fields in this section are optional.
 
 - Link to openhub account:
@@ -121,14 +104,9 @@ more about you. All fields in this section are optional.
 - Other Contact info:
     - Alternate contact info in case primary mail above stops working:
     - Homepage:
-    - Instant messaging:
-
-- Will you be able to join us for a conference such as EuroPython or GUADEC
-  and present your work if at least partial sponsorship will be provided?
-  (See https://github.com/coala/coala/wiki/Conferences-Upcoming)
 
 - We love having twitter handles so we can tell people publicly about your
-  great project and successes at https://twitter.com/coala_io!
+  great project and successes at https://twitter.com/matrixdotorg!
   (Not required but recommended.)
 
 - Anything else you want us to know:

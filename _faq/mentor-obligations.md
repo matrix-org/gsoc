@@ -1,25 +1,22 @@
 ---
 question: "What are my obligations as a mentor during the GSoC?"
 ---
-coala has two mentors for every project:
-
-1.  **Primary mentor**: responsible for the administrative tasks of the project.
-2.  **Secondary mentor**: has little to no responsibility, but provides backup
-    and code review for aspects of the project which are relevant to their
-    expertise.
 
 We expect you to:
 
-* Be active on [gitter](https://coala.io/chat).
-* Blog at least once per milestone (this will be aggregated on
-[blog.coala.io](https://blog.coala.io)).
-Participate in weekly meetings with your student.
+* Be active on matrix!.
+* Participate in weekly meetings with your student.
 * Review your students pull requests timely.
-* Get in contact with the admins if any even remotely
-potential problems arise.
+* Get in contact with the admins if any even remotely potential problems arise.
 
-If you are interested in mentoring, please contact one of the admins
-indicating the reason your open source project is suitable to be included as
-a project to be mentored under the coala administrative umbrella.
 
-List of admins is [here](http://projects.coala.io/#/mentors).
+If you are interested in having a student work on your Matrix project, then you
+can submit a Pull Request with a project idea to our 
+[GSOC repo](https://github.com/matrix-org/gsoc). Your project idea must:
+
+* Use Matrix
+* Have at least three defined milestones, corresponding to the three GSOC evaluation periods.
+* Be achievable within the GSOC time frame.
+
+
+If you have any questions contact any of the [GSOC admins](http://matrix-org.github.io/gsoc/#/mentors).
