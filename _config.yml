@@ -1,10 +1,10 @@
-title: coala Projects
+title: matrix.org GSOC
 license: GNU AFFERO GENERAL PUBLIC LICENSE V3.0
-organization: coala
-description: A website that showcases interesting projects, using Angular JS.
-baseurl: ""  # the subpath of your site, e.g. /blog
-url: ""  # the base hostname & protocol for your site
-githuburl: "https://github.com/coala/projects"
+organization: matrix.org
+description: An open network for secure, decentralized communication.
+baseurl: "/matrixprojects"  # the subpath of your site, e.g. /blog
+url: "https://matrix-org.github.io"  # the base hostname & protocol for your site
+githuburl: "https://github.com/matrix-org/gsoc"
 
 gsoc_switch_month: 6
 
