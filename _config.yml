@@ -2,7 +2,7 @@ title: matrix.org GSOC
 license: GNU AFFERO GENERAL PUBLIC LICENSE V3.0
 organization: matrix.org
 description: An open network for secure, decentralized communication.
-baseurl: "/matrixprojects"  # the subpath of your site, e.g. /blog
+baseurl: "/GSoC"  # the subpath of your site, e.g. /blog
 url: "https://matrix-org.github.io"  # the base hostname & protocol for your site
 githuburl: "https://github.com/matrix-org/gsoc"
 
