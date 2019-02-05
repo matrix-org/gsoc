@@ -1,5 +1,5 @@
 ---
-question: "Do all listed projects will be part of GSoC (or any other initiative)?"
+question: "Will all the listed projects will be part of GSoC?"
 ---
 No.
 We have way too many projects and you are even invited to add your own ideas.
