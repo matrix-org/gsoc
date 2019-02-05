@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Viresh Gupta | Project Report </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="/resources/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/coala/coalaCSS/master/coala.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i|Roboto:100,200,300,400,500,600,700,800,900|Ubuntu+Mono|Overpass+Mono|Inconsolata" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body class='report'>
+        <div class="container">
+        <br>
+            <div class="row no-margin">
+                <div class="col m12">
+                    <h4 class="left light">Google Summer of Code 2018 Work Product Submission </h4>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="row no-margin">
+                <div class="col m6">
+                    <div class="card flex1">
+                        <div class="card-content">
+                            <h5 class="light no-margin"><a href="https://coala.io">coala</a></h5>
+                            <h3 class="light">Viresh Gupta</h3>
+                            <p><p>Hi ! I am Viresh Gupta, an undergrad student at Indraprastha Institute of Information Technology, Delhi, India. I love coding in and out and like to lay my hands on whatever tech I can find. I also love to read books, observe nature and star gaze in my free time. I chose coala for my GSoC project because I think it’s awesome to be able to push my friends a friendly reminder to indent their code properly, and programmatically detect when they went lazy in doing so, which helps me to focus on the main logic when working on a team project.</p>
+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3">
+                    <div class="card flex1">
+                        <div class="card-content">
+                            <div class="center"><h4 class="light no-margin">Project Title</h4></div>
+                            <br>
+                            <div class="center"><a href="https://summerofcode.withgoogle.com/projects/#6067962113425408">Integrate ANTLR v4 to coala</a></div>
+                        </div>
+                    </div>
+                    <div class="card flex1">
+                        <div class="card-content">
+                            <div class="center"><h4 class="light no-margin">GSoC Blog</h4></div>
+                            <br>
+                            <div class="center"><a class="blog-link" href="https://virresh.wordpress.com/">https://virresh.wordpress.com/</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3">
+                    <div class="card flex1">
+                        <div class="card-content links-section">
+                            
+                                <div class="link">
+                                
+                                    <div class="row no-margin ">
+                                        <div class="col m6">GitHub</div>
+                                        <div class="col m6"><a href="https://github.com/virresh">virresh</a></div>
+                                    </div>
+                                
+                                </div>
+                                <div class="divider"></div>
+                            
+                                <div class="link">
+                                
+                                    <div class="row no-margin ">
+                                        <div class="col m6">GitLab</div>
+                                        <div class="col m6"><a href="https://gitlab.com/virresh">virresh</a></div>
+                                    </div>
+                                
+                                </div>
+                                <div class="divider"></div>
+                            
+                                <div class="link">
+                                
+                                    <div class="row no-margin ">
+                                        <div class="col m6">Gitter</div>
+                                        <div class="col m6"><a href="https://gitter.im/virresh">virresh</a></div>
+                                    </div>
+                                
+                                </div>
+                                <div class="divider"></div>
+                            
+                                <div class="link">
+                                
+                                    <div class="row no-margin ">
+                                        <div class="col m6">Openhub</div>
+                                        <div class="col m6"><a href="https://www.openhub.net/accounts/virresh">virresh</a></div>
+                                    </div>
+                                
+                                </div>
+                                
+                            
+                            <br>
+                            <div class="row no-margin center">
+                                <div class="col m3"><i class="fa fa-envelope-o"></i></div>
+                                <div class="col m9"><a href="mailto:viresh16118@iiitd.ac.in">viresh16118@iiitd.ac.in</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row no-margin">
+                <div class="col m2">
+                    <div class="card flex1">
+                        <div class="card-content">
+                            <div class="center"><h5 class="light no-margin">Patches Tarball</h5></div>
+                            <br>
+                            <div class="center"><a href="https://github.com/virresh/GSoC-18_Report/raw/master/patches.tar">Download</a></div>
+                            <br>
+                            <div class="center sha256sum_hash">
+                                <strong>SHA-256</strong>:
+                                <p id="sha256sum_hash_value">
+                                    43cd5aaf56b735abf34bba8fbf9f83f2cba716c9f20f76c3954228887f61e220
+                                </p>
+                                <i class="fa fa-clipboard" aria-hidden="true"><span class="hinttext">Copy Hash value</span></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                        <div class="col m2">
+                            <div class="card flex1">
+                                <div class="card-content">
+                                <div class="center"><h5 class="light no-margin">Bonding</h5></div>
+                                <br>
+                                <div class="center"><a href="https://gitlab.com/coala/GSoC/GSoC-2018/milestones/37">View Milestone</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="col m2">
+                            <div class="card flex1">
+                                <div class="card-content">
+                                <div class="center"><h5 class="light no-margin">Phase 1</h5></div>
+                                <br>
+                                <div class="center"><a href="https://gitlab.com/coala/GSoC/GSoC-2018/milestones/38">View Milestone</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="col m2">
+                            <div class="card flex1">
+                                <div class="card-content">
+                                <div class="center"><h5 class="light no-margin">Phase 2</h5></div>
+                                <br>
+                                <div class="center"><a href="https://gitlab.com/coala/GSoC/GSoC-2018/milestones/39">View Milestone</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="col m2">
+                            <div class="card flex1">
+                                <div class="card-content">
+                                <div class="center"><h5 class="light no-margin">Phase 3</h5></div>
+                                <br>
+                                <div class="center"><a href="https://gitlab.com/coala/GSoC/GSoC-2018/milestones/40">View Milestone</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                <div class="col m2">
+                    <div class="card flex1">
+                        <div class="card-content">
+                        <div class="center"><h5 class="light no-margin">Mentors</h5></div>
+                        <br>
+                        <div class="center"><p><a href="https://github.com/corona10">Dong-hee Na</a> &amp; <a href="https://github.com/Udayan12167">Udayan Tandon</a></p>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+             <div class="row no-margin">
+                <div class="col m12">
+                    <h5 class="left light">Links to commits and repositories I've worked on:</h5>
+                </div>
+                <br>
+            </div>
+            <div class="no-margin">
+                <table class="padding-table">
+                    <thead class="no-border">
+                        <tr class="blue-grey-text text-lighten-2">
+                            <td></td>
+                            <td>Repository</td>
+                            <td>Link to Commit/s</td>
+                            <td>Description</td>
+                        </tr>
+                    </thead>
+                    <tbody class="card activity">
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;cEPs</td>
+                                <td><a href='https://github.com/coala/cEPs/commit/49c6cec2'>View</a></td>
+                                <td><p>“cEP-0018: Integration of ANTLR in coala”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;cEPs</td>
+                                <td><a href='https://github.com/coala/cEPs/commit/b8a17299'>View</a></td>
+                                <td><p>“cEP-0018.md: Add information about fixes”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/f51addcf'>View</a></td>
+                                <td><p>“Initial Commit”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/168263a2'>View</a></td>
+                                <td><p>“ci: Integrate inital ci test”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/9671f083'>View</a></td>
+                                <td><p>“setup.py: Make package installable”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/f8067834'>View</a></td>
+                                <td><p>“Implement a loader for parse trees”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/c80200d2'>View</a></td>
+                                <td><p>“Initial walkers implemented,”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/d8146003'>View</a></td>
+                                <td><p>“core: Add ASTBear and Implement quote spacing bear”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/8bbea04b'>View</a></td>
+                                <td><p>“.gitlab-ci.yml: Add job for bear run testing”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/1249762a'>View</a></td>
+                                <td><p>“PyQuoteSpacingBear: Fix for implicit string concatenation”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/e5f2d83d'>View</a></td>
+                                <td><p>“.gitlab-ci: Add moban check”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/85cbb026'>View</a></td>
+                                <td><p>“Add initial tests”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/7845dec4'>View</a></td>
+                                <td><p>“Change the library logic for visiting”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/8067ab45'>View</a></td>
+                                <td><p>“Add pytest with 100% coverage”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/ec3c90c2'>View</a></td>
+                                <td><p>“.coafile: Add initial coafile”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/8fd5a04a'>View</a></td>
+                                <td><p>“setup.py: Add entrypoint for bear discovery”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/fa4bab87'>View</a></td>
+                                <td><p>“PyQuoteSpacingBearTest.py: Add tests for slash”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/8334960e'>View</a></td>
+                                <td><p>“PyPluralNamingBear: Add Bear”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/1f6df970'>View</a></td>
+                                <td><p>“MANIFEST: Add manifest and housekeeping”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/5a6e3a50'>View</a></td>
+                                <td><p>“Py3Walker: Use NodeData for get_quote_content”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/bbff6752'>View</a></td>
+                                <td><p>“Add sphinx docs”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/7c91ad6e'>View</a></td>
+                                <td><p>“Add coantbears docs”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/cbea3e7f'>View</a></td>
+                                <td><p>“Add docs for gitlab pages”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/b2166a24'>View</a></td>
+                                <td><p>“Add bears metadata and refactor dependencies”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/bc7cf18f'>View</a></td>
+                                <td><p>“ASTLoader: Workaround for python”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/7d7d7e4f'>View</a></td>
+                                <td><p>“ASTLoader.py: Add check for empty files”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/074c96ba'>View</a></td>
+                                <td><p>“coantlib: Move all generated files”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/179bb8a8'>View</a></td>
+                                <td><p>“commonutils.py: Extract common utilities”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/3af8d13e'>View</a></td>
+                                <td><p>“.coafile: Add PyDocStyleBear”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/1a348b4e'>View</a></td>
+                                <td><p>“.gitlab-ci.yml: Add git installation”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/ba4adcdb'>View</a></td>
+                                <td><p>“coantlib: Generalise entrypoint”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/72e2bb72'>View</a></td>
+                                <td><p>“tests: Remove hashbangs”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/abc9f3b0'>View</a></td>
+                                <td><p>“Python3.py: Make parser PEP8 compliant”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/bfa10282'>View</a></td>
+                                <td><p>“ASTBear: Remove redundant <code class="highlighter-rouge">lang</code> argument”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/27891c28'>View</a></td>
+                                <td><p>“XMLIndentBear: Add XMLIndentBear”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-antlr</td>
+                                <td><a href='https://gitlab.com/coala/bears/coala-antlr/commit/a8a7f6eb'>View</a></td>
+                                <td><p>“.ci: Add check for XML Upstream grammar”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala</td>
+                                <td><a href='https://github.com/coala/coala/commit/d936d162'>View</a></td>
+                                <td><p>“XML.py: Add language definition for XML”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;community</td>
+                                <td><a href='https://github.com/coala/community/commit/7e5cd645'>View</a></td>
+                                <td><p>“.coafile: Add PyPluralNamingBear”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/bf587786'>View</a></td>
+                                <td><p>“appveyor.yml: Use pip as a module”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/99ad0910'>View</a></td>
+                                <td><p>“test-requirements.txt: Add packaging”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-bears</td>
+                                <td><a href='https://github.com/coala/coala-bears/commit/97e98900'>View</a></td>
+                                <td><p>“GitCommitBear: Refactor issue regexes”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-bears</td>
+                                <td><a href='https://github.com/coala/coala-bears/commit/33cd9e41'>View</a></td>
+                                <td><p>“GitCommitBear: Add BitBucket type issue references”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-bears</td>
+                                <td><a href='https://github.com/coala/coala-bears/commit/985217dc'>View</a></td>
+                                <td><p>“HgCommitBear: Switch to git-url-parse”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">p</td>
+                                <td class="">&nbsp;projects</td>
+                                <td><a href='https://github.com/coala/projects/commit/a8f0e9b0'>View</a></td>
+                                <td><p>“report.md: Make GSoC year dynamic”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-mobans</td>
+                                <td><a href='https://gitlab.com/coala/mobans/commit/76ebb40c'>View</a></td>
+                                <td><p>“appveyor.yml.jj2: Add template for appveyor config”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">g</td>
+                                <td class="">&nbsp;git-url-parse</td>
+                                <td><a href='https://github.com/retr0h/git-url-parse/commit/ab464224'>View</a></td>
+                                <td><p>“conftest.py: Add test for BitBucket style git url”</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">g</td>
+                                <td class="">&nbsp;grammars-v4</td>
+                                <td><a href='https://github.com/antlr/grammars-v4/pull/1205'>View</a></td>
+                                <td><p>“Python3.g4: Add support for newer python features”</p>
+</td>
+                           </tr>
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div class="content card">
+                <div class="card-content">
+                    <h2 id="integrate-antlr-with-coala">Integrate ANTLR with coala</h2>
+
+<p>This project is about integrating ANTLR with coala. coala is a one stop linter,
+which provides unified API to lint several languages, and it also provides an
+API to create our own Analysis over code.
+ANTLR is ANother Tool for Language Recognition, which helps us to create parse
+trees and provides api for traversing those parse trees.</p>
+
+<p>This project aims to combine the capabilities of the two tools which will
+enable coala users to write advanced analysis logic using parse trees and
+vastly improve the capabilities of Native Bears of coala (Native bears do not
+depend on any external linting tools).</p>
+
+<p>As an outcome of this project, coala will be able to support any arbitrary
+language, provided there exists a grammar for it, and thus this project is a
+step towards the future of native bear development with coala.</p>
+
+<p>Library availaible at: <a href="https://gitlab.com/coala/bears/coala-antlr">https://gitlab.com/coala/bears/coala-antlr</a>
+Docs hosted at: <a href="https://virresh.gitlab.io/coala-antlr/">https://virresh.gitlab.io/coala-antlr/</a></p>
+
+<h3 id="work-done">Work Done</h3>
+
+<h5 id="coala-antlr">coala-antlr</h5>
+
+<p>A library for integrating ANTLR with coala was created and as a proof of
+utility, few analysis tools were created for <code class="highlighter-rouge">Python</code> language, and one of them
+was also put to Production for improved maintenance. A bear for analysing <code class="highlighter-rouge">XML</code>
+language is also ready and acts as an example of the capabilities of this library to
+support multiple grammars.</p>
+
+<p><code class="highlighter-rouge">PyQuoteSpacingBear</code> - This bear checks for trailing spaces in all the strings in
+a python source code.</p>
+
+<p><code class="highlighter-rouge">PyPluralNamingBear</code> - This bear enforces variables that have been assigned to a
+list or a dictionary to have a plural name.</p>
+
+<p><code class="highlighter-rouge">XMLIndentBear</code> - This bear will analyse indents in an XML file and suggest
+appropriate fixes for getting tags to indent at same level.</p>
+
+<p>This library is now usable by bear writers for writing native bears for coala
+while leveraging the power of ANTLR.
+(All commits included as diff patches in the tarball)</p>
+
+<h5 id="antlr-v4-grammars">antlr-v4-grammars</h5>
+
+<p>Some issues were identified with the upstream grammars and were reported, along
+with suggested corrections as PR.
+<a href="https://github.com/antlr/grammars-v4/issues/created_by/virresh">Link</a></p>
+
+<h5 id="community">community</h5>
+
+<p>Add <code class="highlighter-rouge">PyPluralNamingBear</code> to repo, for confirming the feasibility and ease of
+use of the library.</p>
+
+<h5 id="coala">coala</h5>
+
+<p>Minor enhancements were made such as adding a language definition for XML,
+which <code class="highlighter-rouge">coala-antlr</code> requires for it’s <code class="highlighter-rouge">XMLIndentBear</code>.</p>
+
+<h5 id="coala-mobans">coala-mobans</h5>
+
+<p>Added a template for standardising appveyor CI configurations across repos.</p>
+
+<h5 id="coala-bears">coala-bears</h5>
+
+<p>Added support for Mercurial via a HgCommitBear.
+Enhanced existing GitCommitBear with improved logging.</p>
+
+<p>All contributions apart from <code class="highlighter-rouge">coala-antlr</code> repo present as diff patches of
+commits.</p>
+
+<h3 id="challenges">Challenges</h3>
+
+<p>Major challenge in the project for me was to come up with a library design
+that’s flexible enough to support all grammars, and yet powerful enough to
+leverage all features provided by a grammar.</p>
+
+<p>I was guided by my mentor Dong-hee and my org admin John through important
+design decisions and they helped me to come up with a flexible design.</p>
+
+<p>The other major challenge was using grammars that are directly from the
+upstream grammars repository. Several errors were identified in the upstream
+repository and we had to find out workarounds for most issues. This is a more
+prominent problem for places where we needed to provide a fix for the linting
+issue identified.</p>
+
+<h3 id="work-to-be-done">Work to be done</h3>
+
+<p>The library is up and ready to roll, although by itself it won’t be much
+useful unless people use it to write bears for coala. So the future work
+on this library would involve having lots of bears written for various grammars</p>
+
+<p>Also enhancements possible in the library would involve a mechanism that
+would help the bear writers to suggest complex fixes easily, although this
+would probably have to wait until <code class="highlighter-rouge">antlr</code> supports tree rewriting or
+workarounds are discovered to deal with source code retrieval from parse tree.</p>
+
+<p>Another possible enhancement in the library would be the feature of on-demand
+grammar download, which essentially means we would be able to make the process
+of adding more languages to <code class="highlighter-rouge">coala-antlr</code> easier, by not having to worry about
+adding parsers and lexers manually when a language is added for the first time.</p>
+
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <script>
+        $('document').ready(function(){
+            var hash_value = document.getElementById('sha256sum_hash_value').textContent.trim();
+            document.getElementById('sha256sum_hash_value').textContent = hash_value.substring(0,7);
+            document.querySelector('.fa-clipboard').addEventListener('click', function(){
+                var new_element = document.createElement('textarea');
+                $('new_element:first').addClass('hash_value_dup');
+                new_element.value = hash_value;
+                new_element.setAttribute('readonly', '');
+                document.body.appendChild(new_element);
+                new_element.select();
+                document.execCommand('copy');
+                document.body.removeChild(new_element);
+                });
+        })
+        </script>
+    </body>
+</html>

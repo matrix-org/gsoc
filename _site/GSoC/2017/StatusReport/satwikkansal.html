@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Satwik Kansal | Project Report </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="/resources/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/coala/coalaCSS/master/coala.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i|Roboto:100,200,300,400,500,600,700,800,900|Ubuntu+Mono|Overpass+Mono|Inconsolata" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body class='report'>
+        <div class="container">
+        <br>
+            <div class="row no-margin">
+                <div class="col m12">
+                    <h4 class="left light">Google Summer of Code 2017 Work Product Submission </h4>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="row no-margin">
+                <div class="col m6">
+                    <div class="card flex1">
+                        <div class="card-content">
+                            <h5 class="light no-margin"><a href="https://coala.io">coala</a></h5>
+                            <h3 class="light">Satwik Kansal</h3>
+                            <p><p>I’m a final year Software Engineering undergrad from Delhi Technological University, New Delhi, India. I was a Google Summer of Code student for coala over the summer of 2017 and primarily worked on the tool <a href="https://github.com/coala/coala-quickstart">coala-quickstart</a>. My project involved developing an information extraction &amp; utilization framework for project files and improving the existing CLI of quickstart.</p>
+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3">
+                    <div class="card flex1">
+                        <div class="card-content">
+                            <div class="center"><h4 class="light no-margin">Project Title</h4></div>
+                            <br>
+                            <div class="center"><a href="https://summerofcode.withgoogle.com/projects/#4853947354316800">Enhance coala-quickstart</a></div>
+                        </div>
+                    </div>
+                    <div class="card flex1">
+                        <div class="card-content">
+                            <div class="center"><h4 class="light no-margin">GSoC Blog</h4></div>
+                            <br>
+                            <div class="center"><a class="blog-link" href="https://satwikkansal.xyz/archives">https://satwikkansal.xyz/archives</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3">
+                    <div class="card flex1">
+                        <div class="card-content links-section">
+                            
+                                <div class="link">
+                                
+                                    <div class="row no-margin ">
+                                        <div class="col m6">GitHub</div>
+                                        <div class="col m6"><a href="https://github.com/satwikkansal">satwikkansal</a></div>
+                                    </div>
+                                
+                                </div>
+                                <div class="divider"></div>
+                            
+                                <div class="link">
+                                
+                                    <div class="row no-margin ">
+                                        <div class="col m6">GitLab</div>
+                                        <div class="col m6"><a href="https://gitlab.com/satwikkansal">satwikkansal</a></div>
+                                    </div>
+                                
+                                </div>
+                                <div class="divider"></div>
+                            
+                                <div class="link">
+                                
+                                    <div class="row no-margin ">
+                                        <div class="col m6">Gitter</div>
+                                        <div class="col m6"><a href="https://gitter.im/satwikkansal">satwikkansal</a></div>
+                                    </div>
+                                
+                                </div>
+                                
+                            
+                            <br>
+                            <div class="row no-margin center">
+                                <div class="col m3"><i class="fa fa-envelope-o"></i></div>
+                                <div class="col m9"><a href="mailto:satwikkansal@gmail.com">satwikkansal@gmail.com</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row no-margin">
+                <div class="col m2">
+                    <div class="card flex1">
+                        <div class="card-content">
+                            <div class="center"><h5 class="light no-margin">Patches Tarball</h5></div>
+                            <br>
+                            <div class="center"><a href="https://rawgit.com/satwikkansal/GSoC-Report/master/patches.tar">Download</a></div>
+                            <br>
+                            <div class="center sha256sum_hash">
+                                <strong>SHA-256</strong>:
+                                <p id="sha256sum_hash_value">
+                                    0296b7a4c12e367b0ef27c02595f93069805c69b6a3d59f3e41e64a105c7f393
+                                </p>
+                                <i class="fa fa-clipboard" aria-hidden="true"><span class="hinttext">Copy Hash value</span></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                        <div class="col m2">
+                            <div class="card flex1">
+                                <div class="card-content">
+                                <div class="center"><h5 class="light no-margin">Bonding</h5></div>
+                                <br>
+                                <div class="center"><a href="https://gitlab.com/coala/GSoC/GSoC-2017/milestones/6">View Milestone</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="col m2">
+                            <div class="card flex1">
+                                <div class="card-content">
+                                <div class="center"><h5 class="light no-margin">Phase 1</h5></div>
+                                <br>
+                                <div class="center"><a href="https://gitlab.com/coala/GSoC/GSoC-2017/milestones/20">View Milestone</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="col m2">
+                            <div class="card flex1">
+                                <div class="card-content">
+                                <div class="center"><h5 class="light no-margin">Phase 2</h5></div>
+                                <br>
+                                <div class="center"><a href="https://gitlab.com/coala/GSoC/GSoC-2017/milestones/21">View Milestone</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="col m2">
+                            <div class="card flex1">
+                                <div class="card-content">
+                                <div class="center"><h5 class="light no-margin">Phase 3</h5></div>
+                                <br>
+                                <div class="center"><a href="https://gitlab.com/coala/GSoC/GSoC-2017/milestones/22">View Milestone</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                <div class="col m2">
+                    <div class="card flex1">
+                        <div class="card-content">
+                        <div class="center"><h5 class="light no-margin">Mentors</h5></div>
+                        <br>
+                        <div class="center"><p><a href="https://github.com/adtac">Adhityaa</a> &amp; <a href="https://github.com/Adrianzatreanu">Zatreanu Adrian-Gabriel</a></p>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+             <div class="row no-margin">
+                <div class="col m12">
+                    <h5 class="left light">Links to commits and repositories I've worked on:</h5>
+                </div>
+                <br>
+            </div>
+            <div class="no-margin">
+                <table class="padding-table">
+                    <thead class="no-border">
+                        <tr class="blue-grey-text text-lighten-2">
+                            <td></td>
+                            <td>Repository</td>
+                            <td>Link to Commit/s</td>
+                            <td>Description</td>
+                        </tr>
+                    </thead>
+                    <tbody class="card activity">
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;cEPs</td>
+                                <td><a href='https://github.com/coala/cEPs/commit/eb4f194fe8b4cdede65061c08f880c2880936332'>View</a></td>
+                                <td><p>cEP 9: Extract and use information</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/de552a2df32aab56821a2fc0577beada15c7c0bf'>View</a></td>
+                                <td><p>CI: Add Travis</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/a33c3b1239543c6acfa4cfac849fb5448be86fdf'>View</a></td>
+                                <td><p>info_extraction: Add Info class</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/7ae36300e5380bbae11918cc873ef0d4c4beff1f'>View</a></td>
+                                <td><p>info_extraction: Add InfoExtractor class</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/f9bd418cd35827a6b8fc7dad7c66f757ca377f78'>View</a></td>
+                                <td><p>Project.py: Remove OS specific doctest</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/e34a334b1084d95606ac4d9e66b145c793843915'>View</a></td>
+                                <td><p>tests/FileGlobs.py: Normalize case for path</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/d25f3caf9ad9cffafb8c0b5a8a33ed6c1f4fe874'>View</a></td>
+                                <td><p>CI: Add appveyor</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/b82cd81f0b26379a287c112a596863c0e5d1e26f'>View</a></td>
+                                <td><p>Info.py: Add extractor field</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/478aa440ef59799747184a21c062f0e43c4faaae'>View</a></td>
+                                <td><p>Info.py: Validate value type</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/e43bcd55e28f89b882869c2db9cb8cde5e077a1b'>View</a></td>
+                                <td><p>InfoExtractor: Add file name field to parse method</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/060d3ff72c7f9a95118c4d38198a1b539cc38121'>View</a></td>
+                                <td><p>InfoExtractor: Validate supported files</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/5ffd9b8f24059f2630b6a65d08e88605e46e50c0'>View</a></td>
+                                <td><p>info_extraction: Add Info classes</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/299c5e23917790da3c84911c0f22ca11da4b3603'>View</a></td>
+                                <td><p>info_extractors: Add package.json extractor</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/d23329a4737706721ff728c7027fb493487b4a36'>View</a></td>
+                                <td><p>info_extractors: Extract info from Gemfile</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/b9e9746ff13fd51adaac761a1b3a0eee2ae37238'>View</a></td>
+                                <td><p>InfoExtractor: Validate information kind</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/a1f9dc0e75b7cd2ec51752fa57940bb27b482ae8'>View</a></td>
+                                <td><p>info_extraction: Add Info classes</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/37573daae1377f74347112a6f3efd1a2128f44a4'>View</a></td>
+                                <td><p>info_extractors: Add editorconfig extractor</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/7a3a8d3f24d75fe4c196d03329d1ca6111e85a81'>View</a></td>
+                                <td><p>Info.py: Validate value with type signature</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/7ac90f0812a1c338defb5265e33085fce36c2e7a'>View</a></td>
+                                <td><p>.coafile: Add test files to default section</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/1d1690149a4a66625580088de4520ca4d9ce02e2'>View</a></td>
+                                <td><p>InfoExtractor: Add spec_references field</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/a3481136ee62c0728d40f647ef418520185e05b5'>View</a></td>
+                                <td><p>Info: Add example_values field.</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;cEPs</td>
+                                <td><a href='https://github.com/coala/cEPs/commit/8d3f13e10b39eaba02d2f392606e2521ed2002a4'>View</a></td>
+                                <td><p>cEP-0014: Generate relevant coafile sections</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;cEPs</td>
+                                <td><a href='https://github.com/coala/cEPs/commit/2d8274ca94d1140fc436d5123e3245bdf3ea547a'>View</a></td>
+                                <td><p>cEP-009: Change status</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/396d1e0c1d9065e63daa1107514294d07d0c2715'>View</a></td>
+                                <td><p>Inforamtion: Add linter Info classes</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/6cdfb37aeb3684fc6e6d757a3b6d0ff5ec8b4c57'>View</a></td>
+                                <td><p>requirements.txt: Add pyjsparser</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/ddf0779e3645baaab6ab199acb5f2a1320590dc5'>View</a></td>
+                                <td><p>info_extractor/Utilities: Add search functions</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/b40f50c1aef2a5a4027e35da1b970870570ae7e0'>View</a></td>
+                                <td><p>info_extractors: Extract info from Gruntfile.js</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/3c306dbc559c251174577e2ec7ad9e6cc953d7bf'>View</a></td>
+                                <td><p>TestUtilities: Fix file generation</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/cdc38eb20685ec5d4e6116b10c5ff35f23dd8383'>View</a></td>
+                                <td><p>InfoCollector: Collect info from project files</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/1950044ed1e9cbff759f15c79c1d84b67f2ed07a'>View</a></td>
+                                <td><p>InfoScope: Implement InfoScope class</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/54629969935a522f8dadcafee2443d02e2ac420f'>View</a></td>
+                                <td><p>InfoMapping: Add mappings for editorconfig</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/f199a541816476b33624f078ae646f67c42d15bf'>View</a></td>
+                                <td><p>Settings: Autofill setting values</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/82dfddfe120e3d4f5df43cf5f15c35d280856a18'>View</a></td>
+                                <td><p>Bears: Suggest bears using dependecy info</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/88f6996d69042ee79eefd804c7ca437d54176439'>View</a></td>
+                                <td><p>Bears.py: Add bears based on capabilties</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/02369a9c5e387f480564e765a917cc56815c7a52'>View</a></td>
+                                <td><p>Bears.py: Ask users for capabilities</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala</td>
+                                <td><a href='https://github.com/coala/coala/commit/ed283f77ccf8fbeb5f41ea23092c5cd221b73a34'>View</a></td>
+                                <td><p>SectionFilling: Allow custom fill_section method</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/3f197eb148150a8eb5004eab6a7bb0c99d2d9a80'>View</a></td>
+                                <td><p>requirements.txt: Upgrade coalib version</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/4ceaf2fd32be070b2598d8a39247a257354e8590'>View</a></td>
+                                <td><p>coala_quickstart: Fix errors due to logging</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/cd7a7dd2f8d691b0308d689e2c3ccbd47d3b5d20'>View</a></td>
+                                <td><p>SettingsFilling: Validate settings value type</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/485b28b847689e18277ad928dea90bac4e5ea186'>View</a></td>
+                                <td><p>SettingsFilling: Flexible boolean input</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/4802812fc16364b394889ad9df05f2b83a62d1e1'>View</a></td>
+                                <td><p>SettingsFilling: Autofill language setting</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/c22b630c76d71752f8016ffbd0a0f96002dcfc1b'>View</a></td>
+                                <td><p>Bears: Silence .coafile not found warnings</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala</td>
+                                <td><a href='https://github.com/coala/coala/commit/9de6241bc8cebcf32bffe773c6ebbb5018bfad6b'>View</a></td>
+                                <td><p>ConfigurationGathering: Silence warnings</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/4520477dd27624b8ce7a589d452bf893c99941d8'>View</a></td>
+                                <td><p>requirement.txt: Pin lxml version</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-utils</td>
+                                <td><a href='https://gitlab.com/coala/coala-utils/commit/58b55c352793c5cfd86e8c04026a4f6a138e68c1'>View</a></td>
+                                <td><p>FilePathCompleter: Implement autocompletion</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/462beb387b9884853d23d12f3ea79f122846a0c2'>View</a></td>
+                                <td><p>requirements.txt: Upgrade coala-utils version</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/eb5053f48695e36099dd87924e428657b258cc36'>View</a></td>
+                                <td><p>CLI: Complete file paths with Tab</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/a253a54a4e536dc036e6fbd57bfc57c35a0d23bf'>View</a></td>
+                                <td><p>EditorconfigExtractor: Update scope field</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/2a1aeed2c8e074ebcd72b17bb805fc6d9d1ffbde'>View</a></td>
+                                <td><p>InfoMapping: Check for section files</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/7d357ecc39059630309a163ddef514994e377ca6'>View</a></td>
+                                <td><p>Bears.py: Suggest bears based on Gruntfile.js</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-utils</td>
+                                <td><a href='https://gitlab.com/coala/coala-utils/commit/48bf6e4e5201e6274fa882ff025f7f440a540a48'>View</a></td>
+                                <td><p>FilePathcompleter: Use pyreadline for windows</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-utils</td>
+                                <td><a href='https://gitlab.com/coala/coala-utils/commit/d6d4e93cbdba2d745f5f1ba1ca745f4523947314'>View</a></td>
+                                <td><p>setup.py: Add missing params</p>
+</td>
+                           </tr>
+                        
+                        
+                        
+                           <tr>
+                                <td class="fl">c</td>
+                                <td class="">&nbsp;coala-quickstart</td>
+                                <td><a href='https://github.com/coala/coala-quickstart/commit/584888c045040ff0c9f56342cdc337c39fca19e8'>View</a></td>
+                                <td><p>setup.py: Release 0.4</p>
+</td>
+                           </tr>
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div class="content card">
+                <div class="card-content">
+                    <h3 id="enhance-coala-quickstart">Enhance coala-quickstart</h3>
+
+<h4 id="work-done">Work Done</h4>
+
+<p><a href="https://coala.io">coala</a> is a modular and language-agnostic tool for performing static code analysis. <a href="https://github.com/coala/coala-quickstart">coala-quickstart</a> is a tool designed to do all the boilerplate work for coala and help users to quickly get started with coala.</p>
+
+<p><strong>Major tasks of the project:</strong></p>
+
+<ul>
+  <li>Developing a framework for extracting Infromation of interest from different kinds of project files.</li>
+  <li>Extracting useful information from the following files:
+    <ul>
+      <li><code class="highlighter-rouge">Gruntfile.js</code></li>
+      <li><code class="highlighter-rouge">.editorconfig</code></li>
+      <li><code class="highlighter-rouge">package.json</code></li>
+      <li><code class="highlighter-rouge">Gemfile</code></li>
+    </ul>
+
+    <p>More information about each of the files can be found <a href="https://gitlab.com/coala/GSoC/GSoC-2017/issues/21">here</a></p>
+  </li>
+  <li>Utilizing the information extracted from project files to
+    <ul>
+      <li>Suggest static code analysis routines to users</li>
+      <li>Automatically identify values required for settings in <code class="highlighter-rouge">.coafile</code> (coala’s configuration file)</li>
+      <li>Detect inconsistencies among files</li>
+    </ul>
+  </li>
+  <li>Recommending and Filtering static code analysis routines to users based on:
+    <ul>
+      <li><a href="http://api.coala.io/en/latest/Developers/Writing_Native_Bears.html#can-detect-and-can-fix">Capabilities</a> selected by the users.</li>
+      <li>A curated list of static code analysis routines.</li>
+      <li>Insights about static code analysis tools already used by the project.</li>
+    </ul>
+  </li>
+  <li>Improving the existing CLI by
+    <ul>
+      <li>Adding auto-complete feature for project files</li>
+      <li>Allowing flexibility in user input (Example: “yeah!!”, “obviously”, etc will be automatically mapped to <code class="highlighter-rouge">True</code> in boolean-type inputs)</li>
+      <li>Validating user inputs</li>
+    </ul>
+  </li>
+  <li>Adding Continuous Integration support for Windows.</li>
+</ul>
+
+<p>Check out the lateset <a href="https://pypi.python.org/pypi/coala-quickstart/0.4.0">release</a> of coala-quickstart to see all of the above discussed features in action!</p>
+
+<h4 id="challenges">Challenges</h4>
+
+<p>Overall, it was a wonderful and satisfying experience.</p>
+
+<ul>
+  <li>The first challenge for me was to come up with a feasible and promising project on my own. Initially, I was skeptical about the utility and the usefulness of my project. But in the end, everything turned out pretty good.</li>
+  <li>I was also doing an internship, so the biggest challenge for me was to manage my time accordingly. There were some moments, when it felt like it’s gonna be difficult to complete my tasks and deliver a useful solution, but the weekly meetings with <a href="https://github.com/adtac">Adhityaa</a>(which lasted somewhere between 15 minutes to 2+ hrs) really helped me plan everything much ahead of time. Good planning and initial discussion made the code review and merge process much easier for my mentors.</li>
+  <li>Development wise, the challanges were to design and document my approach in the cEPs (implementation was very smooth after that), and to make all the CIs work together at once :P (Thanks to <a href="https://github.com/jayvdb">John</a> for helping me in some of the issues related to CI)</li>
+</ul>
+
+<h4 id="work-to-be-done">Work to be done</h4>
+
+<p>There’s still a long way to go for coala-quickstart and the most important thing to watch out for is the <a href="https://github.com/coala/cEPs/blob/master/cEP-0005.md">aspects</a> project which will simplify the configurations for the users to a lot extent. So, once the aspects project is completely ready, the first step should be to integrate aspects into quickstart.</p>
+
+<p>Apart from that, there’s also scope to extract useful information from meta files like <code class="highlighter-rouge">Gulpfile.js</code>, <code class="highlighter-rouge">requirements.txt</code>, etc which were not covered in my project. Finally, some minor features and improvements are also discussed in these <a href="https://github.com/coala/coala-quickstart/issues/created_by/satwikkansal">issues</a>.</p>
+
+<h4 id="thanks-giving">Thanks giving!</h4>
+
+<p>Thanks a lot to all my fellow coalians for making my so far wonderful journey with coala. It’s been around 9 months since I started contributing to coala and I’ve learned a lot till now. A very very special thanks to <a href="https://github.com/adtac">Adhityaa</a> for helping me constantly throughout the summer despite of his own internship. He was quick in doing critical code reviews and absolutely a fun mentor to work with (not to mention the interesting conversations between <a href="https://github.com/Adrianzatreanu">Adrian</a> and him during the initial weekly meetings).</p>
+
+<p>I’ll definitely keep on contributing to coala-quickstart and coala in general after my GSoC.</p>
+
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <script>
+        $('document').ready(function(){
+            var hash_value = document.getElementById('sha256sum_hash_value').textContent.trim();
+            document.getElementById('sha256sum_hash_value').textContent = hash_value.substring(0,7);
+            document.querySelector('.fa-clipboard').addEventListener('click', function(){
+                var new_element = document.createElement('textarea');
+                $('new_element:first').addClass('hash_value_dup');
+                new_element.value = hash_value;
+                new_element.setAttribute('readonly', '');
+                document.body.appendChild(new_element);
+                new_element.select();
+                document.execCommand('copy');
+                document.body.removeChild(new_element);
+                });
+        })
+        </script>
+    </body>
+</html>
