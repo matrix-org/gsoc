@@ -90,7 +90,7 @@
     app.directive('projects',  ['$http',  '$timeout', '$location', 'Languages', function ($http, $timeout, $location, Languages) {
         return {
             restrict: 'E',
-            templateUrl: '/partials/tabs/projects.html',
+            templateUrl: 'partials/tabs/projects.html',
             controller: function ($scope, $location, Languages) {
                 self = this
 
@@ -289,7 +289,7 @@
     app.directive('faq',[ '$http', '$templateCache', function ($http, $templateCache, Languages) {
         return {
             restrict: 'E',
-            templateUrl: '/partials/tabs/faq.html',
+            templateUrl: 'partials/tabs/faq.html',
             controller: function ($scope, Languages) {
                 $scope.lang = Languages.getData();
 
@@ -380,7 +380,7 @@
     app.directive('mentors', ['$http', function ($http) {
         return {
             restrict: 'E',
-            templateUrl: '/partials/tabs/mentors.html',
+            templateUrl: 'partials/tabs/mentors.html',
             controller: function ($scope, $rootScope) {
                 self = this
                 self.mentorsList = {}
