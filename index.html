@@ -23,15 +23,14 @@
   <script src="resources/js/analytics.js"></script>
   <link rel="stylesheet" href="resources/vendors/materialize/css/materialize.css">
   <link rel="stylesheet" href="resources/css/style.css">
-  <link rel="stylesheet" href="https://rawgit.com/coala/coalaCSS/master/coala.css">
+  <link rel="stylesheet" href="resources/css/coala.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i|Roboto:100,200,300,400,500,600,700,800,900|Ubuntu+Mono|Overpass+Mono|Inconsolata" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 
 <body>
-  <a href="{{ site.githuburl }}" class="for-non-mobile"> <img class="ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"> </a>
   <main ng-app="coala">
     <div ng-controller="TabController as tc">
       <div>
@@ -56,11 +55,7 @@
   </div>
   </main>
   <footer class="page-footer footer-light transparent">
-    <div class="row center for-mobile"> <a class="github-button" href="{{ site.githuburl }}" data-size="large">Fork</a> </div>
-    <div class="row">
-      <div class="col m6 offset-m3 center"> <img class="footer-logo" src="https://api.coala.io/en/latest/_static/images/coala_logo.svg" alt="coala"> <span class="footer-title">{{ site.organization }}</span> </div>
-    </div>
-    <div class="footer-small-title center"> <span class="blue-grey-text text-lighten-3 uppercase"> Licensed under {{ site.license }}</span> </div>
+    <div class="footer-small-title center"> <span class="blue-grey-text text-lighten-3 uppercase">Based on <a href="https://github.com/coala/projects">Coala Projects</a> Licensed under {{ site.license }}</span> </div>
   </footer>
 </body>
 

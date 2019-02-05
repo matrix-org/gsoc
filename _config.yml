@@ -2,14 +2,11 @@ title: matrix.org GSOC
 license: GNU AFFERO GENERAL PUBLIC LICENSE V3.0
 organization: matrix.org
 description: An open network for secure, decentralized communication.
-baseurl: "/GSoC"  # the subpath of your site, e.g. /blog
+baseurl: "/gsoc"  # the subpath of your site, e.g. /blog
 url: "http://matrix-org.github.io"  # the base hostname & protocol for your site
 githuburl: "https://github.com/matrix-org/gsoc"
 
 gsoc_switch_month: 6
-
-plugins:
-  - jekyll-netlify
 
 # Build settings
 exclude: [vendor, _projects/example.md]
@@ -21,11 +18,3 @@ collections:
     output: true
   faq:
     output: true
-
-defaults:
-  - scope:
-      path: ''
-      type: reports
-    values:
-      layout: report
-      permalink: GSoC/:year/StatusReport/:title
