@@ -3,6 +3,7 @@ name: "Fun features for Riot-Web, Riot-iOS and Riot-Android"
 desc: "Add new features to Riot-Web, Riot-iOS and Riot-Android"
 difficulty: "Medium"
 issues:
+ - https://github.com/matrix-org/matrix-react-sdk/pull/596
 mentors:
  - dbkr
  - giomfo
