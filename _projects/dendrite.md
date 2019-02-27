@@ -6,7 +6,7 @@ issues:
  - https://github.com/matrix-org/dendrite/issues/671
 mentors:
  - erikjohnston
- - richvdh
+ - babolivier
 initiatives:
  - GSoC
 tags:
