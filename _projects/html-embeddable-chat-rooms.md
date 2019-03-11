@@ -19,10 +19,14 @@ Matrix could be used as a platform where users can arrive at a random website, s
 
 #### Expected Results
 
-Extending https://github.com/matrix-org/matrix-react-sdk to provide reusable web compoents that a website author can download, embed and skin into their website to make comments work with minimal work to integrate. Could require user to log in with a matrix account to post (so your Matrix account would let you post comments on any website which used this), or support anonymous guest access. The blog author would be able to add their own comments and moderate comments. VoIP and Video calling support would be an added bonus. Other extensions would be plugins for blogging platforms so users of WordPress or similar can use the software on their blogs by just installing the plugin.
+Create a reusable web component that a website author can download, style/theme, and embed into their website to make comments work with minimal integration difficulty. Could require user to log in with a matrix account to post (so your Matrix account would let you post comments on any website which used this), or support anonymous guest access.
+
+The blog author would be able to add their own comments and moderate comments. VoIP and Video calling support would be an added bonus. Other extensions would be plugins for blogging platforms so users of WordPress or similar can use the software on their blogs by just installing the plugin.
 
 There is some related prior art at https://live.hello-matrix.net/ and https://github.com/Half-Shot/matrix-gsoc-bark but neither of these are specifically for embedded rooms.
 
+There are different ways to complete this task, but the most natural would be to extend https://github.com/matrix-org/matrix-react-sdk to be able to create an embeddable component. It is also possible to use https://github.com/matrix-org/matrix-js-sdk for a lower-level implementation.
+
 #### Knowledge pre-req
 
-HTML, Javascript
+HTML, Javascript, React, Web dev

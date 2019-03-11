@@ -1,6 +1,6 @@
 ---
-name: "Fun features for Riot-Web, Riot-iOS and Riot-Android"
-desc: "Add new features to Riot-Web, Riot-iOS and Riot-Android"
+name: "Fun features for Riot-Web and Riot-iOS"
+desc: "Add new features to Riot-Web and Riot-iOS"
 difficulty: "Medium"
 issues:
  - https://github.com/matrix-org/matrix-react-sdk/pull/596
@@ -31,4 +31,4 @@ Fun new features for mobile clients
 
 #### Knowledge pre-req
 
-iOS, Android
+iOS, Web dev (JavaScript and React)

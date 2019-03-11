@@ -17,8 +17,6 @@ Google Summer Of Code Matrix Ideas, 2018 Edition!!
   - [Alternative Push Notification Transport](#alternative-push-notification-transport)
   - [Matrix Visualisations](#matrix-visualisations)
   - [Adding end-to-end encryption to more clients](#adding-end-to-end-encryption-to-more-clients)
-  - [Fun features for Riot/Web, Riot/iOS and Riot/Android](#fun-features-for-riotweb-riotios-and-riotandroid)
-  - [HTML Embeddable Matrix Chat Rooms](#html-embeddable-matrix-chat-rooms)
   - [Alternative Efficient Client-Server Transports and Encodings](#alternative-efficient-client-server-transports-and-encodings)
   - [Extending Native Matrix Desktop Clients](#extending-native-matrix-desktop-clients)
   - [Finishing matrix-ircd](#finishing-matrix-ircd)
@@ -266,43 +264,6 @@ This would be a great way to improve your cryptography skills and learn about on
 **Knowledge pre-req**: Cryptography. The language for the platform you are targetting.
 
 **Potential mentor**: Hubert Chathi ([github](https://github.com/uhoreg)), Matthew Hodgson ([github](https://github.com/ara4n))
-
-
-### Fun features for Riot/Web, Riot/iOS and Riot/Android
-
-Riot is a flagship Matrix client; an Apache-licensed set of communication apps for Web (React), iOS & Android.  Some nice refinements that would be good GSoC projects include:
-
- * Ability to share maps of locations!  We have a PR from the community for Riot/Web (https://github.com/matrix-org/matrix-react-sdk/pull/596) - adding to mobile would be cool too!
- * High quality push-to-talk support.
- * Adding custom emojis to the message composer and timeline on all platforms!
- * Support for using multiple accounts simultaneously.
- * Quick actions on iOS for replying to notifications.
- * Rich-text Editor!  Riot/Web has a Rich-text Editor thanks to GSoC 2016 - why not add to the mobile platforms?
- * Sending and displaying mathematics
-
-**Difficulty**: Medium (on average)
-
-**Knowledge pre-req**: iOS, Android.
-
-**Potential mentors**: David Baker ([github](https://github.com/dbkr)), Guillaume Foret ([github](https://github.com/giomfo)), Emmanuel Rohee ([github](https://github.com/manuroe))
-
-
-### HTML Embeddable Matrix Chat Rooms
-
-Blogs and articles that allow users to engage with the author and comment on the content are standard in today's web and hugely popular. The implementations of these are largely from the authors of the blog or often completely proprietary in the case of newspaper or magzine articles. If I comment on a article and start discussing it with someone else, I now have to keep going back to that article to continue the discussion.
-
-Matrix could be used as a platform where users can arrive at a random website, sign in with their Matrix ID, comment on a blog post or article and then continue that discussion through a standard Matrix client.
-
-**Expected Results**: Extending https://github.com/matrix-org/matrix-react-sdk to provide reusable web compoents that a website author can download, embed and skin into their website to make comments work with minimal work to integrate. Could require user to log in with a matrix account to post (so your Matrix account would let you post comments on any website which used this), or support anonymous guest access. The blog author would be able to add their own comments and moderate comments. VoIP and Video calling support would be an added bonus. Other extensions would be plugins for blogging platforms so users of WordPress or similar can use the software on their blogs by just installing the plugin.
-
-There is some related prior art at https://live.hello-matrix.net/ and https://github.com/Half-Shot/matrix-gsoc-bark but neither of these are specifically for embedded rooms.
-
-**Difficulty**: Easy/Moderate
-
-**Knowledge pre-req**: HTML, Javascript
-
-**Potential mentors**: David Baker ([github](https://github.com/dbkr)), Erik Johnston ([github](https://github.com/erikjohnston))
-
 
 ### Alternative Efficient Client-Server Transports and Encodings
 
