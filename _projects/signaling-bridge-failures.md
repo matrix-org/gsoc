@@ -3,7 +3,7 @@ name: "Signaling bridge failures"
 desc: "Errors from foreign networks should be properly handled in Matrix"
 difficulty: "Medium"
 issues: 
-mentors: 
+mentors: "Half-Shot"
 initiatives:
  - GSoC
 tags:
