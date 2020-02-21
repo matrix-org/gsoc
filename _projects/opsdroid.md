@@ -16,7 +16,7 @@ tags:
  - Python
  - asyncio
 collaborating_projects:
-  - [opsdroid](https://opsdroid.dev/)
+ - opsdroid
 ---
 
 #### Description
