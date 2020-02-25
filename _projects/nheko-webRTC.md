@@ -14,6 +14,7 @@ issues:
 mentors:
 # First person in contact; mentors may change before project starts.
  - Nico (@deepbluev7:neko.dev)
+ - red_sky (@red_sky:ocean.joedonofry.com)
 initiatives:
  - GSOC
 tags:
