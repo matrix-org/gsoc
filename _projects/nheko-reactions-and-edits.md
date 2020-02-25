@@ -19,15 +19,15 @@ tags:
  - C++
  - GUI
 collaborating_projects:
- - Nheko(-Reborn)
+ - [Nheko](https://github.com/Nheko-Reborn/nheko/)
 ---
 
 #### Description
 
-Nheko is a native Matrix client written in C++ using the Qt toolkit using a mix of Qt Widgets and Qml. It uses the mtxclient Matrix library as in the backend, which is based on
-Boost.Asio and Boost.Beast. Nheko does support E2EE and other advanced matrix features. Riot and some other clients recently added reactions and edits, which are cool features based
-on [MSC1849](https://github.com/matrix-org/matrix-doc/pull/1849). Both of those would be nice to have in Nheko and it would also solve the issues of not seeing some events at all
-(reactions) or being spammed with overly long messages, that are almost an exact repetition of the one before it (edits).
+Nheko is a native Matrix client written in C++ using the Qt toolkit using a mix of Qt Widgets and Qml. It uses the [mtxclient](https://github.com/Nheko-Reborn/mtxclient) Matrix
+library as in the backend, which is based on Boost.Asio and Boost.Beast. Nheko does support E2EE and other advanced matrix features. Riot and some other clients recently added
+reactions and edits, which are cool features based on [MSC1849](https://github.com/matrix-org/matrix-doc/pull/1849). Both of those would be nice to have in Nheko and it would also
+solve the issues of not seeing some events at all (reactions) or being spammed with overly long messages, that are almost an exact repetition of the one before it (edits).
 
 #### Milestones
 
@@ -42,7 +42,7 @@ on [MSC1849](https://github.com/matrix-org/matrix-doc/pull/1849). Both of those 
 
 ##### GSOC CODING STARTS
 
-* Implement reaction events in for sending and receiving them. Don't forget to add tests!
+* Implement reaction events in mtxclient for sending and receiving them. Don't forget to add tests!
 * Implement a way to display them in the timeline (adapt the message delegates, probably via a Qml repeater).
 * Extend the timeline model to include reactions.
 * It should now be possible to see reactions from other clients in Nheko.

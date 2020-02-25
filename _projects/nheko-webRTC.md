@@ -21,14 +21,14 @@ tags:
  - C++
  - GUI
 collaborating_projects:
- - Nheko(-Reborn)
+ - [Nheko](https://github.com/Nheko-Reborn/nheko/)
 ---
 
 #### Description
 
-Nheko is a native Matrix client written in C++ using the Qt toolkit using a mix of Qt Widgets and Qml. It uses the mtxclient Matrix library as in the backend, which is based on
-Boost.Asio and Boost.Beast. Nheko does support E2EE and other advanced matrix features. One of the big features still missing is support for Voip/WebRTC to do Video/Voice calls. As
-far as I'm aware, there is no native desktop client, that supports this, yet.
+Nheko is a native Matrix client written in C++ using the Qt toolkit using a mix of Qt Widgets and Qml. It uses the [mtxclient](https://github.com/Nheko-Reborn/mtxclient) Matrix
+library as in the backend, which is based on Boost.Asio and Boost.Beast. Nheko does support E2EE and other advanced matrix features. One of the big features still missing is support
+for Voip/WebRTC to do Video/Voice calls. As far as I'm aware, there is no native desktop client, that supports this, yet.
 
 As a moonshot of a proposal, it would be cool to add such capabilities to Nheko. This is a complicated project, so limiting what actually gets implemented is reasonable. For example
 it would be totally fine to only implement only Voice calls, only implement accepting calls from more full featured clients like Riot/Web or only implement support for it on one of

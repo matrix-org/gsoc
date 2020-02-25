@@ -19,13 +19,13 @@ tags:
  - C++
  - GUI
 collaborating_projects:
- - Nheko(-Reborn)
+ - [Nheko](https://github.com/Nheko-Reborn/nheko/)
 ---
 
 #### Description
 
-Nheko is a native Matrix client written in C++ using the Qt toolkit using a mix of Qt Widgets and Qml. It uses the mtxclient Matrix library as in the backend, which is based on
-Boost.Asio and Boost.Beast. Nheko does support E2EE and other advanced matrix features.
+Nheko is a native Matrix client written in C++ using the Qt toolkit using a mix of Qt Widgets and Qml. It uses the [mtxclient](https://github.com/Nheko-Reborn/mtxclient) Matrix
+library as in the backend, which is based on Boost.Asio and Boost.Beast. Nheko does support E2EE and other advanced matrix features.
 
 Rooms in Matrix are distributed over multiple servers. To handle such a heterogenous server infrastructure, rooms have a version. This specifies how a server should handle certain
 things regarding state resolution, default values and more. From time to time it may be necessary to upgrade a room to fix issues. This means, that the old room gets "thombstoned"
