@@ -1,24 +1,19 @@
 ---
 name: WebRTC support for Nheko
 desc: Add WebRTC based audio and/or video chat suport to Nheko.
-# add a short one line description of your project
 requirements:
-# Student requirements:
  - C++
  - C
  - Qt, mainly Qml
 difficulty: high
 issues:
-# Related issues (if any)  to this project.
  - https://github.com/Nheko-Reborn/nheko/issues/109
 mentors:
-# First person in contact; mentors may change before project starts.
  - Nico (@deepbluev7:neko.dev)
  - red_sky (@red_sky:ocean.joedonofry.com)
 initiatives:
  - GSOC
 tags:
-# Different technologies needed
  - C++
  - GUI
 collaborating_projects:

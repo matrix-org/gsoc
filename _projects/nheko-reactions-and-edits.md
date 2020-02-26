@@ -1,22 +1,17 @@
 ---
 name: reactions and edits for Nheko
 desc: Add support for reaction to and editing messages via Nheko.
-# add a short one line description of your project
 requirements:
-# Student requirements:
  - C++, some understanding of lambdas and C++17's std::variant will be beneficial
  - Qt, mainly Qml
 difficulty: medium
 issues:
-# Related issues (if any)  to this project.
 mentors:
-# First person in contact; mentors may change before project starts.
  - Nico (@deepbluev7:neko.dev)
  - red_sky (@red_sky:ocean.joedonofry.com)
 initiatives:
  - GSOC
 tags:
-# Different technologies needed
  - C++
  - GUI
 collaborating_projects:

@@ -1,22 +1,17 @@
 ---
 name: Room Upgrade Support for Nheko
 desc: Implement a visually pleasing way to handle upgraded rooms and upgrade rooms in Nheko.
-# add a short one line description of your project
 requirements:
-# Student requirements:
  - C++, some understanding of lambdas and C++17's std::variant will be beneficial
  - Qt, mainly Qml and Models
 difficulty: easy
 issues:
-# Related issues (if any)  to this project.
 mentors:
-# First person in contact; mentors may change before project starts.
  - Nico (@deepbluev7:neko.dev)
  - red_sky (@red_sky:ocean.joedonofry.com)
 initiatives:
  - GSOC
 tags:
-# Different technologies needed
  - C++
  - GUI
 collaborating_projects:
