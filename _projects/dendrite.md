@@ -14,7 +14,7 @@ tags:
  - Federation
 ---
 
-[Dendrite](https://github.com/matrix-org/dendrite) is a work in progress matrix homeserver written in Go. Being a large project there are many areas of the homeserver APIs that a GSoC project could work on, there is a [project board](https://github.com/matrix-org/dendrite/projects/2) that tracks the current implementation status of the various APIs. A good GSOC proposal would use this and discussion with mentors and the community to find an appropriate and realistic subset of these APIs to work on during the project.
+[Dendrite](https://github.com/matrix-org/dendrite) is a work in progress matrix homeserver written in Go. Being a large project there are many areas of the homeserver APIs that a GSoC project could work on, there is a [project board](https://github.com/matrix-org/dendrite/projects/2) that tracks the current implementation status of the various APIs. A good GSoC proposal would use this and discussion with mentors and the community to find an appropriate and realistic subset of these APIs to work on during the project.
 
 #### Expected Results
 
