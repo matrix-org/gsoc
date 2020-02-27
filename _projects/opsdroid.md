@@ -11,7 +11,7 @@ mentors:
  - SolarDrew
  - jacobtomlinson 
 initiatives:
- - GSOC
+ - GSoC
 tags:
  - Python
  - asyncio

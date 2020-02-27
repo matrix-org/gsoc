@@ -111,7 +111,7 @@ Remember that you can also use these as inspiration and suggest your own project
 project there are many areas of the homeserver APIs that a GSoC project could
 work on, there is a
 [spreadsheet](https://docs.google.com/spreadsheets/d/1tkMNpIpPjvuDJWjPFbw_xzNzOHBA-Hp50Rkpcr43xTw)
-that tracks the current implementation status of the various APIs. A good GSOC
+that tracks the current implementation status of the various APIs. A good GSoC
 proposal would use this and discussion with mentors and the community to find an
 appropriate and realistic subset of these APIs to work on during the project.
 
@@ -167,7 +167,7 @@ working on bridges is
 3. Develop a new bridge for the service of your choice. Some suggestions of desired bridges from the community can be found [here](https://github.com/turt2live/matrix-wishlist/issues?q=is%3Aissue+is%3Aopen+label%3Abridge)
 
 
-Bridges are relatively easy and fun to write, and we would *love* for GSOCers to get involved in writing new bridges and polishing the existing ones.
+Bridges are relatively easy and fun to write, and we would *love* for GSoCers to get involved in writing new bridges and polishing the existing ones.
 
 By default our preferred language for writing bridges is in Node.js (ES6), so we can build on top of the https://github.com/matrix-org/matrix-appservice-bridge library which provides a bunch of useful infrastructure and boilerplate.  If there already exists a project in another language or if the remote network lacks good Node library support we consider other languages though.
 

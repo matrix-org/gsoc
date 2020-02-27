@@ -14,12 +14,11 @@ mentors:
 # First person in contact; mentors may change before project starts.
  - Cadair
 initiatives:
- - GSOC
+ - GSoC
 tags:
 # Different technologies needed
  - python
  - GUI
-collaborating_projects:
 ---
 This is an awesome project idea.
 
