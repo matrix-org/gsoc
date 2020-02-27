@@ -54,7 +54,7 @@ In Matrix, a user account belongs to a homeserver and looks like this: *@localpa
 
 In the Matrix network, anyone can run a homeserver. Anyone can also run a client, and you can connect to any homeserver from any client.
 
-A client typically represents a human using a web application or mobile app. Clients use the ["Client-to-Server" (C-S) API](http://matrix.org/docs/spec/r0.0.1/client_server.html) to communicate with their homeserver, which stores their profile data and their record of the conversations in which they participate.
+A client typically represents a human using a web application or mobile app. Clients use the ["Client-to-Server" (C-S) API](https://matrix.org/docs/spec/client_server/latest) to communicate with their homeserver, which stores their profile data and their record of the conversations in which they participate.
 
 A "homeserver" is a server where conversation history and user accounts are stored, and provides C-S APIs and has the ability to federate with other HSes to replicate conversation history across all the servers which participate in a given room via the [Federation API](http://matrix.org/docs/spec/r0.0.1/server_server.html). It is typically responsible for multiple clients. "Federation" is the term used to describe the sharing of data between two or more homeservers.
 
