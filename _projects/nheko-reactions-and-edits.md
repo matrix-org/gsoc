@@ -15,7 +15,7 @@ tags:
  - C++
  - GUI
 collaborating_projects:
- - [Nheko](https://github.com/Nheko-Reborn/nheko/)
+ - Nheko
 ---
 
 #### Description
