@@ -7,8 +7,8 @@ requirements:
 difficulty: medium
 issues:
 mentors:
- - Nico (@deepbluev7:neko.dev)
- - red_sky (@red_sky:ocean.joedonofry.com)
+ - deepbluev7
+ - redsky17
 initiatives:
  - GSOC
 tags:
@@ -24,6 +24,12 @@ Nheko is a native Matrix client written in C++ using the Qt toolkit using a mix 
 library as in the backend, which is based on Boost.Asio and Boost.Beast. Nheko does support E2EE and other advanced matrix features. Riot and some other clients recently added
 reactions and edits, which are cool features based on [MSC1849](https://github.com/matrix-org/matrix-doc/pull/1849). Both of those would be nice to have in Nheko and it would also
 solve the issues of not seeing some events at all (reactions) or being spammed with overly long messages, that are almost an exact repetition of the one before it (edits).
+
+#### Contacts
+
+You can reach the mentors for questions via Matrix in the #nheko-reborn:matrix.org room or directly:
+- Nico (@deepbluev7:neko.dev)
+- red_sky (@red_sky:ocean.joedonofry.com)
 
 #### Milestones
 

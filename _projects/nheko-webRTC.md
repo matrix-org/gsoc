@@ -9,8 +9,8 @@ difficulty: high
 issues:
  - https://github.com/Nheko-Reborn/nheko/issues/109
 mentors:
- - Nico (@deepbluev7:neko.dev)
- - red_sky (@red_sky:ocean.joedonofry.com)
+ - deepbluev7
+ - redsky17
 initiatives:
  - GSOC
 tags:
@@ -37,6 +37,12 @@ Some pointers, which may be helpful:
 - Gstreamer added support for WebRTC in version 1.14. Some examples on how that works can be found [here](https://github.com/centricular/gstwebrtc-demos).
 - Gstreamer output can be used in a QtApplication via [qmlsink](https://github.com/GStreamer/gst-plugins-good/tree/master/tests/examples/qt/qmlsink).
 - The Matrix spec for calls can be found [here](https://matrix.org/docs/spec/client_server/latest#voice-over-ip).
+
+#### Contacts
+
+You can reach the mentors for questions via Matrix in the #nheko-reborn:matrix.org room or directly:
+- Nico (@deepbluev7:neko.dev)
+- red_sky (@red_sky:ocean.joedonofry.com)
 
 #### Milestones
 

@@ -7,8 +7,8 @@ requirements:
 difficulty: easy
 issues:
 mentors:
- - Nico (@deepbluev7:neko.dev)
- - red_sky (@red_sky:ocean.joedonofry.com)
+ - deepbluev7
+ - redsky17
 initiatives:
  - GSOC
 tags:
@@ -30,6 +30,12 @@ and should effectively be read only, while a new successor room is created, that
 Currently both of those rooms are shown as regular rooms in nheko, which can be very confusing and disruptive. It would be preferable to show them as a single room, which can be
 scrolled seamlessly. Nheko should make this experience as pleasant as possible. State resets or members leaving the old room shouldn't disrupt the new room for example. You should
 also be possible to upgrade a room using Nheko.
+
+#### Contacts
+
+You can reach the mentors for questions via Matrix in the #nheko-reborn:matrix.org room or directly:
+- Nico (@deepbluev7:neko.dev)
+- red_sky (@red_sky:ocean.joedonofry.com)
 
 #### Milestones
 
