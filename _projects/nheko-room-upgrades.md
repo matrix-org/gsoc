@@ -4,7 +4,7 @@ desc: Implement a visually pleasing way to handle upgraded rooms and upgrade roo
 requirements:
  - C++, some understanding of lambdas and C++17's std::variant will be beneficial
  - Qt, mainly Qml and Models
-difficulty: easy
+difficulty: medium
 issues:
 mentors:
  - deepbluev7
@@ -34,8 +34,8 @@ also be possible to upgrade a room using Nheko.
 #### Contacts
 
 You can reach the mentors for questions via Matrix in the #nheko-reborn:matrix.org room or directly:
-- Nico (@deepbluev7:neko.dev)
 - red_sky (@red_sky:ocean.joedonofry.com)
+- Nico (@deepbluev7:neko.dev)
 
 #### Milestones
 
