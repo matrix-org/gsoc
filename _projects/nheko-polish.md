@@ -24,7 +24,7 @@ Nheko is a native Matrix client written in C++ using the Qt toolkit using a mix 
 library as in the backend, which is based on Boost.Asio and Boost.Beast. Nheko does support E2EE and other advanced matrix features.
 
 Nheko added a lot of big features recently, but it is missing a lot of smaller features. This lack of smaller features pushes folks to Element and other clients.
-There are a lot of open GitHub issues for a lot of these feature, but for others they don't exist. Asking around should yield enough results. You can also
+There are a lot of open GitHub issues for a lot of these features, but for others they don't exist. Asking around should yield enough results. You can also
 just check, which features you are missing personally. An unordered list of what this could include:
 
 - Set and show canonical and secondary aliases for rooms.
@@ -56,7 +56,7 @@ The milestones are just a general timeline, you may want to move some elements t
 ##### Before GSOC
 
 * Get familiar with Nheko.
-* Get familiar with Matrix terms.  Start [here.](https://matrix.org/docs/guides/introduction)
+* Get familiar with Matrix terms.  Start [here](https://matrix.org/docs/guides/introduction).
 * Join #nheko-reborn:matrix.org and get to know the contributors and community.
 * Ask around for issues others would like to have fixed or discover your own bugs or missing features.
 * Clone the [nheko repo](https://github.com/Nheko-Reborn/nheko/) and compile the current dev branch.
