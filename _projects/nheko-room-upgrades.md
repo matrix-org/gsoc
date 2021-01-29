@@ -7,8 +7,8 @@ requirements:
 difficulty: medium
 issues:
 mentors:
- - deepbluev7
  - redsky17
+ - deepbluev7
 initiatives:
  - GSOC
 tags:
