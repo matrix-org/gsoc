@@ -10,6 +10,7 @@ issues:
  - https://github.com/ruma/ruma/issues/365
 mentors:
  - jplatte
+ - iinuwa
 initiatives:
  - GSoC
 tags:
