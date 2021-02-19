@@ -9,7 +9,7 @@ You can contact the Matrix team via our [Matrix GSoC room](https://matrix.to/#/#
 How do I pick a project?
 ------------------------
 
-The first thing to do, is to have a play with Matrix. Register an account on the matrix.org homeserver via a client like [Riot](https://riot.im/app) (or any of the clients listed on the ["try matrix now"](https://matrix.org/docs/projects/try-matrix-now.html) page). Join some rooms, for example [#matrix:matrix.org](https://matrix.to/#/#matrix:matrix.org), and say hello - in fact you can now even join as an anonymous user via that link. 
+The first thing to do, is to have a play with Matrix. Register an account on the matrix.org homeserver via a client like [Element](https://app.element.io) (or any of the clients listed on the ["try matrix now"](https://matrix.org/docs/projects/try-matrix-now.html) page). Join some rooms, for example [#matrix:matrix.org](https://matrix.to/#/#matrix:matrix.org), and say hello - in fact you can now even join as an anonymous user via that link. 
 
 [This guide](https://matrix.org/docs/guides/getting_involved.html) has a lot of information about getting involved. Perhaps you might want to run your own client, or even set up your own homeserver? Check out [the code](https://github.com/matrix-org/synapse) and have a look at the [client-server API](https://matrix.org/docs/api/client-server/).
 
