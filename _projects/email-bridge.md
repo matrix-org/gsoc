@@ -19,7 +19,7 @@ tags:
  - SMTP
 ---
 
-Email is one of the most ubiqutous methods on the internet to communicate today, having
+Email is one of the most ubiquitous methods on the internet to communicate today, having
 been around for a very long time. It's been a dream of ours that that one day Matrix
 could be connected up to Email by translating incoming [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
 traffic to Matrix messages, and then bridging Matrix messages back into emails. 
@@ -33,14 +33,14 @@ above and beyond and build a native SMTP <-> Email bridge.
 ### And this is where you come in
 
 We'd like you to build a Email bridge to Matrix. This would ideally take the form of a
-bridge process that handles it's own SMTP traffic rather than using an existing mail
+bridge process that handles its own SMTP traffic rather than using an existing mail
 server, and would bridge messages to and from Matrix rooms based upon the room membership
 rather than any kind of storage in the bridge. This is typically what we call a gateway
 bridge where the user has to do no extra configuration to make rooms magically bridge!
 
-Ideally a user could send an email to an address like `room+matrix_matrix.org@matrix.org`
+Ideally, a user could send an email to an address like `room+matrix_matrix.org@matrix.org`
 and the user would be automatically joined to `#matrix:matrix.org`, and the message
-would appear in the room. The user would also be subscriped to the room similar to a
+would appear in the room. The user would also be subscribed to the room similar to a
 mailing list so they could see responses.
 
 Several base libraries exist such as:
@@ -51,7 +51,7 @@ Several base libraries exist such as:
 
 ### Expected Results
 
-At it's most basic form, the bridge would be able to send messages to a Matrix room
+At its most basic form, the bridge would be able to send messages to a Matrix room
 and send messages from a Matrix room to a set of subscribers. There is scope for extra
 features like HTML handling, attachments, End-2-End encryption support and more though!
 
