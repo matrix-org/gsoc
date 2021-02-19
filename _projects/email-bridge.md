@@ -33,7 +33,7 @@ above and beyond and build a native SMTP <-> Email bridge.
 ### And this is where you come in
 
 We'd like you to build a Email bridge to Matrix. This would ideally take the form of a
-bridge process that handles it's own SMTP traffic rather than using an existing mail
+bridge process that handles its own SMTP traffic rather than using an existing mail
 server, and would bridge messages to and from Matrix rooms based upon the room membership
 rather than any kind of storage in the bridge. This is typically what we call a gateway
 bridge where the user has to do no extra configuration to make rooms magically bridge!
