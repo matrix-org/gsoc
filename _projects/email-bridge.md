@@ -2,12 +2,10 @@
 name: First-Class Email Bridge
 desc: Build a "gateway" email bridge to Matrix
 requirements:
-# Student requirements:
  - Keen interest in bridging networks together
 difficulty: Hard
 issues:
 mentors:
-# First person in contact; mentors may change before project starts.
  - Half-Shot
 initiatives:
  - GSoC
