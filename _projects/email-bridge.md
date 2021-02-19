@@ -38,7 +38,7 @@ server, and would bridge messages to and from Matrix rooms based upon the room m
 rather than any kind of storage in the bridge. This is typically what we call a gateway
 bridge where the user has to do no extra configuration to make rooms magically bridge!
 
-Ideally a user could send an email to an address like `room+matrix_matrix.org@matrix.org`
+Ideally, a user could send an email to an address like `room+matrix_matrix.org@matrix.org`
 and the user would be automatically joined to `#matrix:matrix.org`, and the message
 would appear in the room. The user would also be subscriped to the room similar to a
 mailing list so they could see responses.
