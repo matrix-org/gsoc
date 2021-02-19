@@ -1,6 +1,6 @@
 ---
 name: First-Class Email Bridge
-desc: Build a "gateway" email bridge to Matrix
+desc: Build a gateway-style email bridge to Matrix
 requirements:
  - Keen interest in bridging networks together
 difficulty: Hard
@@ -26,7 +26,7 @@ Matrix has a long history of being the best place to bridge different networks t
 has a [rich ecosystem of bridges](https://matrix.org/bridges/), making full use of the
 [Application Service API](https://matrix.org/docs/spec/application_service/r0.1.2). There
 are some Email bridges in existence already but here we are looking for someone to go
-above and beyond and build a native SMTP <-> Email bridge.
+above and beyond and build a native SMTP - Email bridge.
 
 ### And this is where you come in
 
