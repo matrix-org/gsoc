@@ -51,7 +51,7 @@ Several base libraries exist such as:
 
 ### Expected Results
 
-At it's most basic form, the bridge would be able to send messages to a Matrix room
+At its most basic form, the bridge would be able to send messages to a Matrix room
 and send messages from a Matrix room to a set of subscribers. There is scope for extra
 features like HTML handling, attachments, End-2-End encryption support and more though!
 
