@@ -20,7 +20,7 @@ tags:
 ---
 
 Email is one of the most ubiqutous methods on the internet to communicate today, having
-been around for a very long time. It's been a dream for a long time that one day Matrix
+been around for a very long time. It's been a dream of ours that that one day Matrix
 could be connected up to Email by translating incoming [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
 traffic to Matrix messages, and then bridging Matrix messages back into emails. 
 
