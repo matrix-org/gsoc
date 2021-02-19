@@ -40,7 +40,7 @@ bridge where the user has to do no extra configuration to make rooms magically b
 
 Ideally, a user could send an email to an address like `room+matrix_matrix.org@matrix.org`
 and the user would be automatically joined to `#matrix:matrix.org`, and the message
-would appear in the room. The user would also be subscriped to the room similar to a
+would appear in the room. The user would also be subscribed to the room similar to a
 mailing list so they could see responses.
 
 Several base libraries exist such as:
