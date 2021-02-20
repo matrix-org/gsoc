@@ -9,7 +9,7 @@ difficulty: low to average
 issues:
  - TBD
 mentors:
- - kitsune
+ - KitsuneRal
 initiatives:
  - GSoC
 tags:

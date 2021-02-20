@@ -11,7 +11,7 @@ difficulty: high
 issues:
  - TBD
 mentors:
- - kitsune
+ - KitsuneRal
 initiatives:
  - GSoC
 tags:
