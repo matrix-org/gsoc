@@ -2,12 +2,11 @@
 name: PyQuotient
 desc: Python bindings for libQuotient
 requirements:
- - Necessary: C++11 and Qt
- - Helpful: C++17
- - Big plus: PySide/PyQt knowledge
+ - "Necessary: C++11 and Qt"
+ - "Helpful: C++17"
+ - "Big plus: PySide/PyQt knowledge"
 difficulty: average
 issues:
- - TBD
 mentors:
  - KitsuneRal
 initiatives:
