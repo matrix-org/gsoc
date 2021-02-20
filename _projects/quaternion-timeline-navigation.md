@@ -7,7 +7,6 @@ requirements:
  - C++11 (desirable)
 difficulty: low to average
 issues:
- - TBD
 mentors:
  - KitsuneRal
 initiatives:
