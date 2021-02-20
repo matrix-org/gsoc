@@ -1,7 +1,6 @@
 ---
 name: PyQuotient
 desc: Python bindings for libQuotient
-# add a short one line description of your project
 requirements:
  - Necessary: C++11 and Qt
  - Helpful: C++17
