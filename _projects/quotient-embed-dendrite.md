@@ -9,7 +9,6 @@ requirements:
  - Experience in Dendrite configuration is a big plus
 difficulty: high
 issues:
- - TBD
 mentors:
  - KitsuneRal
 initiatives:
