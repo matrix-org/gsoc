@@ -12,7 +12,7 @@ issues:
  - https://github.com/vector-im/element-web/issues/2630
 mentors:
 # First person in contact; mentors may change before project starts.
- - Michael (t3chguy)
+ - t3chguy
 initiatives:
  - GSoC
 tags:
