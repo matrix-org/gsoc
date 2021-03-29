@@ -51,4 +51,4 @@ If possibly, familiarize yourself with modern javascript, indexeddb & service wo
 
 
 
-*   Bruno (@bwindels:matrix.org / [brunow@element.io](mailto:brunow@element.io))
+*   Simply join the dedicated room on Matrix: [#hydrogen-gsoc:matrix.org](https://matrix.to/#/#hydrogen-gsoc:matrix.org)
