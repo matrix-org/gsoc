@@ -53,6 +53,10 @@ Other extensions to this project could include:
 * The ability to use [token-authenticated registration](https://spec.matrix.org/v1.2/client-server-api/#token-authenticated-registration)
   to offer accounts on a specific homeserver to authorised users.
 
+**Related Projects**
+
+ - https://github.com/matrix-org/matrix-user-verification-service
+
 #### Milestones
 
 ##### GSOC CODING STARTS
