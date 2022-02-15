@@ -3,7 +3,7 @@ name: Implement Encrypted Search for Matrix
 desc: Implement a searchable symmetric encryption (SSE) protocol in Matrix
 requirements:
  - Knowledge of cryptography
- - Programming in a modern client-side language (Python/Rust/Javascript/Swift/Kotlin)
+ - Programming in a modern client-side language
 difficulty: high
 issues:
  - none
