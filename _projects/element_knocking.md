@@ -32,13 +32,15 @@ knocks to room moderators for review.
 
 ##### GSOC CODING STARTS
 
-Ability to send knocks from room directory and peeks, and alter room settings
-to allow people to knock.
+* Have setup a local Element web development environment and made a small Pull
+  Request to Element Web.
 
 ##### GSOC MIDTERM
 
-Ability to respond to knocks as a room moderator 
+* Ability to send knocks from room directory and peeks, and alter room settings
+to allow people to knock.
+* Ability to respond to knocks as a room moderator 
 
 ##### GSOC FINAL
 
-Ability to see your pending knocks somewhere
+* Ability to see your pending knocks somewhere
