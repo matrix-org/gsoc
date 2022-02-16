@@ -8,6 +8,7 @@ difficulty: medium
 issues:
 mentors:
  - Cadair
+ - Half-Shot
 initiatives:
  - GSoC
 tags:
@@ -48,6 +49,8 @@ The way we envisage this working is in three core components:
 
 Other extensions to this project could include:
 
+* Perodic checks against the third party service to kick people from the rooms
+  if they are no longer authorised to be there.
 * A web based admin panel, where the relationship between rooms and third party
   groups could be configured.
 * The ability to use [token-authenticated registration](https://spec.matrix.org/v1.2/client-server-api/#token-authenticated-registration)
