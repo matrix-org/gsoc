@@ -1,9 +1,11 @@
 ---
-name: 3rd Party Authorised Invites
-desc: Invite your users to a room based on some external authorisation. 
-# add a short one line description of your project
+name: 3rd Party Authorised Room Membership
+desc: Invite and kick users in a room based on some external authorisation. 
 requirements:
  - Understanding of the matrix Client-Server API
+ - Familiarity with Javascript & React
+ - Familiarity with a programming language with a good matrix SDK (for the
+   server side component).
 difficulty: medium
 issues:
 mentors:
@@ -60,16 +62,34 @@ Other extensions to this project could include:
 
  - https://github.com/matrix-org/matrix-user-verification-service
 
+**Implementation**
+
+The server side of this project could be implemented in any language, although
+the mentors are most familiar with Python, node and rust.
+
+The client side components would best be written in Type/Javascript & React.
+A good secondary outcome of this project would be a reusable Matrix login
+component written in React.
+
 #### Milestones
 
 ##### GSOC CODING STARTS
 
-* Be awesome
+* Have agreeded an implementation plan with the mentors, including choice of
+  programming language.
+* Have setup a local development environment and pushed initial project
+  configuration to the new repository.
 
 ##### GSOC MIDTERM
 
-* Have done awesome stuff.
+* Have a working login component with OpenID handoff to the server.
+* Have implemented a matrix bot which can invite users.
+* Have a working URL > matrix login > recieve invite workflow.
 
 ##### GSOC FINAL
 
-* Finished the awesome stuff.
+* Designed an interface for third party plugins and implemented at least one
+  example.
+* Implemented kicks if the third party plugin supports it.
+* Documented setup and configuration of the project to make it easy for people
+  to host instances.
