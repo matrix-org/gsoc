@@ -3,9 +3,6 @@ name: 3rd Party Authorised Room Membership
 desc: Invite and kick users in a room based on some external authorisation. 
 requirements:
  - Understanding of the matrix Client-Server API
- - Familiarity with Javascript & React
- - Familiarity with a programming language with a good matrix SDK (for the
-   server side component).
 difficulty: medium
 issues:
 mentors:
@@ -14,6 +11,9 @@ mentors:
 initiatives:
  - GSoC
 tags:
+ - Javascript & React
+ - A programming language with a good matrix SDK (for the server side component)
+ - 350h
 ---
 
 #### Description
@@ -22,7 +22,12 @@ This project aims to fill a gap which currently exists in the matrix
 ecosystem, which is the ability to delegate membership of a room to a third
 party service.
 
-Two examples of this workflow include:
+We envisage a workflow where a user authenticates with both matrix and the
+third party service, so that the bot can link the two identities and issue
+invites. The bot could also keep access to the third party account to monitor
+for changes with would lead to revoking room membership.
+
+Three examples of this workflow include:
 
 1. A (Patreon) supporters room: if you support a project at a certain level you
    get access to a supporters room. In this situation, the support platform
