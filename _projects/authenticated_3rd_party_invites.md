@@ -54,7 +54,8 @@ Other extensions to this project could include:
 * Perodic checks against the third party service to kick people from the rooms
   if they are no longer authorised to be there.
 * A web based admin panel, where the relationship between rooms and third party
-  groups could be configured.
+  groups could be configured (and support for using this as a widget in
+  a matrix room).
 * The ability to use [token-authenticated registration](https://spec.matrix.org/v1.2/client-server-api/#token-authenticated-registration)
   to offer accounts on a specific homeserver to authorised users.
 
