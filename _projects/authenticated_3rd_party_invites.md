@@ -58,6 +58,14 @@ Other extensions to this project could include:
   a matrix room).
 * The ability to use [token-authenticated registration](https://spec.matrix.org/v1.2/client-server-api/#token-authenticated-registration)
   to offer accounts on a specific homeserver to authorised users.
+* The functionality to kick people from more rooms than the bot invites them
+  to. This would enable the invite bot to invite users to a space where the
+  rooms it contains use 
+  [restricted join rules](https://spec.matrix.org/v1.2/client-server-api/#restricted-rooms)
+  and let users join as many rooms as they wish.
+  The issue with this currently is that if the user is kicked from the space,
+  they are still a member of all sub-rooms, so they would need to be explicitly
+  kicked from those rooms as well.
 
 **Related Projects**
 
