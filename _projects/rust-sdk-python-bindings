@@ -1,0 +1,41 @@
+---
+name: Matrix-Rust-SDK-Python
+desc: Building Python/nio bindings for using the matrix rust sdk
+requirements:
+# Student requirements:
+ - Wokred with Rust FFI
+ - Familiar with building Python Bindings
+difficulty: low
+issues:
+# Related issues (if any)  to this project.
+mentors:
+# First person in contact; mentors may change before project starts.
+ - Poljar
+initiatives:
+ - GSoC
+tags:
+# Different technologies needed
+ - python
+ - Rust
+ - FFI
+ - Nio
+---
+This is an awesome project idea.
+
+#### Description
+
+[matrix-nio](https://github.com/poljar/matrix-nio) the python library to connect to matrix, lacks some important features - most notably e2ee-support - that the new [Matrix Rust SDK](https://github.com/matrix-org/matrix-rust-sdk) supports. This projects want to create python bindings for the Rust SDK and integrate it in the nio library.
+
+#### Milestones
+
+##### GSOC CODING STARTS
+
+* initial Python bindings for Rust SDK
+
+##### GSOC MIDTERM
+
+* Integrating into nio, including encryption support
+
+##### GSOC FINAL
+
+* Fully working nio based on Rust SDK
