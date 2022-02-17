@@ -53,11 +53,11 @@ The way we envisage this working is in three core components:
   users matrix account.
 * A plugin system allowing the server admin to configure what third party
   systems to use for authorisation.
+* Perodic checks against the third party service to kick people from the rooms
+  if they are no longer authorised to be there.
 
 Other extensions to this project could include:
 
-* Perodic checks against the third party service to kick people from the rooms
-  if they are no longer authorised to be there.
 * A web based admin panel, where the relationship between rooms and third party
   groups could be configured (and support for using this as a widget in
   a matrix room).
