@@ -1,8 +1,8 @@
 ---
 name: 3rd Party Authorised Room Membership
-desc: Invite and kick users in a room based on some external authorisation. 
+desc: Invite and kick users in a room based on a external authorisation source. 
 requirements:
- - Understanding of the matrix Client-Server API
+ - Understanding of the Matrix Client-Server API
 difficulty: medium
 issues:
 mentors:
