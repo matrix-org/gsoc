@@ -1,11 +1,11 @@
 ---
 name: Matrix-Rust-SDK-Python
-desc: Building Python/nio bindings for using the matrix rust sdk
+desc: Building Python bindings for using the Matrix Rust SDK
 requirements:
 # Student requirements:
  - Worked with Rust FFI
  - Familiar with building Python Bindings
-difficulty: low
+difficulty: medium
 issues:
 # Related issues (if any)  to this project.
 mentors:
@@ -24,7 +24,9 @@ This is an awesome project idea.
 
 #### Description
 
-[matrix-nio](https://github.com/poljar/matrix-nio) the python library to connect to matrix, lacks some important features - most notably cross-signing-support - that the new [Matrix Rust SDK](https://github.com/matrix-org/matrix-rust-sdk) supports. This projects want to create python bindings for the Rust SDK and integrate it in the nio library.
+[matrix-nio](https://github.com/poljar/matrix-nio), a Python Matrix client library, lacks some important features, up-to-date cryptography, the ability to store state, support for reactions, etc. All of those missing features are supported by the new [Matrix Rust SDK](https://github.com/matrix-org/matrix-rust-sdk).
+
+This project aims to create Python bindings for the Rust SDK and integrate them in the matrix-nio library. matrix-nio already contains multiple `Client` classes for different use-cases, the `AsyncClient` class API is similar to the Rust SDK API. The project should introduce a new `Client` class to `matrix-nio` which would replace the `AsyncClient` class.
 
 #### Milestones
 
@@ -34,8 +36,8 @@ This is an awesome project idea.
 
 ##### GSOC MIDTERM
 
-* Integrating into nio, including encryption support
+Integration into matrix-nio as a separate client implementation.
 
 ##### GSOC FINAL
 
-* Fully working nio based on Rust SDK
+* Fully working matrix-nio backed by the Rust SDK
