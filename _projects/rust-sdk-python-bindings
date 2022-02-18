@@ -15,7 +15,7 @@ initiatives:
  - GSoC
 tags:
 # Different technologies needed
- - python
+ - Python
  - Rust
  - FFI
  - Nio
