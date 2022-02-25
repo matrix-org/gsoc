@@ -21,6 +21,7 @@ tags:
 # Different technologies needed
  - C++
  - WebRTC
+ - 350h
 ---
 
 #### Description
