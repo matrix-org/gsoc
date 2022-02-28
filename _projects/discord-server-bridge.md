@@ -13,6 +13,7 @@ initiatives:
  - GSoC
 tags:
  - typescript
+ - 175h
 
 ---
 

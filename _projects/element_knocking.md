@@ -14,6 +14,7 @@ initiatives:
 tags:
  - Javascript
  - React
+ - 175h
 ---
 
 #### Description
