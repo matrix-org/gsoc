@@ -21,6 +21,7 @@ mentors:
 initiatives:
  - GSoC
 tags:
+ - 175h
 # Different technologies needed
  - c++
  - cpp
