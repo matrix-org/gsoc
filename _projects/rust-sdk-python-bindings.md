@@ -28,8 +28,8 @@ tags:
 [matrix-nio](https://github.com/poljar/matrix-nio), a Python Matrix client
 library, lacks some important features, up-to-date cryptography, the ability to
 store state, support for reactions, etc. All of those missing features are
-supported by the new [Matrix Rust SDK]
-(https://github.com/matrix-org/matrix-rust-sdk).
+supported by the new
+[Matrix Rust SDK](https://github.com/matrix-org/matrix-rust-sdk).
 
 This project aims to create Python bindings for the Rust SDK and integrate them
 in the matrix-nio library. matrix-nio already contains multiple `Client`
