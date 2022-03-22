@@ -14,7 +14,7 @@ issues:
  - https://github.com/Nheko-Reborn/nheko/labels/voip
 mentors:
 # First person in contact; mentors may change before project starts.
- - Nico (@deepbluev7:neko.dev)
+ - deepbluev7
 initiatives:
  - GSoC
 tags:

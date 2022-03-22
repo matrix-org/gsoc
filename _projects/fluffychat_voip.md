@@ -7,7 +7,7 @@ difficulty: high
 issues:
  - https://gitlab.com/famedly/fluffychat/-/issues/874
 mentors:
- - Krille
+ - Krillefear
 initiatives:
  - GSoC
 tags:
