@@ -11,6 +11,7 @@ mentors:
 initiatives:
  - GSoC
 tags:
+ - 350h
  - Flutter
  - Dart
  - WebRTC
