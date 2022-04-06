@@ -19,8 +19,8 @@ Student Info
 - Matrix ID: (i.e. @cadair:cadair.com)
 - Which country will you reside in during the project?
 - Time Zone:
-- GSoC blog RSS feed URL: (You will have to write a blog post every
-  week during GSoC.)
+- GSoC blog RSS feed URL: (if you have one for weekly posts, otherwise we'll
+  use TWIM)
 
 
 Code Sample
@@ -35,7 +35,7 @@ us to take a look at that.
 Project Info
 ------------
 
-- Which project from http://matrix-org.github.io/gsoc are you applying for?
+- Which project from https://matrix-org.github.io/gsoc are you applying for?
   If you have your own idea, please add it to our projects list:
   https://github.com/matrix-org/gsoc
 
