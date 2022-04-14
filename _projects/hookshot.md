@@ -14,7 +14,7 @@ mentors:
 initiatives:
  - GSoC
 tags:
-   - 175h
+ - 175h
  - Typescript
  - JavaScript
  - Webhooks
