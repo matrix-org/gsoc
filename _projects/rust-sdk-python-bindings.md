@@ -11,7 +11,6 @@ issues:
 mentors:
 # First person in contact; mentors may change before project starts.
  - Poljar
- - jplatte
 initiatives:
  - GSoC
 tags:

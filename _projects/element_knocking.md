@@ -8,7 +8,7 @@ difficulty: high
 issues:
  - https://github.com/vector-im/element-web/issues/18655
 mentors:
- - turt2live
+ - kerryarchibald
 initiatives:
  - GSoC
 tags:
